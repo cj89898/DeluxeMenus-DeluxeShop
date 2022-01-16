@@ -1,0 +1,18 @@
+# DeluxeMenus 1.13.5-DEV-129 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  shopConfirm:
+    file: shop/shopConfirm.yml
+  sellConfirm:
+    file: shop/sellConfirm.yml
+  buyMore:
+    file: shop/buyMore.yml
+  sellMore:
+    file: shop/sellMore.yml
+  shopPageOne:
+    file: shop/pages/1.yml
