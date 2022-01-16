@@ -1,0 +1,113 @@
+menu_title: 'Shop'
+size: 27
+open_command: buyMore
+register_command: true
+args:
+- item
+- lastMenu
+open_commands:
+- '[meta] set dmshop-currentAmount INTEGER 1'
+- '[refresh] <delay=5>'
+close_commands:
+- '[meta] remove dmshop-currentAmount INTEGER 0'
+
+items:
+  'item':
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_{item},name}%'
+    display_name: '&a%javascript_dmshop-items_{item},name%'
+    slot: 13
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},price}%'
+    - '&6Total Price: &a$%math_2_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}*{javascript_dmshop-items_{item},price}%'
+    - ''
+    - '&8&oClick to Checkout'
+    click_commands:
+    - '[player] shopConfirm 1 %deluxemenus_meta_dmshop-currentAmount_INTEGER_1% {lastMenu}'
+  'exit':
+    material: barrier
+    slot: 26
+    display_name: '&cReturn to previous menu'
+    click_commands:
+    - '[openguimenu] {lastMenu}'
+  '-all':
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&cRemove all items'
+    amount: 64
+    slot: 9
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_-2304%'
+    - '[refresh]'
+  '-64':
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&cRemove 64 items'
+    amount: 64
+    slot: 10
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_-64%'
+    - '[refresh]'
+  '-10':
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&cRemove 10 items'
+    amount: 10
+    slot: 11
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_-10%'
+    - '[refresh]'
+  '-1':
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&cRemove 1 item'
+    amount: 1
+    slot: 12
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_-1%'
+    - '[refresh]'
+  '+1':
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&aAdd 1 item'
+    amount: 1
+    slot: 14
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_1%'
+    - '[refresh]'
+  '+10':
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&aAdd 10 items'
+    amount: 10
+    slot: 15
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_10%'
+    - '[refresh]'
+  '+64':
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&aAdd 64 items'
+    amount: 64
+    slot: 16
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_64%'
+    - '[refresh]'
+  '+max':
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&aAdd max items'
+    amount: 64
+    slot: 17
+    lore:
+    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    click_commands:
+    - '[meta] set dmshop-currentAmount INTEGER 1'
+    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop-maxpurchase_{item}%'
+    - '[refresh]'

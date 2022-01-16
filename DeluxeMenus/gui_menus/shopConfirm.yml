@@ -1,0 +1,46 @@
+menu_title: '&8Shop - &9%javascript_dmshop-items_{item},name%'
+open_command: shopConfirm
+register_command: true  
+args:
+- item
+- amount
+- lastMenu
+size: 9
+items:
+  'dirt':
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_{item},name}%'
+    display_name: '&r&6Item: &a%javascript_dmshop-items_{item},name%'
+    lore:
+    - "&6Amount: &a{amount}"
+    - "&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},price}%"
+    - "&6Total Price: &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%"
+    slot: 4
+  'purchase':
+    display_name: '&a&oClick to Purchase'
+    material: LIME_STAINED_GLASS_PANE
+    slots:
+    - 0-3
+    lore:
+    - "&a{amount} %javascript_dmshop-items_{item},name% &6for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%"
+    click_requirement:
+      requirements:
+        money:
+          type: has money
+          amount: '%math_{amount}*{javascript_dmshop-items_{item},price}%'
+          deny_commands:
+          - '[message]&cYou do not have enough money'
+          - '[close]'
+    click_commands:
+    - '[console] eco take %player_name% %math_{amount}*{javascript_dmshop-items_{item},price}%'
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_{item},name},amt:{amount}%'
+    - '[message] &a{amount} %javascript_dmshop-items_{item},name% &6Successfully Purchased for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%'
+    - '[close]'
+  'return':
+    display_name: '&4Cancel Purchase'
+    material: RED_STAINED_GLASS_PANE
+    slots:
+    - 5-8
+    click_commands:
+    - '[message] &cPurchase Cancelled'
+    - '[close]'
+    - '[openguimenu] {lastMenu}'
