@@ -1,4 +1,7 @@
+#Valid selling options can be any number or "individual"
+selling: 'individual'
 items:
   '1':
     name: Stone
-    price: '0.5'
+    buy: '1'
+    sell: '0.5'

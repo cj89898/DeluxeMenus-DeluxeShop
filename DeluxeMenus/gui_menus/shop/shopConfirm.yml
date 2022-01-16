@@ -12,8 +12,8 @@ items:
     display_name: '&r&6Item: &a%javascript_dmshop-items_{item},name%'
     lore:
     - "&6Amount: &a{amount}"
-    - "&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},price}%"
-    - "&6Total Price: &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%"
+    - "&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},buy}%"
+    - "&6Total Price: &a$%math_2_{amount}*{javascript_dmshop-items_{item},buy}%"
     slot: 4
   'purchase':
     display_name: '&a&oClick to Purchase'
@@ -21,19 +21,19 @@ items:
     slots:
     - 0-3
     lore:
-    - "&a{amount} %javascript_dmshop-items_{item},name% &6for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%"
+    - "&a{amount} %javascript_dmshop-items_{item},name% &6for &a$%math_2_{amount}*{javascript_dmshop-items_{item},buy}%"
     click_requirement:
       requirements:
         money:
           type: has money
-          amount: '%math_{amount}*{javascript_dmshop-items_{item},price}%'
+          amount: '%math_{amount}*{javascript_dmshop-items_{item},buy}%'
           deny_commands:
           - '[message]&cYou do not have enough money'
           - '[close]'
     click_commands:
-    - '[console] eco take %player_name% %math_{amount}*{javascript_dmshop-items_{item},price}%'
+    - '[console] eco take %player_name% %math_{amount}*{javascript_dmshop-items_{item},buy}%'
     - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_{item},name},amt:{amount}%'
-    - '[message] &a{amount} %javascript_dmshop-items_{item},name% &6Successfully Purchased for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}%'
+    - '[message] &a{amount} %javascript_dmshop-items_{item},name% &6Successfully Purchased for &a$%math_2_{amount}*{javascript_dmshop-items_{item},buy}%'
     - '[close]'
   'return':
     display_name: '&4Cancel Purchase'

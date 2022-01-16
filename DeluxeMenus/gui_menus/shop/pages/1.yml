@@ -8,8 +8,8 @@ items:
     slot: 0
     display_name: '&a%javascript_dmshop-items_1,name%'
     lore:
-    - '&2Buy: &a$%math_2_{javascript_dmshop-items_1,price}% &6each'
-    - '&cSell: &a$%math_2_{javascript_dmshop-items_1,price}/2% &6each'
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_1,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_1,sell}% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
     - '&8&oShift-Click to Purchase/Sell More'
@@ -17,12 +17,12 @@ items:
       requirements:
         money:
           type: has money
-          amount: '%javascript_dmshop-items_1,price%'
+          amount: '%javascript_dmshop-items_1,buy%'
           deny_commands:
           - '[message] &cYou do not have enough money'
     left_click_commands:
     - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_1,name},amt:1%'
-    - '[console] eco take %player_name% %javascript_dmshop-items_1,price%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_1,buy%'
     shift_left_click_commands:
     - '[player] buyMore 1 shopPageOne'
     right_click_requirement:
@@ -35,6 +35,6 @@ items:
           - '[message] &cYou do not have enough items'
     right_click_commands:
     - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_1,name},amt:1%'
-    - '[console] eco give %player_name% %math_{javascript_dmshop-items_1,price}/2%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_1,sell}%'
     shift_right_click_commands:
     - '[player] sellMore 1 shopPageOne'

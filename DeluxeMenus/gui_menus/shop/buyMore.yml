@@ -18,8 +18,8 @@ items:
     slot: 13
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
-    - '&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},price}%'
-    - '&6Total Price: &a$%math_2_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}*{javascript_dmshop-items_{item},price}%'
+    - '&6Price per Item: &a$%math_2_{javascript_dmshop-items_{item},buy}%'
+    - '&6Total Price: &a$%math_2_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}*{javascript_dmshop-items_{item},buy}%'
     - ''
     - '&8&oClick to Checkout'
     click_commands:

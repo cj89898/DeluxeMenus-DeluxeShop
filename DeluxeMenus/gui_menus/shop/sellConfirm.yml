@@ -12,8 +12,8 @@ items:
     display_name: '&r&6Item: &a%javascript_dmshop-items_{item},name%'
     lore:
     - "&6Amount: &a{amount}"
-    - "&6Value per Item: &a$%math_2_{javascript_dmshop-items_{item},price}/2%"
-    - "&6Total Value: &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}/2%"
+    - "&6Value per Item: &a$%math_2_{javascript_dmshop-items_{item},sell}%"
+    - "&6Total Value: &a$%math_2_{amount}*{javascript_dmshop-items_{item},sell}%"
     slot: 4
   'purchase':
     display_name: '&a&oClick to Sell'
@@ -21,7 +21,7 @@ items:
     slots:
     - 0-3
     lore:
-    - "&a{amount} %javascript_dmshop-items_{item},name% &6for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}/2%"
+    - "&a{amount} %javascript_dmshop-items_{item},name% &6for &a$%math_2_{amount}*{javascript_dmshop-items_{item},sell}%"
     click_requirement:
       requirements:
         item:
@@ -32,9 +32,9 @@ items:
           - '[message]&cYou do not have enough items'
           - '[close]'
     click_commands:
-    - '[console] eco give %player_name% %math_{amount}*{javascript_dmshop-items_{item},price}/2%'
+    - '[console] eco give %player_name% %math_{amount}*{javascript_dmshop-items_{item},sell}%'
     - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_{item},name},amt:{amount}%'
-    - '[message] &a{amount} %javascript_dmshop-items_{item},name% &6Successfully Sold for &a$%math_2_{amount}*{javascript_dmshop-items_{item},price}/2%'
+    - '[message] &a{amount} %javascript_dmshop-items_{item},name% &6Successfully Sold for &a$%math_2_{amount}*{javascript_dmshop-items_{item},sell}%'
     - '[close]'
   'return':
     display_name: '&4Cancel Sale'
