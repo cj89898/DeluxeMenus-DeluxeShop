@@ -1,0 +1,40 @@
+menu_title: 'Shop Page 1'
+open_command: shop
+register_command: true
+size: 27
+items:
+  'item1':
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_1,name}%'
+    slot: 0
+    display_name: '&a%javascript_dmshop-items_1,name%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_1,price}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_1,price}/2% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          amount: '%javascript_dmshop-items_1,price%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_1,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_1,price%'
+    shift_left_click_commands:
+    - '[player] buyMore 1 shopPageOne'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_1,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_1,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_1,price}/2%'
+    shift_right_click_commands:
+    - '[player] sellMore 1 shopPageOne'
