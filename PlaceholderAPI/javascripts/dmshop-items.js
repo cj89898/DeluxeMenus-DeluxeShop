@@ -12,6 +12,9 @@ function items(){
             dataLoc = "items." + args[0] + ".buy";
             return parseFloat(Data.get(dataLoc))*sellMult;
         }
+    }else if(args[1] == "name"){
+        if(args.length > 2 && args[2] == "formatted")
+            return data.replaceAll('_', ' ');
     }
     return data;
 }
