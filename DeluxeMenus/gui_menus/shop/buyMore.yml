@@ -23,7 +23,7 @@ items:
     - ''
     - '&8&oClick to Checkout'
     click_commands:
-    - '[player] shopConfirm 1 %deluxemenus_meta_dmshop-currentAmount_INTEGER_1% {lastMenu}'
+    - '[player] shopConfirm {item} %deluxemenus_meta_dmshop-currentAmount_INTEGER_1% {lastMenu}'
   'exit':
     material: barrier
     slot: 26
