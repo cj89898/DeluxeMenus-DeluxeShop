@@ -26,7 +26,7 @@ items:
       requirements:
         money:
           type: has money
-          amount: '%math_{amount}*{javascript_dmshop-items_{item},buy}%'
+          placeholder: '%math_{amount}*{javascript_dmshop-items_{item},buy}%'
           deny_commands:
           - '[message]&cYou do not have enough money'
           - '[close]'
