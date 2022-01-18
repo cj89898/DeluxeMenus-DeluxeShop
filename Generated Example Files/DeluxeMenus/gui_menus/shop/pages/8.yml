@@ -1,4 +1,4 @@
-menu_title: 'Shop Page 8/24'
+menu_title: 'Shop Page 8/21'
 size: 54
 items:
   'next_page':
@@ -15,51 +15,6 @@ items:
     slot: 45
     click_commands:
     - '[openguimenu] shopPageSeven'
-  'item365':
-    view_requirement:
-      requirements:
-        valid:
-          type: '!string equals'
-          input: '%deluxeshop_365,name%'
-          output: ''
-        error:
-          type: '!string contains'
-          input: '%deluxeshop_365,name%'
-          output: 'error'
-    material: 'placeholder-%string_uppercase_{deluxeshop_365,name}%'
-    slot: 0
-    display_name: '&a%deluxeshop_365,name,formatted%'
-    lore:
-    - '&2Buy: &a$%math_2_{deluxeshop_365,buy}% &6each'
-    - '&cSell: &a$%math_2_{deluxeshop_365,sell}% &6each'
-    - '&8Left Click to Purchase'
-    - '&8Right Click to Sell'
-    - '&8&oShift-Click to Purchase/Sell More'
-    left_click_requirement:
-      requirements:
-        money:
-          type: has money
-          placeholder: '%deluxeshop_365,buy%'
-          deny_commands:
-          - '[message] &cYou do not have enough money'
-    left_click_commands:
-    - '[placeholder] %checkitem_give_mat:{deluxeshop_365,name},amt:1%'
-    - '[console] eco take %player_name% %deluxeshop_365,buy%'
-    shift_left_click_commands:
-    - '[player] buyMore 365 shopPageEight'
-    right_click_requirement:
-      requirements:
-        item:
-          type: string equals
-          input: '%checkitem_mat:{deluxeshop_365,name},amt:1%'
-          output: 'yes'
-          deny_commands:
-          - '[message] &cYou do not have enough items'
-    right_click_commands:
-    - '[placeholder] %checkitem_remove_mat:{deluxeshop_365,name},amt:1%'
-    - '[console] eco give %player_name% %math_{deluxeshop_365,sell}%'
-    shift_right_click_commands:
-    - '[player] sellMore 365 shopPageEight'
   'item366':
     view_requirement:
       requirements:
@@ -72,7 +27,7 @@ items:
           input: '%deluxeshop_366,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_366,name}%'
-    slot: 1
+    slot: 0
     display_name: '&a%deluxeshop_366,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_366,buy}% &6each'
@@ -117,7 +72,7 @@ items:
           input: '%deluxeshop_367,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_367,name}%'
-    slot: 2
+    slot: 1
     display_name: '&a%deluxeshop_367,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_367,buy}% &6each'
@@ -162,7 +117,7 @@ items:
           input: '%deluxeshop_368,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_368,name}%'
-    slot: 3
+    slot: 2
     display_name: '&a%deluxeshop_368,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_368,buy}% &6each'
@@ -207,7 +162,7 @@ items:
           input: '%deluxeshop_369,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_369,name}%'
-    slot: 4
+    slot: 3
     display_name: '&a%deluxeshop_369,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_369,buy}% &6each'
@@ -252,7 +207,7 @@ items:
           input: '%deluxeshop_370,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_370,name}%'
-    slot: 5
+    slot: 4
     display_name: '&a%deluxeshop_370,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_370,buy}% &6each'
@@ -297,7 +252,7 @@ items:
           input: '%deluxeshop_371,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_371,name}%'
-    slot: 6
+    slot: 5
     display_name: '&a%deluxeshop_371,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_371,buy}% &6each'
@@ -342,7 +297,7 @@ items:
           input: '%deluxeshop_372,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_372,name}%'
-    slot: 7
+    slot: 6
     display_name: '&a%deluxeshop_372,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_372,buy}% &6each'
@@ -387,7 +342,7 @@ items:
           input: '%deluxeshop_373,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_373,name}%'
-    slot: 8
+    slot: 7
     display_name: '&a%deluxeshop_373,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_373,buy}% &6each'
@@ -432,7 +387,7 @@ items:
           input: '%deluxeshop_374,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_374,name}%'
-    slot: 9
+    slot: 8
     display_name: '&a%deluxeshop_374,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_374,buy}% &6each'
@@ -477,7 +432,7 @@ items:
           input: '%deluxeshop_375,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_375,name}%'
-    slot: 10
+    slot: 9
     display_name: '&a%deluxeshop_375,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_375,buy}% &6each'
@@ -522,7 +477,7 @@ items:
           input: '%deluxeshop_376,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_376,name}%'
-    slot: 11
+    slot: 10
     display_name: '&a%deluxeshop_376,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_376,buy}% &6each'
@@ -567,7 +522,7 @@ items:
           input: '%deluxeshop_377,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_377,name}%'
-    slot: 12
+    slot: 11
     display_name: '&a%deluxeshop_377,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_377,buy}% &6each'
@@ -612,7 +567,7 @@ items:
           input: '%deluxeshop_378,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_378,name}%'
-    slot: 13
+    slot: 12
     display_name: '&a%deluxeshop_378,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_378,buy}% &6each'
@@ -657,7 +612,7 @@ items:
           input: '%deluxeshop_379,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_379,name}%'
-    slot: 14
+    slot: 13
     display_name: '&a%deluxeshop_379,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_379,buy}% &6each'
@@ -702,7 +657,7 @@ items:
           input: '%deluxeshop_380,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_380,name}%'
-    slot: 15
+    slot: 14
     display_name: '&a%deluxeshop_380,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_380,buy}% &6each'
@@ -747,7 +702,7 @@ items:
           input: '%deluxeshop_381,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_381,name}%'
-    slot: 16
+    slot: 15
     display_name: '&a%deluxeshop_381,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_381,buy}% &6each'
@@ -792,7 +747,7 @@ items:
           input: '%deluxeshop_382,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_382,name}%'
-    slot: 17
+    slot: 16
     display_name: '&a%deluxeshop_382,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_382,buy}% &6each'
@@ -837,7 +792,7 @@ items:
           input: '%deluxeshop_383,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_383,name}%'
-    slot: 18
+    slot: 17
     display_name: '&a%deluxeshop_383,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_383,buy}% &6each'
@@ -882,7 +837,7 @@ items:
           input: '%deluxeshop_384,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_384,name}%'
-    slot: 19
+    slot: 18
     display_name: '&a%deluxeshop_384,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_384,buy}% &6each'
@@ -927,7 +882,7 @@ items:
           input: '%deluxeshop_385,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_385,name}%'
-    slot: 20
+    slot: 19
     display_name: '&a%deluxeshop_385,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_385,buy}% &6each'
@@ -972,7 +927,7 @@ items:
           input: '%deluxeshop_386,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_386,name}%'
-    slot: 21
+    slot: 20
     display_name: '&a%deluxeshop_386,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_386,buy}% &6each'
@@ -1017,7 +972,7 @@ items:
           input: '%deluxeshop_387,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_387,name}%'
-    slot: 22
+    slot: 21
     display_name: '&a%deluxeshop_387,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_387,buy}% &6each'
@@ -1062,7 +1017,7 @@ items:
           input: '%deluxeshop_388,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_388,name}%'
-    slot: 23
+    slot: 22
     display_name: '&a%deluxeshop_388,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_388,buy}% &6each'
@@ -1107,7 +1062,7 @@ items:
           input: '%deluxeshop_389,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_389,name}%'
-    slot: 24
+    slot: 23
     display_name: '&a%deluxeshop_389,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_389,buy}% &6each'
@@ -1152,7 +1107,7 @@ items:
           input: '%deluxeshop_390,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_390,name}%'
-    slot: 25
+    slot: 24
     display_name: '&a%deluxeshop_390,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_390,buy}% &6each'
@@ -1197,7 +1152,7 @@ items:
           input: '%deluxeshop_391,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_391,name}%'
-    slot: 26
+    slot: 25
     display_name: '&a%deluxeshop_391,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_391,buy}% &6each'
@@ -1242,7 +1197,7 @@ items:
           input: '%deluxeshop_392,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_392,name}%'
-    slot: 27
+    slot: 26
     display_name: '&a%deluxeshop_392,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_392,buy}% &6each'
@@ -1287,7 +1242,7 @@ items:
           input: '%deluxeshop_393,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_393,name}%'
-    slot: 28
+    slot: 27
     display_name: '&a%deluxeshop_393,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_393,buy}% &6each'
@@ -1332,7 +1287,7 @@ items:
           input: '%deluxeshop_394,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_394,name}%'
-    slot: 29
+    slot: 28
     display_name: '&a%deluxeshop_394,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_394,buy}% &6each'
@@ -1377,7 +1332,7 @@ items:
           input: '%deluxeshop_395,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_395,name}%'
-    slot: 30
+    slot: 29
     display_name: '&a%deluxeshop_395,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_395,buy}% &6each'
@@ -1422,7 +1377,7 @@ items:
           input: '%deluxeshop_396,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_396,name}%'
-    slot: 31
+    slot: 30
     display_name: '&a%deluxeshop_396,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_396,buy}% &6each'
@@ -1467,7 +1422,7 @@ items:
           input: '%deluxeshop_397,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_397,name}%'
-    slot: 32
+    slot: 31
     display_name: '&a%deluxeshop_397,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_397,buy}% &6each'
@@ -1512,7 +1467,7 @@ items:
           input: '%deluxeshop_398,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_398,name}%'
-    slot: 33
+    slot: 32
     display_name: '&a%deluxeshop_398,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_398,buy}% &6each'
@@ -1557,7 +1512,7 @@ items:
           input: '%deluxeshop_399,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_399,name}%'
-    slot: 34
+    slot: 33
     display_name: '&a%deluxeshop_399,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_399,buy}% &6each'
@@ -1602,7 +1557,7 @@ items:
           input: '%deluxeshop_400,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_400,name}%'
-    slot: 35
+    slot: 34
     display_name: '&a%deluxeshop_400,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_400,buy}% &6each'
@@ -1647,7 +1602,7 @@ items:
           input: '%deluxeshop_401,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_401,name}%'
-    slot: 36
+    slot: 35
     display_name: '&a%deluxeshop_401,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_401,buy}% &6each'
@@ -1692,7 +1647,7 @@ items:
           input: '%deluxeshop_402,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_402,name}%'
-    slot: 37
+    slot: 36
     display_name: '&a%deluxeshop_402,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_402,buy}% &6each'
@@ -1737,7 +1692,7 @@ items:
           input: '%deluxeshop_403,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_403,name}%'
-    slot: 38
+    slot: 37
     display_name: '&a%deluxeshop_403,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_403,buy}% &6each'
@@ -1782,7 +1737,7 @@ items:
           input: '%deluxeshop_404,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_404,name}%'
-    slot: 39
+    slot: 38
     display_name: '&a%deluxeshop_404,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_404,buy}% &6each'
@@ -1827,7 +1782,7 @@ items:
           input: '%deluxeshop_405,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_405,name}%'
-    slot: 40
+    slot: 39
     display_name: '&a%deluxeshop_405,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_405,buy}% &6each'
@@ -1872,7 +1827,7 @@ items:
           input: '%deluxeshop_406,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_406,name}%'
-    slot: 41
+    slot: 40
     display_name: '&a%deluxeshop_406,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_406,buy}% &6each'
@@ -1917,7 +1872,7 @@ items:
           input: '%deluxeshop_407,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_407,name}%'
-    slot: 42
+    slot: 41
     display_name: '&a%deluxeshop_407,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_407,buy}% &6each'
@@ -1962,7 +1917,7 @@ items:
           input: '%deluxeshop_408,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_408,name}%'
-    slot: 43
+    slot: 42
     display_name: '&a%deluxeshop_408,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_408,buy}% &6each'
@@ -2007,7 +1962,7 @@ items:
           input: '%deluxeshop_409,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_409,name}%'
-    slot: 44
+    slot: 43
     display_name: '&a%deluxeshop_409,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_409,buy}% &6each'
@@ -2052,7 +2007,7 @@ items:
           input: '%deluxeshop_410,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_410,name}%'
-    slot: 46
+    slot: 44
     display_name: '&a%deluxeshop_410,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_410,buy}% &6each'
@@ -2097,7 +2052,7 @@ items:
           input: '%deluxeshop_411,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_411,name}%'
-    slot: 47
+    slot: 46
     display_name: '&a%deluxeshop_411,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_411,buy}% &6each'
@@ -2142,7 +2097,7 @@ items:
           input: '%deluxeshop_412,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_412,name}%'
-    slot: 48
+    slot: 47
     display_name: '&a%deluxeshop_412,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_412,buy}% &6each'
@@ -2187,7 +2142,7 @@ items:
           input: '%deluxeshop_413,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_413,name}%'
-    slot: 49
+    slot: 48
     display_name: '&a%deluxeshop_413,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_413,buy}% &6each'
@@ -2232,7 +2187,7 @@ items:
           input: '%deluxeshop_414,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_414,name}%'
-    slot: 50
+    slot: 49
     display_name: '&a%deluxeshop_414,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_414,buy}% &6each'
@@ -2277,7 +2232,7 @@ items:
           input: '%deluxeshop_415,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_415,name}%'
-    slot: 51
+    slot: 50
     display_name: '&a%deluxeshop_415,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_415,buy}% &6each'
@@ -2322,7 +2277,7 @@ items:
           input: '%deluxeshop_416,name%'
           output: 'error'
     material: 'placeholder-%string_uppercase_{deluxeshop_416,name}%'
-    slot: 52
+    slot: 51
     display_name: '&a%deluxeshop_416,name,formatted%'
     lore:
     - '&2Buy: &a$%math_2_{deluxeshop_416,buy}% &6each'
@@ -2355,3 +2310,48 @@ items:
     - '[console] eco give %player_name% %math_{deluxeshop_416,sell}%'
     shift_right_click_commands:
     - '[player] sellMore 416 shopPageEight'
+  'item417':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_417,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_417,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_417,name}%'
+    slot: 52
+    display_name: '&a%deluxeshop_417,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_417,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_417,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_417,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_417,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_417,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 417 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_417,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_417,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_417,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 417 shopPageEight'
