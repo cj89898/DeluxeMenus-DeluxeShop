@@ -1,0 +1,4803 @@
+# Valid selling options can be any number or "individual"
+selling: 0.33
+items:
+  '1':
+    name: Stone
+    buy: '1'
+    sell: '0.5'
+  '2':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '3':
+    name: Cobblestone
+    buy: '1'
+    sell: '0.5'
+  '4':
+    name: Gravel
+    buy: '1'
+    sell: '0.5'
+  '5':
+    name: Sand
+    buy: '1'
+    sell: '0.5'
+  '6':
+    name: Red_Sand
+    buy: '1'
+    sell: '0.5'
+  '7':
+    name: Granite
+    buy: '1'
+    sell: '0.5'
+  '8':
+    name: Andesite
+    buy: '1'
+    sell: '0.5'
+  '9':
+    name: Diorite
+    buy: '1'
+    sell: '0.5'
+  '10':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '11':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '12':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '13':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '14':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '15':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '16':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '17':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '18':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '19':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '20':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '21':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '22':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '23':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '24':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '25':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '26':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '27':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '28':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '29':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '30':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '31':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '32':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '33':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '34':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '35':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '36':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '37':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '38':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '39':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '40':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '41':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '42':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '43':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '44':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '45':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '46':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '47':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '48':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '49':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '50':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '51':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '52':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '53':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '54':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '55':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '56':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '57':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '58':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '59':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '60':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '61':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '62':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '63':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '64':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '65':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '66':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '67':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '68':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '69':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '70':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '71':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '72':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '73':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '74':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '75':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '76':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '77':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '78':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '79':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '80':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '81':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '82':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '83':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '84':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '85':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '86':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '87':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '88':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '89':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '90':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '91':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '92':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '93':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '94':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '95':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '96':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '97':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '98':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '99':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '100':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '101':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '102':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '103':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '104':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '105':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '106':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '107':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '108':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '109':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '110':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '111':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '112':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '113':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '114':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '115':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '116':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '117':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '118':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '119':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '120':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '121':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '122':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '123':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '124':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '125':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '126':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '127':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '128':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '129':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '130':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '131':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '132':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '133':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '134':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '135':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '136':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '137':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '138':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '139':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '140':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '141':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '142':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '143':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '144':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '145':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '146':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '147':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '148':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '149':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '150':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '151':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '152':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '153':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '154':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '155':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '156':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '157':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '158':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '159':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '160':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '161':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '162':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '163':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '164':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '165':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '166':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '167':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '168':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '169':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '170':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '171':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '172':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '173':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '174':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '175':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '176':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '177':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '178':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '179':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '180':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '181':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '182':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '183':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '184':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '185':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '186':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '187':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '188':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '189':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '190':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '191':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '192':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '193':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '194':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '195':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '196':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '197':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '198':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '199':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '200':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '201':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '202':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '203':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '204':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '205':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '206':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '207':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '208':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '209':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '210':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '211':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '212':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '213':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '214':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '215':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '216':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '217':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '218':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '219':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '220':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '221':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '222':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '223':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '224':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '225':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '226':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '227':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '228':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '229':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '230':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '231':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '232':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '233':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '234':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '235':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '236':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '237':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '238':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '239':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '240':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '241':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '242':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '243':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '244':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '245':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '246':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '247':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '248':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '249':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '250':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '251':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '252':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '253':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '254':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '255':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '256':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '257':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '258':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '259':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '260':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '261':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '262':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '263':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '264':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '265':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '266':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '267':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '268':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '269':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '270':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '271':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '272':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '273':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '274':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '275':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '276':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '277':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '278':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '279':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '280':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '281':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '282':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '283':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '284':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '285':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '286':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '287':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '288':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '289':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '290':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '291':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '292':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '293':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '294':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '295':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '296':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '297':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '298':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '299':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '300':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '301':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '302':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '303':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '304':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '305':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '306':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '307':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '308':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '309':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '310':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '311':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '312':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '313':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '314':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '315':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '316':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '317':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '318':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '319':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '320':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '321':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '322':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '323':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '324':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '325':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '326':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '327':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '328':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '329':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '330':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '331':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '332':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '333':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '334':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '335':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '336':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '337':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '338':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '339':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '340':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '341':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '342':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '343':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '344':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '345':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '346':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '347':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '348':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '349':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '350':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '351':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '352':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '353':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '354':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '355':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '356':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '357':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '358':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '359':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '360':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '361':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '362':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '363':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '364':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '365':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '366':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '367':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '368':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '369':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '370':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '371':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '372':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '373':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '374':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '375':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '376':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '377':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '378':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '379':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '380':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '381':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '382':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '383':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '384':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '385':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '386':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '387':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '388':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '389':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '390':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '391':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '392':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '393':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '394':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '395':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '396':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '397':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '398':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '399':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '400':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '401':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '402':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '403':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '404':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '405':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '406':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '407':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '408':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '409':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '410':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '411':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '412':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '413':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '414':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '415':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '416':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '417':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '418':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '419':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '420':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '421':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '422':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '423':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '424':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '425':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '426':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '427':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '428':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '429':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '430':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '431':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '432':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '433':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '434':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '435':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '436':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '437':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '438':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '439':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '440':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '441':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '442':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '443':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '444':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '445':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '446':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '447':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '448':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '449':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '450':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '451':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '452':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '453':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '454':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '455':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '456':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '457':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '458':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '459':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '460':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '461':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '462':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '463':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '464':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '465':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '466':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '467':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '468':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '469':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '470':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '471':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '472':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '473':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '474':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '475':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '476':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '477':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '478':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '479':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '480':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '481':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '482':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '483':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '484':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '485':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '486':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '487':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '488':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '489':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '490':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '491':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '492':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '493':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '494':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '495':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '496':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '497':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '498':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '499':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '500':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '501':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '502':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '503':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '504':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '505':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '506':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '507':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '508':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '509':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '510':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '511':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '512':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '513':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '514':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '515':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '516':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '517':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '518':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '519':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '520':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '521':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '522':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '523':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '524':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '525':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '526':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '527':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '528':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '529':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '530':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '531':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '532':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '533':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '534':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '535':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '536':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '537':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '538':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '539':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '540':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '541':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '542':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '543':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '544':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '545':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '546':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '547':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '548':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '549':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '550':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '551':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '552':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '553':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '554':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '555':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '556':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '557':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '558':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '559':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '560':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '561':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '562':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '563':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '564':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '565':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '566':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '567':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '568':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '569':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '570':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '571':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '572':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '573':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '574':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '575':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '576':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '577':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '578':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '579':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '580':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '581':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '582':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '583':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '584':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '585':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '586':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '587':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '588':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '589':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '590':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '591':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '592':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '593':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '594':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '595':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '596':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '597':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '598':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '599':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '600':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '601':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '602':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '603':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '604':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '605':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '606':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '607':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '608':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '609':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '610':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '611':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '612':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '613':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '614':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '615':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '616':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '617':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '618':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '619':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '620':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '621':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '622':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '623':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '624':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '625':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '626':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '627':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '628':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '629':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '630':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '631':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '632':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '633':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '634':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '635':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '636':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '637':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '638':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '639':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '640':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '641':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '642':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '643':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '644':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '645':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '646':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '647':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '648':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '649':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '650':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '651':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '652':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '653':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '654':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '655':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '656':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '657':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '658':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '659':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '660':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '661':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '662':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '663':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '664':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '665':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '666':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '667':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '668':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '669':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '670':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '671':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '672':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '673':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '674':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '675':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '676':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '677':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '678':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '679':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '680':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '681':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '682':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '683':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '684':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '685':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '686':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '687':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '688':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '689':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '690':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '691':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '692':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '693':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '694':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '695':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '696':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '697':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '698':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '699':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '700':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '701':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '702':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '703':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '704':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '705':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '706':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '707':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '708':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '709':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '710':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '711':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '712':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '713':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '714':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '715':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '716':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '717':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '718':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '719':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '720':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '721':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '722':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '723':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '724':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '725':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '726':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '727':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '728':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '729':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '730':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '731':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '732':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '733':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '734':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '735':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '736':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '737':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '738':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '739':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '740':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '741':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '742':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '743':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '744':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '745':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '746':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '747':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '748':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '749':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '750':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '751':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '752':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '753':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '754':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '755':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '756':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '757':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '758':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '759':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '760':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '761':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '762':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '763':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '764':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '765':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '766':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '767':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '768':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '769':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '770':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '771':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '772':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '773':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '774':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '775':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '776':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '777':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '778':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '779':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '780':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '781':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '782':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '783':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '784':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '785':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '786':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '787':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '788':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '789':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '790':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '791':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '792':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '793':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '794':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '795':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '796':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '797':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '798':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '799':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '800':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '801':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '802':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '803':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '804':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '805':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '806':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '807':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '808':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '809':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '810':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '811':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '812':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '813':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '814':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '815':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '816':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '817':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '818':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '819':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '820':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '821':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '822':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '823':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '824':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '825':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '826':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '827':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '828':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '829':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '830':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '831':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '832':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '833':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '834':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '835':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '836':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '837':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '838':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '839':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '840':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '841':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '842':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '843':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '844':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '845':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '846':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '847':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '848':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '849':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '850':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '851':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '852':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '853':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '854':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '855':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '856':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '857':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '858':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '859':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '860':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '861':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '862':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '863':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '864':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '865':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '866':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '867':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '868':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '869':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '870':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '871':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '872':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '873':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '874':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '875':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '876':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '877':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '878':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '879':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '880':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '881':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '882':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '883':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '884':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '885':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '886':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '887':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '888':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '889':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '890':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '891':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '892':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '893':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '894':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '895':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '896':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '897':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '898':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '899':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '900':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '901':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '902':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '903':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '904':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '905':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '906':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '907':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '908':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '909':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '910':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '911':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '912':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '913':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '914':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '915':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '916':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '917':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '918':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '919':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '920':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '921':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '922':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '923':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '924':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '925':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '926':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '927':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '928':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '929':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '930':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '931':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '932':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '933':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '934':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '935':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '936':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '937':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '938':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '939':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '940':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '941':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '942':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '943':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '944':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '945':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '946':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '947':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '948':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '949':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '950':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '951':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '952':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '953':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '954':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '955':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '956':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '957':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '958':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '959':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '960':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '961':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '962':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '963':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '964':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '965':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '966':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '967':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '968':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '969':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '970':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '971':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '972':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '973':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '974':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '975':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '976':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '977':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '978':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '979':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '980':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '981':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '982':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '983':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '984':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '985':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '986':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '987':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '988':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '989':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '990':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '991':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '992':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '993':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '994':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '995':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '996':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '997':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '998':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '999':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1000':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1001':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1002':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1003':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1004':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1005':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1006':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1007':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1008':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1009':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1010':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1011':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1012':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1013':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1014':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1015':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1016':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1017':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1018':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1019':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1020':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1021':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1022':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1023':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1024':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1025':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1026':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1027':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1028':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1029':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1030':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1031':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1032':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1033':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1034':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1035':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1036':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1037':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1038':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1039':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1040':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1041':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1042':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1043':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1044':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1045':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1046':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1047':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1048':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1049':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1050':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1051':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1052':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1053':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1054':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1055':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1056':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1057':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1058':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1059':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1060':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1061':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1062':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1063':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1064':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1065':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1066':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1067':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1068':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1069':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1070':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1071':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1072':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1073':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1074':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1075':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1076':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1077':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1078':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1079':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1080':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1081':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1082':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1083':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1084':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1085':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1086':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1087':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1088':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1089':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1090':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1091':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1092':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1093':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1094':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1095':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1096':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1097':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1098':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1099':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1100':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1101':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1102':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1103':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1104':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1105':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1106':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1107':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1108':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1109':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1110':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1111':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1112':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1113':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1114':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1115':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1116':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1117':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1118':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1119':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1120':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1121':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1122':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1123':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1124':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1125':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1126':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1127':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1128':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1129':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1130':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1131':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1132':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1133':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1134':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1135':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1136':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1137':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1138':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1139':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1140':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1141':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1142':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1143':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1144':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1145':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1146':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1147':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1148':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1149':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1150':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1151':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1152':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1153':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1154':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1155':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1156':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1157':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1158':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1159':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1160':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1161':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1162':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1163':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1164':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1165':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1166':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1167':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1168':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1169':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1170':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1171':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1172':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1173':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1174':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1175':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1176':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1177':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1178':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1179':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1180':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1181':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1182':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1183':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1184':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1185':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1186':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1187':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1188':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1189':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1190':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1191':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1192':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1193':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1194':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1195':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1196':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1197':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1198':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1199':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'
+  '1200':
+    name: Dirt
+    buy: '1'
+    sell: '0.5'

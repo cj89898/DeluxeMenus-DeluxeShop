@@ -1,0 +1,2358 @@
+menu_title: 'Shop Page 8'
+size: 54
+items:
+  'next_page':
+    material: iron_ingot
+    display_name: "&6Next Page"
+    nbt_int: CustomModelData:10
+    slot: 53
+    click_commands:
+    - '[openguimenu] shopPageNine'
+  'previous_page':
+    material: iron_ingot
+    display_name: "&6Previous Page"
+    nbt_int: CustomModelData:11
+    slot: 45
+    click_commands:
+    - '[openguimenu] shopPageSeven'
+  'item365':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_365,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_365,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_365,name}%'
+    slot: 0
+    display_name: '&a%javascript_dmshop-items_365,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_365,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_365,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_365,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_365,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_365,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 365 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_365,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_365,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_365,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 365 shopPageEight'
+  'item366':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_366,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_366,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_366,name}%'
+    slot: 1
+    display_name: '&a%javascript_dmshop-items_366,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_366,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_366,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_366,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_366,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_366,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 366 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_366,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_366,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_366,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 366 shopPageEight'
+  'item367':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_367,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_367,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_367,name}%'
+    slot: 2
+    display_name: '&a%javascript_dmshop-items_367,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_367,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_367,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_367,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_367,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_367,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 367 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_367,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_367,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_367,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 367 shopPageEight'
+  'item368':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_368,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_368,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_368,name}%'
+    slot: 3
+    display_name: '&a%javascript_dmshop-items_368,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_368,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_368,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_368,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_368,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_368,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 368 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_368,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_368,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_368,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 368 shopPageEight'
+  'item369':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_369,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_369,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_369,name}%'
+    slot: 4
+    display_name: '&a%javascript_dmshop-items_369,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_369,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_369,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_369,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_369,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_369,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 369 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_369,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_369,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_369,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 369 shopPageEight'
+  'item370':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_370,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_370,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_370,name}%'
+    slot: 5
+    display_name: '&a%javascript_dmshop-items_370,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_370,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_370,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_370,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_370,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_370,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 370 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_370,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_370,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_370,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 370 shopPageEight'
+  'item371':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_371,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_371,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_371,name}%'
+    slot: 6
+    display_name: '&a%javascript_dmshop-items_371,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_371,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_371,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_371,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_371,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_371,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 371 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_371,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_371,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_371,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 371 shopPageEight'
+  'item372':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_372,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_372,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_372,name}%'
+    slot: 7
+    display_name: '&a%javascript_dmshop-items_372,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_372,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_372,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_372,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_372,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_372,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 372 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_372,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_372,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_372,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 372 shopPageEight'
+  'item373':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_373,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_373,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_373,name}%'
+    slot: 8
+    display_name: '&a%javascript_dmshop-items_373,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_373,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_373,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_373,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_373,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_373,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 373 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_373,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_373,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_373,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 373 shopPageEight'
+  'item374':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_374,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_374,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_374,name}%'
+    slot: 9
+    display_name: '&a%javascript_dmshop-items_374,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_374,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_374,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_374,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_374,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_374,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 374 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_374,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_374,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_374,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 374 shopPageEight'
+  'item375':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_375,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_375,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_375,name}%'
+    slot: 10
+    display_name: '&a%javascript_dmshop-items_375,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_375,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_375,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_375,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_375,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_375,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 375 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_375,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_375,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_375,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 375 shopPageEight'
+  'item376':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_376,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_376,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_376,name}%'
+    slot: 11
+    display_name: '&a%javascript_dmshop-items_376,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_376,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_376,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_376,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_376,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_376,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 376 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_376,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_376,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_376,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 376 shopPageEight'
+  'item377':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_377,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_377,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_377,name}%'
+    slot: 12
+    display_name: '&a%javascript_dmshop-items_377,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_377,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_377,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_377,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_377,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_377,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 377 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_377,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_377,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_377,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 377 shopPageEight'
+  'item378':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_378,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_378,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_378,name}%'
+    slot: 13
+    display_name: '&a%javascript_dmshop-items_378,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_378,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_378,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_378,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_378,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_378,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 378 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_378,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_378,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_378,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 378 shopPageEight'
+  'item379':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_379,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_379,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_379,name}%'
+    slot: 14
+    display_name: '&a%javascript_dmshop-items_379,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_379,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_379,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_379,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_379,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_379,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 379 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_379,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_379,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_379,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 379 shopPageEight'
+  'item380':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_380,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_380,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_380,name}%'
+    slot: 15
+    display_name: '&a%javascript_dmshop-items_380,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_380,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_380,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_380,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_380,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_380,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 380 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_380,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_380,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_380,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 380 shopPageEight'
+  'item381':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_381,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_381,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_381,name}%'
+    slot: 16
+    display_name: '&a%javascript_dmshop-items_381,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_381,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_381,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_381,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_381,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_381,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 381 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_381,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_381,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_381,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 381 shopPageEight'
+  'item382':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_382,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_382,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_382,name}%'
+    slot: 17
+    display_name: '&a%javascript_dmshop-items_382,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_382,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_382,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_382,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_382,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_382,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 382 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_382,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_382,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_382,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 382 shopPageEight'
+  'item383':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_383,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_383,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_383,name}%'
+    slot: 18
+    display_name: '&a%javascript_dmshop-items_383,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_383,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_383,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_383,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_383,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_383,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 383 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_383,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_383,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_383,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 383 shopPageEight'
+  'item384':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_384,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_384,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_384,name}%'
+    slot: 19
+    display_name: '&a%javascript_dmshop-items_384,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_384,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_384,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_384,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_384,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_384,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 384 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_384,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_384,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_384,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 384 shopPageEight'
+  'item385':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_385,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_385,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_385,name}%'
+    slot: 20
+    display_name: '&a%javascript_dmshop-items_385,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_385,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_385,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_385,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_385,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_385,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 385 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_385,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_385,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_385,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 385 shopPageEight'
+  'item386':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_386,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_386,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_386,name}%'
+    slot: 21
+    display_name: '&a%javascript_dmshop-items_386,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_386,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_386,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_386,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_386,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_386,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 386 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_386,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_386,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_386,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 386 shopPageEight'
+  'item387':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_387,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_387,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_387,name}%'
+    slot: 22
+    display_name: '&a%javascript_dmshop-items_387,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_387,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_387,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_387,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_387,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_387,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 387 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_387,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_387,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_387,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 387 shopPageEight'
+  'item388':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_388,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_388,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_388,name}%'
+    slot: 23
+    display_name: '&a%javascript_dmshop-items_388,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_388,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_388,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_388,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_388,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_388,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 388 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_388,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_388,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_388,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 388 shopPageEight'
+  'item389':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_389,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_389,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_389,name}%'
+    slot: 24
+    display_name: '&a%javascript_dmshop-items_389,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_389,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_389,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_389,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_389,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_389,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 389 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_389,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_389,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_389,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 389 shopPageEight'
+  'item390':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_390,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_390,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_390,name}%'
+    slot: 25
+    display_name: '&a%javascript_dmshop-items_390,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_390,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_390,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_390,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_390,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_390,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 390 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_390,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_390,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_390,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 390 shopPageEight'
+  'item391':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_391,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_391,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_391,name}%'
+    slot: 26
+    display_name: '&a%javascript_dmshop-items_391,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_391,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_391,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_391,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_391,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_391,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 391 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_391,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_391,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_391,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 391 shopPageEight'
+  'item392':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_392,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_392,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_392,name}%'
+    slot: 27
+    display_name: '&a%javascript_dmshop-items_392,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_392,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_392,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_392,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_392,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_392,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 392 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_392,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_392,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_392,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 392 shopPageEight'
+  'item393':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_393,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_393,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_393,name}%'
+    slot: 28
+    display_name: '&a%javascript_dmshop-items_393,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_393,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_393,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_393,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_393,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_393,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 393 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_393,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_393,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_393,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 393 shopPageEight'
+  'item394':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_394,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_394,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_394,name}%'
+    slot: 29
+    display_name: '&a%javascript_dmshop-items_394,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_394,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_394,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_394,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_394,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_394,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 394 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_394,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_394,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_394,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 394 shopPageEight'
+  'item395':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_395,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_395,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_395,name}%'
+    slot: 30
+    display_name: '&a%javascript_dmshop-items_395,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_395,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_395,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_395,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_395,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_395,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 395 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_395,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_395,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_395,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 395 shopPageEight'
+  'item396':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_396,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_396,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_396,name}%'
+    slot: 31
+    display_name: '&a%javascript_dmshop-items_396,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_396,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_396,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_396,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_396,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_396,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 396 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_396,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_396,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_396,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 396 shopPageEight'
+  'item397':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_397,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_397,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_397,name}%'
+    slot: 32
+    display_name: '&a%javascript_dmshop-items_397,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_397,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_397,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_397,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_397,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_397,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 397 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_397,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_397,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_397,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 397 shopPageEight'
+  'item398':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_398,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_398,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_398,name}%'
+    slot: 33
+    display_name: '&a%javascript_dmshop-items_398,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_398,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_398,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_398,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_398,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_398,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 398 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_398,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_398,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_398,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 398 shopPageEight'
+  'item399':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_399,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_399,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_399,name}%'
+    slot: 34
+    display_name: '&a%javascript_dmshop-items_399,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_399,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_399,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_399,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_399,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_399,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 399 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_399,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_399,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_399,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 399 shopPageEight'
+  'item400':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_400,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_400,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_400,name}%'
+    slot: 35
+    display_name: '&a%javascript_dmshop-items_400,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_400,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_400,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_400,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_400,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_400,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 400 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_400,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_400,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_400,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 400 shopPageEight'
+  'item401':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_401,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_401,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_401,name}%'
+    slot: 36
+    display_name: '&a%javascript_dmshop-items_401,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_401,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_401,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_401,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_401,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_401,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 401 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_401,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_401,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_401,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 401 shopPageEight'
+  'item402':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_402,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_402,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_402,name}%'
+    slot: 37
+    display_name: '&a%javascript_dmshop-items_402,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_402,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_402,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_402,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_402,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_402,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 402 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_402,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_402,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_402,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 402 shopPageEight'
+  'item403':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_403,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_403,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_403,name}%'
+    slot: 38
+    display_name: '&a%javascript_dmshop-items_403,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_403,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_403,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_403,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_403,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_403,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 403 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_403,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_403,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_403,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 403 shopPageEight'
+  'item404':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_404,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_404,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_404,name}%'
+    slot: 39
+    display_name: '&a%javascript_dmshop-items_404,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_404,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_404,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_404,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_404,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_404,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 404 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_404,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_404,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_404,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 404 shopPageEight'
+  'item405':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_405,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_405,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_405,name}%'
+    slot: 40
+    display_name: '&a%javascript_dmshop-items_405,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_405,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_405,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_405,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_405,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_405,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 405 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_405,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_405,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_405,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 405 shopPageEight'
+  'item406':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_406,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_406,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_406,name}%'
+    slot: 41
+    display_name: '&a%javascript_dmshop-items_406,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_406,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_406,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_406,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_406,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_406,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 406 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_406,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_406,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_406,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 406 shopPageEight'
+  'item407':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_407,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_407,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_407,name}%'
+    slot: 42
+    display_name: '&a%javascript_dmshop-items_407,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_407,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_407,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_407,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_407,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_407,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 407 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_407,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_407,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_407,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 407 shopPageEight'
+  'item408':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_408,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_408,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_408,name}%'
+    slot: 43
+    display_name: '&a%javascript_dmshop-items_408,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_408,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_408,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_408,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_408,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_408,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 408 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_408,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_408,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_408,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 408 shopPageEight'
+  'item409':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_409,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_409,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_409,name}%'
+    slot: 44
+    display_name: '&a%javascript_dmshop-items_409,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_409,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_409,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_409,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_409,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_409,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 409 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_409,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_409,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_409,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 409 shopPageEight'
+  'item410':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_410,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_410,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_410,name}%'
+    slot: 46
+    display_name: '&a%javascript_dmshop-items_410,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_410,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_410,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_410,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_410,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_410,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 410 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_410,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_410,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_410,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 410 shopPageEight'
+  'item411':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_411,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_411,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_411,name}%'
+    slot: 47
+    display_name: '&a%javascript_dmshop-items_411,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_411,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_411,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_411,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_411,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_411,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 411 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_411,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_411,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_411,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 411 shopPageEight'
+  'item412':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_412,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_412,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_412,name}%'
+    slot: 48
+    display_name: '&a%javascript_dmshop-items_412,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_412,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_412,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_412,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_412,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_412,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 412 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_412,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_412,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_412,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 412 shopPageEight'
+  'item413':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_413,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_413,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_413,name}%'
+    slot: 49
+    display_name: '&a%javascript_dmshop-items_413,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_413,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_413,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_413,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_413,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_413,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 413 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_413,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_413,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_413,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 413 shopPageEight'
+  'item414':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_414,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_414,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_414,name}%'
+    slot: 50
+    display_name: '&a%javascript_dmshop-items_414,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_414,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_414,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_414,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_414,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_414,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 414 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_414,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_414,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_414,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 414 shopPageEight'
+  'item415':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_415,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_415,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_415,name}%'
+    slot: 51
+    display_name: '&a%javascript_dmshop-items_415,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_415,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_415,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_415,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_415,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_415,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 415 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_415,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_415,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_415,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 415 shopPageEight'
+  'item416':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%javascript_dmshop-items_416,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%javascript_dmshop-items_416,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{javascript_dmshop-items_416,name}%'
+    slot: 52
+    display_name: '&a%javascript_dmshop-items_416,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{javascript_dmshop-items_416,buy}% &6each'
+    - '&cSell: &a$%math_2_{javascript_dmshop-items_416,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%javascript_dmshop-items_416,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{javascript_dmshop-items_416,name},amt:1%'
+    - '[console] eco take %player_name% %javascript_dmshop-items_416,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 416 shopPageEight'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{javascript_dmshop-items_416,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{javascript_dmshop-items_416,name},amt:1%'
+    - '[console] eco give %player_name% %math_{javascript_dmshop-items_416,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 416 shopPageEight'
+
