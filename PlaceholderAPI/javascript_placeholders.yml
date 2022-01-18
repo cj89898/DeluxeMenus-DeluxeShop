@@ -47,8 +47,6 @@
 #   file: 'my_placeholder.js'
 dmshop:
   file: dmshop.js
-dmshop-items:
-  file: dmshop-items.js
 dmshop-maxitems:
   file: dmshop-maxitems.js
 dmshop-maxpurchase:

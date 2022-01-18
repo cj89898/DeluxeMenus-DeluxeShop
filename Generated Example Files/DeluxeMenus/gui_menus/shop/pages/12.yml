@@ -1,0 +1,2357 @@
+menu_title: 'Shop Page 12/24'
+size: 54
+items:
+  'next_page':
+    material: iron_ingot
+    display_name: "&6Next Page"
+    nbt_int: CustomModelData:10
+    slot: 53
+    click_commands:
+    - '[openguimenu] shopPageThirteen'
+  'previous_page':
+    material: iron_ingot
+    display_name: "&6Previous Page"
+    nbt_int: CustomModelData:11
+    slot: 45
+    click_commands:
+    - '[openguimenu] shopPageEleven'
+  'item573':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_573,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_573,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_573,name}%'
+    slot: 0
+    display_name: '&a%deluxeshop_573,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_573,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_573,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_573,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_573,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_573,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 573 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_573,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_573,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_573,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 573 shopPageTwelve'
+  'item574':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_574,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_574,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_574,name}%'
+    slot: 1
+    display_name: '&a%deluxeshop_574,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_574,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_574,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_574,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_574,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_574,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 574 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_574,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_574,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_574,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 574 shopPageTwelve'
+  'item575':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_575,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_575,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_575,name}%'
+    slot: 2
+    display_name: '&a%deluxeshop_575,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_575,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_575,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_575,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_575,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_575,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 575 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_575,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_575,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_575,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 575 shopPageTwelve'
+  'item576':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_576,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_576,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_576,name}%'
+    slot: 3
+    display_name: '&a%deluxeshop_576,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_576,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_576,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_576,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_576,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_576,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 576 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_576,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_576,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_576,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 576 shopPageTwelve'
+  'item577':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_577,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_577,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_577,name}%'
+    slot: 4
+    display_name: '&a%deluxeshop_577,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_577,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_577,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_577,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_577,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_577,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 577 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_577,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_577,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_577,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 577 shopPageTwelve'
+  'item578':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_578,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_578,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_578,name}%'
+    slot: 5
+    display_name: '&a%deluxeshop_578,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_578,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_578,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_578,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_578,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_578,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 578 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_578,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_578,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_578,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 578 shopPageTwelve'
+  'item579':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_579,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_579,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_579,name}%'
+    slot: 6
+    display_name: '&a%deluxeshop_579,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_579,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_579,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_579,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_579,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_579,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 579 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_579,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_579,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_579,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 579 shopPageTwelve'
+  'item580':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_580,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_580,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_580,name}%'
+    slot: 7
+    display_name: '&a%deluxeshop_580,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_580,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_580,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_580,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_580,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_580,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 580 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_580,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_580,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_580,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 580 shopPageTwelve'
+  'item581':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_581,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_581,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_581,name}%'
+    slot: 8
+    display_name: '&a%deluxeshop_581,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_581,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_581,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_581,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_581,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_581,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 581 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_581,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_581,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_581,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 581 shopPageTwelve'
+  'item582':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_582,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_582,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_582,name}%'
+    slot: 9
+    display_name: '&a%deluxeshop_582,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_582,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_582,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_582,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_582,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_582,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 582 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_582,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_582,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_582,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 582 shopPageTwelve'
+  'item583':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_583,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_583,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_583,name}%'
+    slot: 10
+    display_name: '&a%deluxeshop_583,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_583,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_583,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_583,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_583,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_583,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 583 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_583,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_583,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_583,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 583 shopPageTwelve'
+  'item584':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_584,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_584,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_584,name}%'
+    slot: 11
+    display_name: '&a%deluxeshop_584,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_584,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_584,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_584,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_584,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_584,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 584 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_584,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_584,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_584,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 584 shopPageTwelve'
+  'item585':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_585,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_585,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_585,name}%'
+    slot: 12
+    display_name: '&a%deluxeshop_585,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_585,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_585,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_585,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_585,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_585,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 585 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_585,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_585,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_585,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 585 shopPageTwelve'
+  'item586':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_586,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_586,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_586,name}%'
+    slot: 13
+    display_name: '&a%deluxeshop_586,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_586,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_586,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_586,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_586,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_586,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 586 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_586,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_586,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_586,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 586 shopPageTwelve'
+  'item587':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_587,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_587,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_587,name}%'
+    slot: 14
+    display_name: '&a%deluxeshop_587,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_587,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_587,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_587,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_587,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_587,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 587 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_587,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_587,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_587,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 587 shopPageTwelve'
+  'item588':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_588,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_588,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_588,name}%'
+    slot: 15
+    display_name: '&a%deluxeshop_588,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_588,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_588,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_588,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_588,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_588,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 588 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_588,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_588,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_588,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 588 shopPageTwelve'
+  'item589':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_589,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_589,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_589,name}%'
+    slot: 16
+    display_name: '&a%deluxeshop_589,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_589,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_589,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_589,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_589,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_589,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 589 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_589,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_589,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_589,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 589 shopPageTwelve'
+  'item590':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_590,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_590,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_590,name}%'
+    slot: 17
+    display_name: '&a%deluxeshop_590,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_590,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_590,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_590,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_590,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_590,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 590 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_590,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_590,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_590,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 590 shopPageTwelve'
+  'item591':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_591,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_591,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_591,name}%'
+    slot: 18
+    display_name: '&a%deluxeshop_591,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_591,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_591,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_591,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_591,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_591,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 591 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_591,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_591,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_591,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 591 shopPageTwelve'
+  'item592':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_592,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_592,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_592,name}%'
+    slot: 19
+    display_name: '&a%deluxeshop_592,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_592,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_592,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_592,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_592,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_592,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 592 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_592,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_592,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_592,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 592 shopPageTwelve'
+  'item593':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_593,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_593,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_593,name}%'
+    slot: 20
+    display_name: '&a%deluxeshop_593,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_593,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_593,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_593,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_593,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_593,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 593 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_593,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_593,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_593,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 593 shopPageTwelve'
+  'item594':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_594,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_594,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_594,name}%'
+    slot: 21
+    display_name: '&a%deluxeshop_594,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_594,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_594,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_594,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_594,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_594,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 594 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_594,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_594,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_594,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 594 shopPageTwelve'
+  'item595':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_595,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_595,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_595,name}%'
+    slot: 22
+    display_name: '&a%deluxeshop_595,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_595,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_595,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_595,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_595,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_595,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 595 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_595,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_595,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_595,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 595 shopPageTwelve'
+  'item596':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_596,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_596,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_596,name}%'
+    slot: 23
+    display_name: '&a%deluxeshop_596,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_596,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_596,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_596,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_596,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_596,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 596 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_596,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_596,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_596,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 596 shopPageTwelve'
+  'item597':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_597,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_597,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_597,name}%'
+    slot: 24
+    display_name: '&a%deluxeshop_597,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_597,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_597,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_597,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_597,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_597,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 597 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_597,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_597,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_597,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 597 shopPageTwelve'
+  'item598':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_598,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_598,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_598,name}%'
+    slot: 25
+    display_name: '&a%deluxeshop_598,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_598,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_598,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_598,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_598,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_598,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 598 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_598,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_598,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_598,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 598 shopPageTwelve'
+  'item599':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_599,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_599,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_599,name}%'
+    slot: 26
+    display_name: '&a%deluxeshop_599,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_599,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_599,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_599,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_599,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_599,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 599 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_599,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_599,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_599,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 599 shopPageTwelve'
+  'item600':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_600,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_600,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_600,name}%'
+    slot: 27
+    display_name: '&a%deluxeshop_600,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_600,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_600,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_600,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_600,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_600,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 600 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_600,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_600,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_600,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 600 shopPageTwelve'
+  'item601':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_601,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_601,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_601,name}%'
+    slot: 28
+    display_name: '&a%deluxeshop_601,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_601,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_601,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_601,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_601,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_601,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 601 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_601,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_601,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_601,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 601 shopPageTwelve'
+  'item602':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_602,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_602,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_602,name}%'
+    slot: 29
+    display_name: '&a%deluxeshop_602,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_602,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_602,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_602,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_602,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_602,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 602 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_602,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_602,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_602,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 602 shopPageTwelve'
+  'item603':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_603,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_603,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_603,name}%'
+    slot: 30
+    display_name: '&a%deluxeshop_603,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_603,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_603,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_603,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_603,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_603,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 603 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_603,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_603,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_603,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 603 shopPageTwelve'
+  'item604':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_604,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_604,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_604,name}%'
+    slot: 31
+    display_name: '&a%deluxeshop_604,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_604,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_604,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_604,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_604,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_604,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 604 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_604,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_604,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_604,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 604 shopPageTwelve'
+  'item605':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_605,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_605,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_605,name}%'
+    slot: 32
+    display_name: '&a%deluxeshop_605,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_605,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_605,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_605,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_605,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_605,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 605 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_605,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_605,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_605,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 605 shopPageTwelve'
+  'item606':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_606,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_606,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_606,name}%'
+    slot: 33
+    display_name: '&a%deluxeshop_606,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_606,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_606,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_606,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_606,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_606,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 606 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_606,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_606,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_606,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 606 shopPageTwelve'
+  'item607':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_607,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_607,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_607,name}%'
+    slot: 34
+    display_name: '&a%deluxeshop_607,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_607,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_607,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_607,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_607,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_607,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 607 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_607,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_607,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_607,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 607 shopPageTwelve'
+  'item608':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_608,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_608,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_608,name}%'
+    slot: 35
+    display_name: '&a%deluxeshop_608,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_608,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_608,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_608,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_608,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_608,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 608 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_608,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_608,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_608,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 608 shopPageTwelve'
+  'item609':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_609,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_609,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_609,name}%'
+    slot: 36
+    display_name: '&a%deluxeshop_609,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_609,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_609,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_609,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_609,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_609,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 609 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_609,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_609,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_609,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 609 shopPageTwelve'
+  'item610':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_610,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_610,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_610,name}%'
+    slot: 37
+    display_name: '&a%deluxeshop_610,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_610,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_610,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_610,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_610,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_610,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 610 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_610,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_610,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_610,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 610 shopPageTwelve'
+  'item611':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_611,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_611,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_611,name}%'
+    slot: 38
+    display_name: '&a%deluxeshop_611,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_611,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_611,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_611,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_611,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_611,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 611 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_611,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_611,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_611,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 611 shopPageTwelve'
+  'item612':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_612,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_612,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_612,name}%'
+    slot: 39
+    display_name: '&a%deluxeshop_612,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_612,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_612,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_612,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_612,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_612,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 612 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_612,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_612,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_612,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 612 shopPageTwelve'
+  'item613':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_613,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_613,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_613,name}%'
+    slot: 40
+    display_name: '&a%deluxeshop_613,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_613,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_613,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_613,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_613,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_613,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 613 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_613,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_613,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_613,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 613 shopPageTwelve'
+  'item614':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_614,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_614,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_614,name}%'
+    slot: 41
+    display_name: '&a%deluxeshop_614,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_614,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_614,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_614,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_614,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_614,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 614 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_614,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_614,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_614,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 614 shopPageTwelve'
+  'item615':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_615,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_615,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_615,name}%'
+    slot: 42
+    display_name: '&a%deluxeshop_615,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_615,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_615,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_615,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_615,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_615,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 615 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_615,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_615,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_615,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 615 shopPageTwelve'
+  'item616':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_616,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_616,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_616,name}%'
+    slot: 43
+    display_name: '&a%deluxeshop_616,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_616,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_616,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_616,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_616,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_616,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 616 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_616,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_616,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_616,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 616 shopPageTwelve'
+  'item617':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_617,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_617,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_617,name}%'
+    slot: 44
+    display_name: '&a%deluxeshop_617,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_617,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_617,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_617,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_617,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_617,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 617 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_617,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_617,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_617,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 617 shopPageTwelve'
+  'item618':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_618,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_618,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_618,name}%'
+    slot: 46
+    display_name: '&a%deluxeshop_618,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_618,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_618,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_618,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_618,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_618,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 618 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_618,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_618,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_618,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 618 shopPageTwelve'
+  'item619':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_619,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_619,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_619,name}%'
+    slot: 47
+    display_name: '&a%deluxeshop_619,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_619,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_619,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_619,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_619,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_619,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 619 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_619,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_619,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_619,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 619 shopPageTwelve'
+  'item620':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_620,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_620,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_620,name}%'
+    slot: 48
+    display_name: '&a%deluxeshop_620,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_620,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_620,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_620,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_620,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_620,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 620 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_620,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_620,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_620,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 620 shopPageTwelve'
+  'item621':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_621,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_621,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_621,name}%'
+    slot: 49
+    display_name: '&a%deluxeshop_621,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_621,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_621,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_621,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_621,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_621,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 621 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_621,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_621,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_621,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 621 shopPageTwelve'
+  'item622':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_622,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_622,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_622,name}%'
+    slot: 50
+    display_name: '&a%deluxeshop_622,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_622,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_622,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_622,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_622,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_622,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 622 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_622,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_622,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_622,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 622 shopPageTwelve'
+  'item623':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_623,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_623,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_623,name}%'
+    slot: 51
+    display_name: '&a%deluxeshop_623,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_623,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_623,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_623,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_623,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_623,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 623 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_623,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_623,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_623,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 623 shopPageTwelve'
+  'item624':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_624,name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_624,name%'
+          output: 'error'
+    material: 'placeholder-%string_uppercase_{deluxeshop_624,name}%'
+    slot: 52
+    display_name: '&a%deluxeshop_624,name,formatted%'
+    lore:
+    - '&2Buy: &a$%math_2_{deluxeshop_624,buy}% &6each'
+    - '&cSell: &a$%math_2_{deluxeshop_624,sell}% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    - '&8&oShift-Click to Purchase/Sell More'
+    left_click_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%deluxeshop_624,buy%'
+          deny_commands:
+          - '[message] &cYou do not have enough money'
+    left_click_commands:
+    - '[placeholder] %checkitem_give_mat:{deluxeshop_624,name},amt:1%'
+    - '[console] eco take %player_name% %deluxeshop_624,buy%'
+    shift_left_click_commands:
+    - '[player] buyMore 624 shopPageTwelve'
+    right_click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_624,name},amt:1%'
+          output: 'yes'
+          deny_commands:
+          - '[message] &cYou do not have enough items'
+    right_click_commands:
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_624,name},amt:1%'
+    - '[console] eco give %player_name% %math_{deluxeshop_624,sell}%'
+    shift_right_click_commands:
+    - '[player] sellMore 624 shopPageTwelve'

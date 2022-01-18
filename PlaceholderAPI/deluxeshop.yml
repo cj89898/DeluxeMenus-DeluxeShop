@@ -1,0 +1,44 @@
+#
+# DeluxeShop created by cj89898
+#
+# Full material list available here: https://github.com/cj89898/DeluxeMenus-DeluxeShop/tree/main/Generated%20Example%20Files
+#
+# Valid selling options can be any number or "individual"
+selling: 0.33
+items:
+  'Stone':
+    buy: '1'
+    sell: '0.5'
+  'Granite':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Granite':
+    buy: '1'
+    sell: '0.5'
+  'Diorite':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Diorite':
+    buy: '1'
+    sell: '0.5'
+  'Andesite':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Andesite':
+    buy: '1'
+    sell: '0.5'
+  'Grass_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dirt':
+    buy: '1'
+    sell: '0.5'
+  'Coarse_Dirt':
+    buy: '1'
+    sell: '0.5'
+  'Podzol':
+    buy: '1'
+    sell: '0.5'
+  'Cobblestone':
+    buy: '1'
+    sell: '0.5'
