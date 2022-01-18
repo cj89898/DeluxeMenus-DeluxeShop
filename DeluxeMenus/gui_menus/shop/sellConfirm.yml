@@ -1,4 +1,4 @@
-menu_title: '&8Sell - &9%deluxeshop_{item},name%'
+menu_title: '&8Sell - &9%deluxeshop_{item},name,formatted%'
 open_command: sellConfirm
 register_command: true  
 args:
@@ -9,7 +9,7 @@ size: 9
 items:
   'dirt':
     material: 'placeholder-%string_uppercase_{deluxeshop_{item},name}%'
-    display_name: '&r&6Item: &a%deluxeshop_{item},name%'
+    display_name: '&r&6Item: &a%deluxeshop_{item},name,formatted%'
     lore:
     - "&6Amount: &a{amount}"
     - "&6Value per Item: &a$%math_2_{deluxeshop_{item},sell}%"
@@ -21,7 +21,7 @@ items:
     slots:
     - 0-3
     lore:
-    - "&a{amount} %deluxeshop_{item},name% &6for &a$%math_2_{amount}*{deluxeshop_{item},sell}%"
+    - "&a{amount} %deluxeshop_{item},name,formatted% &6for &a$%math_2_{amount}*{deluxeshop_{item},sell}%"
     click_requirement:
       requirements:
         item:
@@ -34,7 +34,7 @@ items:
     click_commands:
     - '[console] eco give %player_name% %math_{amount}*{deluxeshop_{item},sell}%'
     - '[placeholder] %checkitem_remove_mat:{deluxeshop_{item},name},amt:{amount}%'
-    - '[message] &a{amount} %deluxeshop_{item},name% &6Successfully Sold for &a$%math_2_{amount}*{deluxeshop_{item},sell}%'
+    - '[message] &a{amount} %deluxeshop_{item},name,formatted% &6Successfully Sold for &a$%math_2_{amount}*{deluxeshop_{item},sell}%'
     - '[close]'
   'return':
     display_name: '&4Cancel Sale'
