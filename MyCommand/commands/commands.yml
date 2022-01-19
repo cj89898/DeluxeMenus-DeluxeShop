@@ -36,4 +36,4 @@
  error-message: '&cType /shopSearch <search parameters>'
  runcmd:
  - /dm execute $player [meta] set dmshop-filter STRING %str_capitalize_$multiargs%
- - /dm open bulkShop $player
+ - /dm open shop $player
