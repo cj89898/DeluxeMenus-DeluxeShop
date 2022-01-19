@@ -1,0 +1,39 @@
+#-------------------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.7.2)									#
+#																													#
+#  Plugin Documentation : https://dev.bukkit.org/projects/mycommand/pages/getstarted    							#
+#  Spigot https://www.spigotmc.org/resources/mycommand.22272/  Bukkit : https://dev.bukkit.org/projects/mycommand/	#
+#																													#
+#	How to make a command :	(See an example command below)															#
+#		First, decide your command name placing it in the first row (no duplicates!)  "mycommand:"					#
+#		Now set the "command:" field. This will trigger the command. Don't forget the '/' before your command.		#
+#		Now choose your command type from a predefined list and put it after the "type" field						#
+#	COMMAND TYPE LIST :																								#
+#		TEXT , BROADCAST_TEXT, RAW_TEXT , BROADCAST_RAW_TEXT, ALIAS , RUN_COMMAND , RUN_CONSOLE , RUN_COMMAND_TASK  #
+#       RUN_COMMAND_RANDOM , RUN_CONSOLE_RANDOM , RUN_AS_OPERATOR , ADD_PERMISSION , ADD_COST , WARMUP , COOLDOWN   #
+#       WARMUP_AND_COOLDOWN , BLOCK_PATTERN ,  BAR_API_TEXT , BAR_API_BROADCAST_TEXT , CALL_URL , EXP_BAR			#
+#       ICON_MENU , MERCHANT , SCOREBOARD , BUNGEE_TP , TITLE, BROADCAST_TITLE , ACTION_BAR , BROADCAST_ACTION_BAR	#
+#		HOLOGRAPHIC_TEXT , BROADCAST_HOLOGRAPHIC_TEXT , LIVE_CHAT , BOOK , RAW_BOOK, ANVIL_GUI , SIGN_MENU 			#
+#																													#
+#	If your command is "TEXT" type, you can put multiple line of text below this parameter							#
+#	You can do the same thing with the "RUN_COMMAND" type, but instead of text, puts commands in this list			#
+#	For delayed command(s) add $delay$ before the command in runcmd Example : - $delay$/list						#
+#	Set delay time with delaytimer: 5 (5 = seconds) | 																#
+#   If you are using the Vault plugin, you can put the "cost: 123.0" with this line. 								#
+#	You can customize your permission node by placing "permission-node:" field in a command							#
+#	Change the permission error message with "permission-error:" or create a command without permission required	#
+#   with "permission-required: false". Custom error-message for invalid args, use "error-message:"					#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 													#
+#   Register REAL commands putting "register: true" below the command. Those are recognized from other plugins.    	#
+#   With register commands you can use the "tab_completer: - Hi - Hello!"											#
+#   For Scripts and more features, find more on the bukkitdev page													#
+#-------------------------------------------------------------------------------------------------------------------#
+'shopsearch':
+ command: /shopSearch
+ type: RUN_CONSOLE
+ register: true
+ required_args: 1
+ error-message: '&cType /shopSearch <search parameters>'
+ runcmd:
+ - /dm execute $player [meta] set dmshop-filter STRING %str_capitalize_$multiargs%
+ - /dm open bulkShop $player

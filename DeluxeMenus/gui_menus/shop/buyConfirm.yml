@@ -1,5 +1,5 @@
 menu_title: '&8Shop - &9%deluxeshop_{item},name,formatted%'
-open_command: shopConfirm
+open_command: buyConfirm
 register_command: true  
 args:
 - item

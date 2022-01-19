@@ -1,8 +1,3 @@
-#
-# DeluxeShop created by cj89898
-#
-# Full material list available here: https://github.com/cj89898/DeluxeMenus-DeluxeShop/tree/main/Generated%20Example%20Files
-#
 # Valid selling options can be any number or "individual"
 selling: 0.33
 items:
@@ -40,5 +35,3254 @@ items:
     buy: '1'
     sell: '0.5'
   'Cobblestone':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Sapling':
+    buy: '1'
+    sell: '0.5'
+  'Bedrock':
+    buy: '1'
+    sell: '0.5'
+  'Sand':
+    buy: '1'
+    sell: '0.5'
+  'Red_Sand':
+    buy: '1'
+    sell: '0.5'
+  'Gravel':
+    buy: '1'
+    sell: '0.5'
+  'Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Coal_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Log':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Log':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Log':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Log':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Log':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Spruce_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Birch_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Jungle_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Acacia_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Dark_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Spruce_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Birch_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Jungle_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Acacia_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Dark_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Sponge':
+    buy: '1'
+    sell: '0.5'
+  'Wet_Sponge':
+    buy: '1'
+    sell: '0.5'
+  'Glass':
+    buy: '1'
+    sell: '0.5'
+  'Lapis_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Lapis_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dispenser':
+    buy: '1'
+    sell: '0.5'
+  'Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Note_Block':
+    buy: '1'
+    sell: '0.5'
+  'Powered_Rail':
+    buy: '1'
+    sell: '0.5'
+  'Detector_Rail':
+    buy: '1'
+    sell: '0.5'
+  'Sticky_Piston':
+    buy: '1'
+    sell: '0.5'
+  'Cobweb':
+    buy: '1'
+    sell: '0.5'
+  'Grass':
+    buy: '1'
+    sell: '0.5'
+  'Fern':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Bush':
+    buy: '1'
+    sell: '0.5'
+  'Seagrass':
+    buy: '1'
+    sell: '0.5'
+  'Sea_Pickle':
+    buy: '1'
+    sell: '0.5'
+  'Piston':
+    buy: '1'
+    sell: '0.5'
+  'White_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Green_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Red_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Black_Wool':
+    buy: '1'
+    sell: '0.5'
+  'Dandelion':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Orchid':
+    buy: '1'
+    sell: '0.5'
+  'Allium':
+    buy: '1'
+    sell: '0.5'
+  'Azure_Bluet':
+    buy: '1'
+    sell: '0.5'
+  'Red_Tulip':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Tulip':
+    buy: '1'
+    sell: '0.5'
+  'White_Tulip':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Tulip':
+    buy: '1'
+    sell: '0.5'
+  'Oxeye_Daisy':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Mushroom':
+    buy: '1'
+    sell: '0.5'
+  'Red_Mushroom':
+    buy: '1'
+    sell: '0.5'
+  'Gold_Block':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Block':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Petrified_Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Cobblestone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Quartz_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Purpur_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Prismarine_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Quartz':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Stone':
+    buy: '1'
+    sell: '0.5'
+  'Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Tnt':
+    buy: '1'
+    sell: '0.5'
+  'Bookshelf':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Cobblestone':
+    buy: '1'
+    sell: '0.5'
+  'Obsidian':
+    buy: '1'
+    sell: '0.5'
+  'Torch':
+    buy: '1'
+    sell: '0.5'
+  'End_Rod':
+    buy: '1'
+    sell: '0.5'
+  'Chorus_Plant':
+    buy: '1'
+    sell: '0.5'
+  'Chorus_Flower':
+    buy: '1'
+    sell: '0.5'
+  'Purpur_Block':
+    buy: '1'
+    sell: '0.5'
+  'Purpur_Pillar':
+    buy: '1'
+    sell: '0.5'
+  'Purpur_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Spawner':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Chest':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Block':
+    buy: '1'
+    sell: '0.5'
+  'Crafting_Table':
+    buy: '1'
+    sell: '0.5'
+  'Farmland':
+    buy: '1'
+    sell: '0.5'
+  'Furnace':
+    buy: '1'
+    sell: '0.5'
+  'Ladder':
+    buy: '1'
+    sell: '0.5'
+  'Rail':
+    buy: '1'
+    sell: '0.5'
+  'Cobblestone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Lever':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Redstone_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Redstone_Torch':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Button':
+    buy: '1'
+    sell: '0.5'
+  'Snow':
+    buy: '1'
+    sell: '0.5'
+  'Ice':
+    buy: '1'
+    sell: '0.5'
+  'Snow_Block':
+    buy: '1'
+    sell: '0.5'
+  'Cactus':
+    buy: '1'
+    sell: '0.5'
+  'Clay':
+    buy: '1'
+    sell: '0.5'
+  'Jukebox':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Pumpkin':
+    buy: '1'
+    sell: '0.5'
+  'Carved_Pumpkin':
+    buy: '1'
+    sell: '0.5'
+  'Netherrack':
+    buy: '1'
+    sell: '0.5'
+  'Soul_Sand':
+    buy: '1'
+    sell: '0.5'
+  'Glowstone':
+    buy: '1'
+    sell: '0.5'
+  'Jack_O_Lantern':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Stone':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Cobblestone':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Mossy_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Cracked_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Chiseled_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Cracked_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Mushroom_Block':
+    buy: '1'
+    sell: '0.5'
+  'Red_Mushroom_Block':
+    buy: '1'
+    sell: '0.5'
+  'Mushroom_Stem':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Bars':
+    buy: '1'
+    sell: '0.5'
+  'Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Melon':
+    buy: '1'
+    sell: '0.5'
+  'Vine':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Mycelium':
+    buy: '1'
+    sell: '0.5'
+  'Lily_Pad':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Brick_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Enchanting_Table':
+    buy: '1'
+    sell: '0.5'
+  'End_Portal_Frame':
+    buy: '1'
+    sell: '0.5'
+  'End_Stone':
+    buy: '1'
+    sell: '0.5'
+  'End_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Dragon_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Redstone_Lamp':
+    buy: '1'
+    sell: '0.5'
+  'Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Emerald_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Ender_Chest':
+    buy: '1'
+    sell: '0.5'
+  'Tripwire_Hook':
+    buy: '1'
+    sell: '0.5'
+  'Emerald_Block':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Command_Block':
+    buy: '1'
+    sell: '0.5'
+  'Beacon':
+    buy: '1'
+    sell: '0.5'
+  'Cobblestone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Cobblestone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Button':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Button':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Button':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Button':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Button':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Button':
+    buy: '1'
+    sell: '0.5'
+  'Anvil':
+    buy: '1'
+    sell: '0.5'
+  'Chipped_Anvil':
+    buy: '1'
+    sell: '0.5'
+  'Damaged_Anvil':
+    buy: '1'
+    sell: '0.5'
+  'Trapped_Chest':
+    buy: '1'
+    sell: '0.5'
+  'Light_Weighted_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Heavy_Weighted_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Daylight_Detector':
+    buy: '1'
+    sell: '0.5'
+  'Redstone_Block':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Quartz_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Hopper':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Quartz_Block':
+    buy: '1'
+    sell: '0.5'
+  'Quartz_Block':
+    buy: '1'
+    sell: '0.5'
+  'Quartz_Pillar':
+    buy: '1'
+    sell: '0.5'
+  'Quartz_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Activator_Rail':
+    buy: '1'
+    sell: '0.5'
+  'Dropper':
+    buy: '1'
+    sell: '0.5'
+  'White_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Green_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Red_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Black_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Barrier':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Hay_Block':
+    buy: '1'
+    sell: '0.5'
+  'White_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Green_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Red_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Black_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Coal_Block':
+    buy: '1'
+    sell: '0.5'
+  'Packed_Ice':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Slime_Block':
+    buy: '1'
+    sell: '0.5'
+  'Sunflower':
+    buy: '1'
+    sell: '0.5'
+  'Lilac':
+    buy: '1'
+    sell: '0.5'
+  'Rose_Bush':
+    buy: '1'
+    sell: '0.5'
+  'Peony':
+    buy: '1'
+    sell: '0.5'
+  'Tall_Grass':
+    buy: '1'
+    sell: '0.5'
+  'Large_Fern':
+    buy: '1'
+    sell: '0.5'
+  'White_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Green_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Red_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'Black_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+  'White_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Green_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Red_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Black_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Prismarine':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Prismarine_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Sea_Lantern':
+    buy: '1'
+    sell: '0.5'
+  'Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+  'Red_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Repeating_Command_Block':
+    buy: '1'
+    sell: '0.5'
+  'Chain_Command_Block':
+    buy: '1'
+    sell: '0.5'
+  'Magma_Block':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Wart_Block':
+    buy: '1'
+    sell: '0.5'
+  'Red_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Bone_Block':
+    buy: '1'
+    sell: '0.5'
+  'Structure_Void':
+    buy: '1'
+    sell: '0.5'
+  'Observer':
+    buy: '1'
+    sell: '0.5'
+  'Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'White_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Green_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Red_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'Black_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+  'White_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Green_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Red_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'Black_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+  'White_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Green_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Red_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'Black_Concrete':
+    buy: '1'
+    sell: '0.5'
+  'White_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Green_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Red_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Black_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Turtle_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Tube_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Brain_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Bubble_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Fire_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Horn_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Tube_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Brain_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Bubble_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Fire_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Horn_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+  'Tube_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Brain_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Bubble_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Fire_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Horn_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Brain_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Bubble_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Fire_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Horn_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Tube_Coral':
+    buy: '1'
+    sell: '0.5'
+  'Tube_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Brain_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Bubble_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Fire_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Horn_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Tube_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Brain_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Bubble_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Fire_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Dead_Horn_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Ice':
+    buy: '1'
+    sell: '0.5'
+  'Conduit':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Door':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Door':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Door':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Door':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Door':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Door':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Door':
+    buy: '1'
+    sell: '0.5'
+  'Repeater':
+    buy: '1'
+    sell: '0.5'
+  'Comparator':
+    buy: '1'
+    sell: '0.5'
+  'Structure_Block':
+    buy: '1'
+    sell: '0.5'
+  'Turtle_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Scute':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Axe':
+    buy: '1'
+    sell: '0.5'
+  'Flint_And_Steel':
+    buy: '1'
+    sell: '0.5'
+  'Apple':
+    buy: '1'
+    sell: '0.5'
+  'Bow':
+    buy: '1'
+    sell: '0.5'
+  'Arrow':
+    buy: '1'
+    sell: '0.5'
+  'Coal':
+    buy: '1'
+    sell: '0.5'
+  'Charcoal':
+    buy: '1'
+    sell: '0.5'
+  'Diamond':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Ingot':
+    buy: '1'
+    sell: '0.5'
+  'Gold_Ingot':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Wooden_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Wooden_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Wooden_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Wooden_Axe':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Axe':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Axe':
+    buy: '1'
+    sell: '0.5'
+  'Stick':
+    buy: '1'
+    sell: '0.5'
+  'Bowl':
+    buy: '1'
+    sell: '0.5'
+  'Mushroom_Stew':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Axe':
+    buy: '1'
+    sell: '0.5'
+  'String':
+    buy: '1'
+    sell: '0.5'
+  'Feather':
+    buy: '1'
+    sell: '0.5'
+  'Gunpowder':
+    buy: '1'
+    sell: '0.5'
+  'Wooden_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Wheat_Seeds':
+    buy: '1'
+    sell: '0.5'
+  'Wheat':
+    buy: '1'
+    sell: '0.5'
+  'Bread':
+    buy: '1'
+    sell: '0.5'
+  'Leather_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Leather_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Leather_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Leather_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Chainmail_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Chainmail_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Chainmail_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Chainmail_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Flint':
+    buy: '1'
+    sell: '0.5'
+  'Porkchop':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Porkchop':
+    buy: '1'
+    sell: '0.5'
+  'Painting':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Apple':
+    buy: '1'
+    sell: '0.5'
+  'Enchanted_Golden_Apple':
+    buy: '1'
+    sell: '0.5'
+  'Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Water_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Lava_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Saddle':
+    buy: '1'
+    sell: '0.5'
+  'Redstone':
+    buy: '1'
+    sell: '0.5'
+  'Snowball':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Leather':
+    buy: '1'
+    sell: '0.5'
+  'Milk_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Pufferfish_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Salmon_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Cod_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Tropical_Fish_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Brick':
+    buy: '1'
+    sell: '0.5'
+  'Clay_Ball':
+    buy: '1'
+    sell: '0.5'
+  'Sugar_Cane':
+    buy: '1'
+    sell: '0.5'
+  'Kelp':
+    buy: '1'
+    sell: '0.5'
+  'Dried_Kelp_Block':
+    buy: '1'
+    sell: '0.5'
+  'Paper':
+    buy: '1'
+    sell: '0.5'
+  'Book':
+    buy: '1'
+    sell: '0.5'
+  'Slime_Ball':
+    buy: '1'
+    sell: '0.5'
+  'Chest_Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Furnace_Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Egg':
+    buy: '1'
+    sell: '0.5'
+  'Compass':
+    buy: '1'
+    sell: '0.5'
+  'Fishing_Rod':
+    buy: '1'
+    sell: '0.5'
+  'Clock':
+    buy: '1'
+    sell: '0.5'
+  'Glowstone_Dust':
+    buy: '1'
+    sell: '0.5'
+  'Cod':
+    buy: '1'
+    sell: '0.5'
+  'Salmon':
+    buy: '1'
+    sell: '0.5'
+  'Tropical_Fish':
+    buy: '1'
+    sell: '0.5'
+  'Pufferfish':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Cod':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Salmon':
+    buy: '1'
+    sell: '0.5'
+  'Ink_Sac':
+    buy: '1'
+    sell: '0.5'
+  'Red_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Green_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Cocoa_Beans':
+    buy: '1'
+    sell: '0.5'
+  'Lapis_Lazuli':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Bone_Meal':
+    buy: '1'
+    sell: '0.5'
+  'Bone':
+    buy: '1'
+    sell: '0.5'
+  'Sugar':
+    buy: '1'
+    sell: '0.5'
+  'Cake':
+    buy: '1'
+    sell: '0.5'
+  'White_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Green_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Red_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Black_Bed':
+    buy: '1'
+    sell: '0.5'
+  'Cookie':
+    buy: '1'
+    sell: '0.5'
+  'Filled_Map':
+    buy: '1'
+    sell: '0.5'
+  'Shears':
+    buy: '1'
+    sell: '0.5'
+  'Melon_Slice':
+    buy: '1'
+    sell: '0.5'
+  'Dried_Kelp':
+    buy: '1'
+    sell: '0.5'
+  'Pumpkin_Seeds':
+    buy: '1'
+    sell: '0.5'
+  'Melon_Seeds':
+    buy: '1'
+    sell: '0.5'
+  'Beef':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Beef':
+    buy: '1'
+    sell: '0.5'
+  'Chicken':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Chicken':
+    buy: '1'
+    sell: '0.5'
+  'Rotten_Flesh':
+    buy: '1'
+    sell: '0.5'
+  'Ender_Pearl':
+    buy: '1'
+    sell: '0.5'
+  'Blaze_Rod':
+    buy: '1'
+    sell: '0.5'
+  'Ghast_Tear':
+    buy: '1'
+    sell: '0.5'
+  'Gold_Nugget':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Wart':
+    buy: '1'
+    sell: '0.5'
+  'Potion':
+    buy: '1'
+    sell: '0.5'
+  'Splash_Potion':
+    buy: '1'
+    sell: '0.5'
+  'Lingering_Potion':
+    buy: '1'
+    sell: '0.5'
+  'Glass_Bottle':
+    buy: '1'
+    sell: '0.5'
+  'Spider_Eye':
+    buy: '1'
+    sell: '0.5'
+  'Fermented_Spider_Eye':
+    buy: '1'
+    sell: '0.5'
+  'Blaze_Powder':
+    buy: '1'
+    sell: '0.5'
+  'Magma_Cream':
+    buy: '1'
+    sell: '0.5'
+  'Brewing_Stand':
+    buy: '1'
+    sell: '0.5'
+  'Cauldron':
+    buy: '1'
+    sell: '0.5'
+  'Ender_Eye':
+    buy: '1'
+    sell: '0.5'
+  'Glistering_Melon_Slice':
+    buy: '1'
+    sell: '0.5'
+  'Bat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Blaze_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Cave_Spider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Chicken_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Cod_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Cow_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Creeper_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Dolphin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Donkey_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Drowned_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Elder_Guardian_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Enderman_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Endermite_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Evoker_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Ghast_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Guardian_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Husk_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Llama_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Magma_Cube_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Mooshroom_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Mule_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Ocelot_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Parrot_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Phantom_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Pig_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Polar_Bear_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Pufferfish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Rabbit_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Salmon_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Sheep_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Shulker_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Silverfish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Skeleton_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Skeleton_Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Slime_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Spider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Squid_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Stray_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Tropical_Fish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Turtle_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Vex_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Villager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Vindicator_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Witch_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Wither_Skeleton_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Wolf_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Zombie_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Zombie_Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Zombie_Villager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Experience_Bottle':
+    buy: '1'
+    sell: '0.5'
+  'Fire_Charge':
+    buy: '1'
+    sell: '0.5'
+  'Writable_Book':
+    buy: '1'
+    sell: '0.5'
+  'Written_Book':
+    buy: '1'
+    sell: '0.5'
+  'Emerald':
+    buy: '1'
+    sell: '0.5'
+  'Item_Frame':
+    buy: '1'
+    sell: '0.5'
+  'Flower_Pot':
+    buy: '1'
+    sell: '0.5'
+  'Carrot':
+    buy: '1'
+    sell: '0.5'
+  'Potato':
+    buy: '1'
+    sell: '0.5'
+  'Baked_Potato':
+    buy: '1'
+    sell: '0.5'
+  'Poisonous_Potato':
+    buy: '1'
+    sell: '0.5'
+  'Map':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Carrot':
+    buy: '1'
+    sell: '0.5'
+  'Skeleton_Skull':
+    buy: '1'
+    sell: '0.5'
+  'Wither_Skeleton_Skull':
+    buy: '1'
+    sell: '0.5'
+  'Player_Head':
+    buy: '1'
+    sell: '0.5'
+  'Zombie_Head':
+    buy: '1'
+    sell: '0.5'
+  'Creeper_Head':
+    buy: '1'
+    sell: '0.5'
+  'Dragon_Head':
+    buy: '1'
+    sell: '0.5'
+  'Carrot_On_A_Stick':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Star':
+    buy: '1'
+    sell: '0.5'
+  'Pumpkin_Pie':
+    buy: '1'
+    sell: '0.5'
+  'Firework_Rocket':
+    buy: '1'
+    sell: '0.5'
+  'Firework_Star':
+    buy: '1'
+    sell: '0.5'
+  'Enchanted_Book':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Brick':
+    buy: '1'
+    sell: '0.5'
+  'Quartz':
+    buy: '1'
+    sell: '0.5'
+  'Tnt_Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Hopper_Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Shard':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Crystals':
+    buy: '1'
+    sell: '0.5'
+  'Rabbit':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Rabbit':
+    buy: '1'
+    sell: '0.5'
+  'Rabbit_Stew':
+    buy: '1'
+    sell: '0.5'
+  'Rabbit_Foot':
+    buy: '1'
+    sell: '0.5'
+  'Rabbit_Hide':
+    buy: '1'
+    sell: '0.5'
+  'Armor_Stand':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+  'Golden_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+  'Diamond_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+  'Lead':
+    buy: '1'
+    sell: '0.5'
+  'Name_Tag':
+    buy: '1'
+    sell: '0.5'
+  'Command_Block_Minecart':
+    buy: '1'
+    sell: '0.5'
+  'Mutton':
+    buy: '1'
+    sell: '0.5'
+  'Cooked_Mutton':
+    buy: '1'
+    sell: '0.5'
+  'White_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Green_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Red_Banner':
+    buy: '1'
+    sell: '0.5'
+  'Black_Banner':
+    buy: '1'
+    sell: '0.5'
+  'End_Crystal':
+    buy: '1'
+    sell: '0.5'
+  'Chorus_Fruit':
+    buy: '1'
+    sell: '0.5'
+  'Popped_Chorus_Fruit':
+    buy: '1'
+    sell: '0.5'
+  'Beetroot':
+    buy: '1'
+    sell: '0.5'
+  'Beetroot_Seeds':
+    buy: '1'
+    sell: '0.5'
+  'Beetroot_Soup':
+    buy: '1'
+    sell: '0.5'
+  'Dragon_Breath':
+    buy: '1'
+    sell: '0.5'
+  'Spectral_Arrow':
+    buy: '1'
+    sell: '0.5'
+  'Tipped_Arrow':
+    buy: '1'
+    sell: '0.5'
+  'Shield':
+    buy: '1'
+    sell: '0.5'
+  'Elytra':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Boat':
+    buy: '1'
+    sell: '0.5'
+  'Totem_Of_Undying':
+    buy: '1'
+    sell: '0.5'
+  'Shulker_Shell':
+    buy: '1'
+    sell: '0.5'
+  'Iron_Nugget':
+    buy: '1'
+    sell: '0.5'
+  'Knowledge_Book':
+    buy: '1'
+    sell: '0.5'
+  'Debug_Stick':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_13':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Cat':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Blocks':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Chirp':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Far':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Mall':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Mellohi':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Stal':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Strad':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Ward':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_11':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Wait':
+    buy: '1'
+    sell: '0.5'
+  'Trident':
+    buy: '1'
+    sell: '0.5'
+  'Phantom_Membrane':
+    buy: '1'
+    sell: '0.5'
+  'Nautilus_Shell':
+    buy: '1'
+    sell: '0.5'
+  'Heart_Of_The_Sea':
+    buy: '1'
+    sell: '0.5'
+  'Cornflower':
+    buy: '1'
+    sell: '0.5'
+  'Lily_Of_The_Valley':
+    buy: '1'
+    sell: '0.5'
+  'Wither_Rose':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Stone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Prismarine_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Red_Sandstone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Granite_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Andesite_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Red_Nether_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Sandstone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'End_Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Diorite_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Granite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Red_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Diorite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Cobblestone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'End_Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Stone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Quartz_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Granite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Andesite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Red_Nether_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Andesite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Diorite_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Granite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Diorite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Mossy_Cobblestone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'End_Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Quartz_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Granite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Andesite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Red_Nether_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Andesite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Diorite_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Scaffolding':
+    buy: '1'
+    sell: '0.5'
+  'Jigsaw':
+    buy: '1'
+    sell: '0.5'
+  'Composter':
+    buy: '1'
+    sell: '0.5'
+  'Oak_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Spruce_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Birch_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Jungle_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Acacia_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Dark_Oak_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Bamboo':
+    buy: '1'
+    sell: '0.5'
+  'Red_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Green_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Black_Dye':
+    buy: '1'
+    sell: '0.5'
+  'White_Dye':
+    buy: '1'
+    sell: '0.5'
+  'Cat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Fox_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Panda_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Pillager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Ravager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Trader_Llama_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Wandering_Trader_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Leather_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+  'Crossbow':
+    buy: '1'
+    sell: '0.5'
+  'Suspicious_Stew':
+    buy: '1'
+    sell: '0.5'
+  'Loom':
+    buy: '1'
+    sell: '0.5'
+  'Flower_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Creeper_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Skull_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Mojang_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Globe_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Barrel':
+    buy: '1'
+    sell: '0.5'
+  'Smoker':
+    buy: '1'
+    sell: '0.5'
+  'Blast_Furnace':
+    buy: '1'
+    sell: '0.5'
+  'Cartography_Table':
+    buy: '1'
+    sell: '0.5'
+  'Fletching_Table':
+    buy: '1'
+    sell: '0.5'
+  'Grindstone':
+    buy: '1'
+    sell: '0.5'
+  'Lectern':
+    buy: '1'
+    sell: '0.5'
+  'Smithing_Table':
+    buy: '1'
+    sell: '0.5'
+  'Stonecutter':
+    buy: '1'
+    sell: '0.5'
+  'Bell':
+    buy: '1'
+    sell: '0.5'
+  'Lantern':
+    buy: '1'
+    sell: '0.5'
+  'Sweet_Berries':
+    buy: '1'
+    sell: '0.5'
+  'Campfire':
+    buy: '1'
+    sell: '0.5'
+  'Bee_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Honeycomb':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Nylium':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Nylium':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Planks':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Stem':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Stem':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Crimson_Stem':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Warped_Stem':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Crimson_Hyphae':
+    buy: '1'
+    sell: '0.5'
+  'Stripped_Warped_Hyphae':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Hyphae':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Hyphae':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Fungus':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Fungus':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Roots':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Roots':
+    buy: '1'
+    sell: '0.5'
+  'Nether_Sprouts':
+    buy: '1'
+    sell: '0.5'
+  'Weeping_Vines':
+    buy: '1'
+    sell: '0.5'
+  'Twisting_Vines':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Fence':
+    buy: '1'
+    sell: '0.5'
+  'Soul_Soil':
+    buy: '1'
+    sell: '0.5'
+  'Basalt':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Basalt':
+    buy: '1'
+    sell: '0.5'
+  'Soul_Torch':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+  'Chain':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+  'Cracked_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Blackstone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Button':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Button':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Button':
+    buy: '1'
+    sell: '0.5'
+  'Quartz_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Wart_Block':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Door':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Door':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Ingot':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Scrap':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Sword':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Shovel':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Axe':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Hoe':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Helmet':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Chestplate':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Leggings':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Boots':
+    buy: '1'
+    sell: '0.5'
+  'Crimson_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Sign':
+    buy: '1'
+    sell: '0.5'
+  'Hoglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Piglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Strider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Zoglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Zombified_Piglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Warped_Fungus_On_A_Stick':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Pigstep':
+    buy: '1'
+    sell: '0.5'
+  'Piglin_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+  'Soul_Lantern':
+    buy: '1'
+    sell: '0.5'
+  'Soul_Campfire':
+    buy: '1'
+    sell: '0.5'
+  'Shroomlight':
+    buy: '1'
+    sell: '0.5'
+  'Lodestone':
+    buy: '1'
+    sell: '0.5'
+  'Netherite_Block':
+    buy: '1'
+    sell: '0.5'
+  'Ancient_Debris':
+    buy: '1'
+    sell: '0.5'
+  'Target':
+    buy: '1'
+    sell: '0.5'
+  'Crying_Obsidian':
+    buy: '1'
+    sell: '0.5'
+  'Blackstone':
+    buy: '1'
+    sell: '0.5'
+  'Blackstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Blackstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Gilded_Blackstone':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Polished_Blackstone':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Blackstone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Cracked_Polished_Blackstone_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Respawn_Anchor':
+    buy: '1'
+    sell: '0.5'
+  'Amethyst_Block':
+    buy: '1'
+    sell: '0.5'
+  'Amethyst_Cluster':
+    buy: '1'
+    sell: '0.5'
+  'Amethyst_Shard':
+    buy: '1'
+    sell: '0.5'
+  'Axolotl_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Axolotl_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Azalea':
+    buy: '1'
+    sell: '0.5'
+  'Azalea_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Big_Dripleaf':
+    buy: '1'
+    sell: '0.5'
+  'Black_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Blue_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Brown_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Budding_Amethyst':
+    buy: '1'
+    sell: '0.5'
+  'Bundle':
+    buy: '1'
+    sell: '0.5'
+  'Calcite':
+    buy: '1'
+    sell: '0.5'
+  'Candle':
+    buy: '1'
+    sell: '0.5'
+  'Chiseled_Deepslate':
+    buy: '1'
+    sell: '0.5'
+  'Cobbled_Deepslate':
+    buy: '1'
+    sell: '0.5'
+  'Cobbled_Deepslate_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Cobbled_Deepslate_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Cobbled_Deepslate_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Copper_Block':
+    buy: '1'
+    sell: '0.5'
+  'Copper_Ingot':
+    buy: '1'
+    sell: '0.5'
+  'Copper_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Cracked_Deepslate_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Cracked_Deepslate_Tiles':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Cyan_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Bricks':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Coal_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Copper_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Diamond_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Emerald_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Iron_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Lapis_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Redstone_Ore':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Tiles':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Tile_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Tile_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Deepslate_Tile_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Dirt_Path':
+    buy: '1'
+    sell: '0.5'
+  'Dripstone_Block':
+    buy: '1'
+    sell: '0.5'
+  'Exposed_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Exposed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Exposed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Exposed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Flowering_Azalea':
+    buy: '1'
+    sell: '0.5'
+  'Flowering_Azalea_Leaves':
+    buy: '1'
+    sell: '0.5'
+  'Glow_Berries':
+    buy: '1'
+    sell: '0.5'
+  'Glow_Ink_Sac':
+    buy: '1'
+    sell: '0.5'
+  'Glow_Item_Frame':
+    buy: '1'
+    sell: '0.5'
+  'Glow_Lichen':
+    buy: '1'
+    sell: '0.5'
+  'Glow_Squid_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Goat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Gray_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Green_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Hanging_Roots':
+    buy: '1'
+    sell: '0.5'
+  'Infested_Deepslate':
+    buy: '1'
+    sell: '0.5'
+  'Large_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Lightning_Rod':
+    buy: '1'
+    sell: '0.5'
+  'Light_Blue_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Light_Gray_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Lime_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Magenta_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Medium_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Moss_Block':
+    buy: '1'
+    sell: '0.5'
+  'Moss_Carpet':
+    buy: '1'
+    sell: '0.5'
+  'Orange_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Oxidized_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Oxidized_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Oxidized_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Oxidized_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Piglin_Brute_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+  'Pink_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Pointed_Dripstone':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Deepslate':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Deepslate_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Deepslate_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Polished_Deepslate_Wall':
+    buy: '1'
+    sell: '0.5'
+  'Powder_Snow_Bucket':
+    buy: '1'
+    sell: '0.5'
+  'Purple_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Copper_Block':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Gold':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Gold_Block':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Iron':
+    buy: '1'
+    sell: '0.5'
+  'Raw_Iron_Block':
+    buy: '1'
+    sell: '0.5'
+  'Red_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Rooted_Dirt':
+    buy: '1'
+    sell: '0.5'
+  'Sculk_Sensor':
+    buy: '1'
+    sell: '0.5'
+  'Small_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Small_Dripleaf':
+    buy: '1'
+    sell: '0.5'
+  'Smooth_Basalt':
+    buy: '1'
+    sell: '0.5'
+  'Spore_Blossom':
+    buy: '1'
+    sell: '0.5'
+  'Spyglass':
+    buy: '1'
+    sell: '0.5'
+  'Tinted_Glasstuff':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Copper_Block':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Exposed_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Exposed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Exposed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Exposed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Oxidized_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Oxidized_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Oxidized_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Oxidized_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Weathered_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Weathered_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Weathered_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Weathered_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'Weathered_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Weathered_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Weathered_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+  'Weathered_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+  'White_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Yellow_Candle':
+    buy: '1'
+    sell: '0.5'
+  'Music_Disc_Otherside':
     buy: '1'
     sell: '0.5'
