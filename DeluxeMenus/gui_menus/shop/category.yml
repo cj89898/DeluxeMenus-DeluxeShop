@@ -1,0 +1,702 @@
+menu_title: '%str_capitalize_{category}%'
+open_command: shopCat
+register_command: true
+args:
+- category
+size: 36
+open_commands:
+- '[meta] set dmshop-currentPage INTEGER 1'
+- '[meta] set dmshop-filter STRING {category}'
+- '[refresh] <delay=3>'
+close_commands:
+- '[meta] remove dmshop-currentPage INTEGER 0<delay=3>'
+items:
+  'exit':
+    material: barrier
+    display_name: "&cExit"
+    slot: 45
+    click_commands:
+    - '[close]'
+  'first_page':
+    material: iron_ingot
+    display_name: "&6First Page"
+    nbt_int: CustomModelData:13
+    slot: 29
+    view_requirement:
+      requirements:
+        page:
+          type: has meta
+          key: dmshop-currentPage
+          meta_type: INTEGER
+          value: 3
+    click_commands:
+    - '[meta] set dmshop-currentPage INTEGER 1'
+    - '[refresh]'
+  'previous_page':
+    material: iron_ingot
+    display_name: "&6Previous Page"
+    nbt_int: CustomModelData:11
+    slot: 30
+    view_requirement:
+      requirements:
+        page:
+          type: has meta
+          key: dmshop-currentPage
+          meta_type: INTEGER
+          value: 2
+    click_commands:
+    - '[meta] set dmshop-currentPage INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)%'
+    - '[refresh]'
+  'current_category':
+    material: paper
+    display_name: "&6%str_capitalize_{category}%"
+    slot: 31
+  'next_page':
+    material: iron_ingot
+    display_name: "&6Next Page"
+    nbt_int: CustomModelData:10
+    slot: 32
+    view_requirement:
+      requirements:
+        pageNum:
+          type: '<'
+          input: '%deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+          output: '%deluxeshop_pages:45%'
+    click_commands:
+    - '[meta] set dmshop-currentPage INTEGER %math_0_MIN({deluxeshop_pages:45},{deluxemenus_meta_dmshop-currentPage_INTEGER_1}+1)%'
+    - '[refresh]'
+  'lastpage':
+    material: iron_ingot
+    display_name: "&6Last Page"
+    nbt_int: CustomModelData:14
+    slot: 33
+    view_requirement:
+      requirements:
+        pageNum:
+          type: '<='
+          input: '%deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+          output: '%math_0_{deluxeshop_pages:45}-2%'
+    click_commands:
+    - '[meta] set dmshop-currentPage INTEGER %deluxeshop_pages:45%'
+    - '[refresh]'
+  'item1':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 0
+    display_name: '&a%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item2':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 1
+    display_name: '&a%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item3':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 2
+    display_name: '&a%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item4':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 3
+    display_name: '&a%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item5':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 4
+    display_name: '&a%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item6':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 5
+    display_name: '&a%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item7':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 6
+    display_name: '&a%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item8':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 7
+    display_name: '&a%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item9':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 8
+    display_name: '&a%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item10':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 9
+    display_name: '&a%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item11':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 10
+    display_name: '&a%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item12':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 11
+    display_name: '&a%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item13':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 12
+    display_name: '&a%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item14':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 13
+    display_name: '&a%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item15':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 14
+    display_name: '&a%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item16':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 15
+    display_name: '&a%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item17':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 16
+    display_name: '&a%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item18':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 17
+    display_name: '&a%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item19':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 18
+    display_name: '&a%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item20':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 19
+    display_name: '&a%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item21':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 20
+    display_name: '&a%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item22':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 21
+    display_name: '&a%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item23':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 22
+    display_name: '&a%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item24':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 23
+    display_name: '&a%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item25':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 24
+    display_name: '&a%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item26':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 25
+    display_name: '&a%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+  'item27':
+    view_requirement:
+      requirements:
+        valid:
+          type: '!string equals'
+          input: '%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: ''
+        error:
+          type: '!string contains'
+          input: '%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          output: 'error'
+    material: 'placeholder-%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+    slot: 26
+    display_name: '&a%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name,formatted%'
+    lore:
+    - '&2Buy: &a$%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),buy% &6each'
+    - '&cSell: &a$%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
+    - '&8Left Click to Purchase'
+    - '&8Right Click to Sell'
+    left_click_commands:
+    - '[player] buyMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_commands:
+    - '[player] sellMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'

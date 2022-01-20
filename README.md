@@ -15,3 +15,4 @@ Download these with `/papi ecloud download <expansion>` then type `/papi reload`
  - Items can be added via the `deluxeshop.yml` file found in the `PlaceholderAPI` folder. There is a full list of items in the generated files folder
  - The selling option can be changed. It can be set to `individual` to have sell price per item, OR a number such as `0.4` to have a multiplier based off the buy price.
  - `/shopsearch <search>` is the mycmd command for searching the shop, it will open it.
+ - Tags can be added to items. If you have a filter, it will have to match one of the item tags EXACTLY for it to show in the results.

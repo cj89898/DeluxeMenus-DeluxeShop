@@ -1,4 +1,4 @@
-menu_title: 'Shop'
+menu_title: '&8Selling - &9%deluxeshop_{item},name,formatted%'
 size: 27
 open_command: sellMore
 register_command: true

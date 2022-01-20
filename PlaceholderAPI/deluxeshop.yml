@@ -4,57 +4,93 @@ items:
   'Stone':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Granite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Polished_Granite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Diorite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Polished_Diorite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Andesite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Polished_Andesite':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Grass_Block':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Dirt':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Coarse_Dirt':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Podzol':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Cobblestone':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Oak_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Spruce_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Birch_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Jungle_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Acacia_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Dark_Oak_Planks':
     buy: '1'
     sell: '0.5'
+    tags:
+    - blocksCategory
   'Oak_Sapling':
     buy: '1'
     sell: '0.5'

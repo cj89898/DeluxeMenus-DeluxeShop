@@ -6,20 +6,6 @@
 debug: false
 check_updates: true
 gui_menus:
-  basics_menu:
-    file: basics_menu.yml
-  advanced_menu:
-    file: advanced_menu.yml
-  requirements_menu:
-    file: requirements_menu.yml
-  miners:
-    file: miners.yml
-  checkitem:
-    file: checkitem.yml
-  test:
-    file: test.yml
-  tags:
-    file: tags.yml
   buyConfirm:
     file: shop/buyConfirm.yml
   sellConfirm:
@@ -28,48 +14,7 @@ gui_menus:
     file: shop/buyMore.yml
   sellMore:
     file: shop/sellMore.yml
-  #  shopPageOne:
-  #    file: shop/pages/1.yml
-  shopPageTwo:
-    file: shop/pages/2.yml
-  shopPageThree:
-    file: shop/pages/3.yml
-  shopPageFour:
-    file: shop/pages/4.yml
-  shopPageFive:
-    file: shop/pages/5.yml
-  shopPageSix:
-    file: shop/pages/6.yml
-  shopPageSeven:
-    file: shop/pages/7.yml
-  shopPageEight:
-    file: shop/pages/8.yml
-  shopPageNine:
-    file: shop/pages/9.yml
-  shopPageTen:
-    file: shop/pages/10.yml
-  shopPageEleven:
-    file: shop/pages/11.yml
-  shopPageTwelve:
-    file: shop/pages/12.yml
-  shopPageThirteen:
-    file: shop/pages/13.yml
-  shopPageFourteen:
-    file: shop/pages/14.yml
-  shopPageFifteen:
-    file: shop/pages/15.yml
-  shopPageSixteen:
-    file: shop/pages/16.yml
-  shopPageSeventeen:
-    file: shop/pages/17.yml
-  shopPageEighteen:
-    file: shop/pages/18.yml
-  shopPageNineteen:
-    file: shop/pages/19.yml
-  shopPageTwenty:
-    file: shop/pages/20.yml
-  shopPageTwentyOne:
-    file: shop/pages/21.yml
   shop:
     file: shop/main.yml
-
+  shopCategory:
+    file: shop/category.yml
