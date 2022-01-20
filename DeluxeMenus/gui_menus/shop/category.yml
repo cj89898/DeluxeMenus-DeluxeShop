@@ -6,7 +6,7 @@ args:
 size: 36
 open_commands:
 - '[meta] set dmshop-currentPage INTEGER 1'
-- '[meta] set dmshop-filter STRING {category}'
+- '[meta] set dmshop-filter STRING {category}Category'
 - '[refresh] <delay=3>'
 close_commands:
 - '[meta] remove dmshop-currentPage INTEGER 0<delay=3>'
@@ -14,7 +14,7 @@ items:
   'exit':
     material: barrier
     display_name: "&cExit"
-    slot: 45
+    slot: 27
     click_commands:
     - '[close]'
   'first_page':
