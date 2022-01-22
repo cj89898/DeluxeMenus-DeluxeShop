@@ -7,14 +7,16 @@ debug: false
 check_updates: true
 gui_menus:
   buyConfirm:
-    file: shop/buyConfirm.yml
+    file: deluxeShop/buyConfirm.yml
   sellConfirm:
-    file: shop/sellConfirm.yml
+    file: deluxeShop/sellConfirm.yml
   buyMore:
-    file: shop/buyMore.yml
+    file: deluxeShop/buyMore.yml
   sellMore:
-    file: shop/sellMore.yml
-  shop:
-    file: shop/main.yml
+    file: deluxeShop/sellMore.yml
+  deluxeShop:
+    file: deluxeShop/main.yml
   shopCategory:
-    file: shop/category.yml
+    file: deluxeShop/category.yml
+  shopCategories:
+    file: deluxeShop/categories.yml

@@ -1,4 +1,4 @@
-menu_title: '&8Selling - &9%deluxeshop_{item},name,formatted%'
+menu_title: '&8Sell - &9%deluxeshop_{item},name,formatted%'
 open_command: sellConfirm
 register_command: true  
 args:

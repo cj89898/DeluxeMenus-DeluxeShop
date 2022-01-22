@@ -1,4 +1,4 @@
-menu_title: '%str_capitalize_{category}%'
+menu_title: '&9&lDeluxe&3&lShop &8- &d%str_capitalize_{category}%'
 open_command: shopCat
 register_command: true
 args:
@@ -7,13 +7,16 @@ size: 36
 open_commands:
 - '[meta] set dmshop-currentPage INTEGER 1'
 - '[meta] set dmshop-filter STRING {category}Category'
-- '[refresh] <delay=3>'
+- '[refresh] <delay=1>'
 close_commands:
-- '[meta] remove dmshop-currentPage INTEGER 0<delay=3>'
+- '[meta] remove dmshop-currentPage INTEGER 0<delay=1>'
+- '[meta] remove dmshop-filter STRING 0'
+- '[openguimenu] shopCategories'
 items:
   'exit':
-    material: barrier
-    display_name: "&cExit"
+    material: iron_ingot
+    nbt_int: CustomModelData:11
+    display_name: "&cGo Back to Categories"
     slot: 27
     click_commands:
     - '[close]'
@@ -98,10 +101,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item2':
     view_requirement:
       requirements:
@@ -121,10 +139,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_2+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item3':
     view_requirement:
       requirements:
@@ -144,10 +177,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_3+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item4':
     view_requirement:
       requirements:
@@ -167,10 +215,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_4+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item5':
     view_requirement:
       requirements:
@@ -190,10 +253,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_5+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item6':
     view_requirement:
       requirements:
@@ -213,10 +291,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_6+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item7':
     view_requirement:
       requirements:
@@ -236,10 +329,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_7+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item8':
     view_requirement:
       requirements:
@@ -259,10 +367,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_8+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item9':
     view_requirement:
       requirements:
@@ -282,10 +405,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_9+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item10':
     view_requirement:
       requirements:
@@ -305,10 +443,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_10+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item11':
     view_requirement:
       requirements:
@@ -328,10 +481,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_11+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item12':
     view_requirement:
       requirements:
@@ -351,10 +519,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_12+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item13':
     view_requirement:
       requirements:
@@ -374,10 +557,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_13+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item14':
     view_requirement:
       requirements:
@@ -397,10 +595,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_14+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item15':
     view_requirement:
       requirements:
@@ -420,10 +633,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_15+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item16':
     view_requirement:
       requirements:
@@ -443,10 +671,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_16+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item17':
     view_requirement:
       requirements:
@@ -466,10 +709,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_17+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item18':
     view_requirement:
       requirements:
@@ -489,10 +747,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_18+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item19':
     view_requirement:
       requirements:
@@ -512,10 +785,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_19+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item20':
     view_requirement:
       requirements:
@@ -535,10 +823,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_20+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item21':
     view_requirement:
       requirements:
@@ -558,10 +861,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_21+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item22':
     view_requirement:
       requirements:
@@ -581,10 +899,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_22+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item23':
     view_requirement:
       requirements:
@@ -604,10 +937,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_23+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item24':
     view_requirement:
       requirements:
@@ -627,10 +975,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_24+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item25':
     view_requirement:
       requirements:
@@ -650,10 +1013,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_25+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item26':
     view_requirement:
       requirements:
@@ -673,10 +1051,25 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_26+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
   'item27':
     view_requirement:
       requirements:
@@ -696,7 +1089,22 @@ items:
     - '&cSell: &a$%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),sell% &6each'
     - '&8Left Click to Purchase'
     - '&8Right Click to Sell'
+    left_click_requirement:
+      requirements:
+        money:
+          type: javascript
+          expression: '%vault_eco_balance% >= %deluxeshop_math_0_1+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*45),buy%'
+          deny_commands:
+          - '[message] &cYou don''t have enough money!'
     left_click_commands:
-    - '[player] buyMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] buyMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    right_click_requirement:
+      requirements:
+        money:
+          type: has item
+          material: '%deluxeshop_math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27),name%'
+          amount: '1'
+          deny_commands:
+          - '[message] &cYou don''t have enough items!'
     right_click_commands:
-    - '[player] sellMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% bulkShop %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'
+    - '[player] sellMore %math_0_27+(({deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)*27)% shopCategories %deluxemenus_meta_dmshop-currentPage_INTEGER_1%'

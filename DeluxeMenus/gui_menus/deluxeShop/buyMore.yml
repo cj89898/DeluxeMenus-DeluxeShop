@@ -1,4 +1,4 @@
-menu_title: '&8Buying - &9%deluxeshop_{item},name,formatted%'
+menu_title: '&8Buy - &9%deluxeshop_{item},name,formatted%'
 size: 27
 open_command: buyMore
 register_command: true
@@ -8,7 +8,7 @@ args:
 - page
 open_commands:
 - '[meta] set dmshop-currentAmount INTEGER 1'
-- '[refresh] <delay=3>'
+- '[refresh] <delay=1>'
 close_commands:
 - '[meta] remove dmshop-currentAmount INTEGER 0'
 
@@ -34,11 +34,18 @@ items:
     - '[meta] set dmshop-currentPage INTEGER {page} <delay=3>'
   '-all':
     material: RED_STAINED_GLASS_PANE
-    display_name: '&cRemove all items'
-    amount: 64
+    display_name: '&cSet to 1 item'
+    amount: 1
     slot: 9
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        amount:
+          type: has meta
+          key: dmshop-currentAmount
+          meta_type: INTEGER
+          value: 3
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER 1'
     - '[refresh]'
@@ -47,6 +54,13 @@ items:
     display_name: '&cRemove 64 items'
     amount: 64
     slot: 10
+    view_requirement:
+      requirements:
+        amount:
+          type: has meta
+          key: dmshop-currentAmount
+          meta_type: INTEGER
+          value: 65
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
     click_commands:
@@ -59,6 +73,13 @@ items:
     slot: 11
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        amount:
+          type: has meta
+          key: dmshop-currentAmount
+          meta_type: INTEGER
+          value: 11
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}-10)%'
     - '[refresh]'
@@ -69,6 +90,13 @@ items:
     slot: 12
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        amount:
+          type: has meta
+          key: dmshop-currentAmount
+          meta_type: INTEGER
+          value: 2
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}-1)%'
     - '[refresh]'
@@ -79,6 +107,11 @@ items:
     slot: 14
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%math_0_{deluxeshop_{item},buy}*({deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+1)%'
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_1%'
     - '[refresh]'
@@ -89,6 +122,11 @@ items:
     slot: 15
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%math_0_{deluxeshop_{item},buy}*({deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+10)%'
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_10%'
     - '[refresh]'
@@ -99,16 +137,26 @@ items:
     slot: 16
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%math_0_{deluxeshop_{item},buy}*({deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+64)%'
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_64%'
     - '[refresh]'
   '+max':
     material: LIME_STAINED_GLASS_PANE
-    display_name: '&aAdd max items'
+    display_name: '&aSet max items'
     amount: 64
     slot: 17
     lore:
     - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    view_requirement:
+      requirements:
+        money:
+          type: has money
+          placeholder: '%math_0_{deluxeshop_{item},buy}*({deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+2)%'
     click_commands:
     - '[meta] set dmshop-currentAmount INTEGER 1'
     - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop-maxpurchase_{item}%'

@@ -1,0 +1,26 @@
+menu_title: '&9&lDeluxe&3&lShop &8- &dCategories'
+open_command: shops
+size: 54
+close_commands:
+- '[meta] remove dmshop-filter STRING 0'
+items:
+  'Blocks':
+    material: stone_bricks
+    slots:
+    - 11
+    display_name: '&aBlocks'
+    click_commands:
+    - '[player] shopCat blocks'
+  'set-filter':
+    material: iron_ingot
+    nbt_int: CustomModelData:12
+    display_name: '&6Search Items'
+    slot: 45
+    click_commands:
+    - '[openguimenu] deluxeshop'
+  filler-item:
+    priority: 100
+    display_name: ' '
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+    - 0-53
