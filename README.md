@@ -15,4 +15,5 @@ Download these with `/papi ecloud download <expansion>` then type `/papi reload`
  - Items can be added via the `deluxeshop.yml` file found in the `PlaceholderAPI` folder. There is a full list of items in the generated files folder
  - The `selling` option can be changed to 1 of 3 options: Any placeholder, `individual`, or any number. Numbers/placeholders will multiply the buy cost to get the sell value.
  - `/shopsearch <search>` is the mycmd command for searching the shop, it will open it.
+ - Support for filters and anti-filters via deluxemenus meta `dmshop-filter` and `dmshop-antiFilter`.
  - Tags can be added to items. If you have a filter, it will have to match one of the item tags EXACTLY for it to show in the results.

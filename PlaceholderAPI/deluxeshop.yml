@@ -21,6 +21,7 @@ items:
     sell: '0.5'
     tags:
     - blocksCategory
+    - privateCategory
   'Polished_Diorite':
     buy: '1'
     sell: '0.5'
@@ -51,11 +52,13 @@ items:
     sell: '0.5'
     tags:
     - blocksCategory
+    - privateCategory
   'Podzol':
     buy: '1'
     sell: '0.5'
     tags:
     - blocksCategory
+    - privateCategory
   'Cobblestone':
     buy: '1'
     sell: '0.5'
@@ -109,6 +112,8 @@ items:
   'Dark_Oak_Sapling':
     buy: '1'
     sell: '0.5'
+    tags:
+    - privateCategory
   'Bedrock':
     buy: '1'
     sell: '0.5'
