@@ -7,8 +7,8 @@ args:
 - lastMenu
 size: 9
 items:
-  'dirt':
-    material: 'placeholder-%string_uppercase_{deluxeshop_{item},name}%'
+  'item':
+    material: 'placeholder-%deluxeshop_{item},name%'
     display_name: '&r&6Item: &a%deluxeshop_{item},name,formatted%'
     lore:
     - "&6Amount: &a{amount}"

@@ -34,7 +34,7 @@
  register: true
  required_args: 1
  error-message: '&cType /shopSearch <search parameters>'
- delaytimer: 1
+ delaytimer: 2
  delaytimer_format: TICKS
  runcmd:
  - /dm open deluxeshop $player
