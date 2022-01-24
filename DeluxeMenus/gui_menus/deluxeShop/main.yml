@@ -60,7 +60,8 @@ items:
     - '[meta] remove dmshop-filter STRING _'
     - '[refresh]'
   'filter':
-    material: name_tag
+    material: iron_ingot
+    nbt_int: CustomModelData:16
     display_name: '&6Current Search: &a%deluxemenus_meta_dmshop-filter_STRING_ %'
     priority: 1
     view_requirement:
@@ -70,8 +71,11 @@ items:
          input: '%deluxemenus_meta_dmshop-filter_STRING_ %'
          output: ' '
     slot: 49
+    click_commands:
+    - '[refresh]'
   'no-filter':
-    material: name_tag
+    material: iron_ingot
+    nbt_int: CustomModelData:16
     display_name: '&cNo Filter'
     priority: 2
     slot: 49

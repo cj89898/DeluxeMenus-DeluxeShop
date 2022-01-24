@@ -51,7 +51,8 @@ items:
     - '[meta] set dmshop-currentPage INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentPage_INTEGER_1}-1)%'
     - '[refresh]'
   'current_category':
-    material: paper
+    material: iron_ingot
+    nbt_int: CustomModelData:16
     display_name: "&6%str_capitalize_{category}%"
     slot: 31
   'next_page':
