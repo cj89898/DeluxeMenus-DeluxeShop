@@ -36,6 +36,8 @@
  error-message: '&cType /shopSearch <search parameters>'
  delaytimer: 2
  delaytimer_format: TICKS
+ regex_pattern: "^[-a-zA-Z0-9:,_ ]+"
+ regex_error_message: '&cOnly alphanumerical and &a_ &callowed. Use a comma &cto separate searches.'
  runcmd:
  - /dm open deluxeshop $player
- - $delay$/dm execute $player [meta] set dmshop-filter STRING %str_capitalize_$multiargs%
+ - $delay$search $player $multiargs

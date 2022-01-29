@@ -4,8 +4,8 @@ register_command: true
 size: 54
 open_commands:
 - '[meta] set dmshop-currentPage INTEGER 1'
-- '[meta] remove dmshop-filter STRING 0'
-- '[refresh] <delay=2>'
+- '[console] search %player_name% clear'
+- '[refresh] <delay=3>'
 close_commands:
 - '[meta] remove dmshop-currentPage INTEGER 0<delay=3>'
 items:
@@ -57,19 +57,19 @@ items:
     display_name: '&cClear Filter'
     slot: 48
     click_commands:
-    - '[meta] remove dmshop-filter STRING _'
+    - '[player] search clear'
     - '[refresh]'
   'filter':
     material: iron_ingot
     nbt_int: CustomModelData:16
-    display_name: '&6Current Search: &a%deluxemenus_meta_dmshop-filter_STRING_ %'
+    display_name: '&6Current Search: &a%deluxeshop_formatfilter%'
     priority: 1
     view_requirement:
       requirements:
         filter:
          type: '!string equals'
-         input: '%deluxemenus_meta_dmshop-filter_STRING_ %'
-         output: ' '
+         input: '%deluxeshop_filter%'
+         output: ''
     slot: 49
     click_commands:
     - '[refresh]'

@@ -2,7 +2,7 @@ menu_title: '&9&lDeluxe&3&lShop &8- &dCategories'
 open_command: shops
 size: 54
 close_commands:
-- '[meta] remove dmshop-filter STRING 0'
+- '[console] search %player_name% clear'
 items:
   'Blocks':
     material: stone_bricks

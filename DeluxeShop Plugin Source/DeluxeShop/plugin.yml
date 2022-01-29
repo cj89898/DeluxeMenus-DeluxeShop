@@ -1,0 +1,39 @@
+name: DeluxeShop
+version: 3.0.0
+author: cj89898
+website: http://www.cjservers.net/
+main: net.cjservers.deluxeshop.DeluxeShop
+depend: [PlaceholderAPI]
+softdepend: [Vault]
+commands:
+  deluxeshopsell:
+    description: Displays help
+    usage: '/deluxeshopsell <item> <amount>'
+    aliases: [sell]
+  search:
+    description: Search the DeluxeShop
+    usage: '/search <search parameters>'
+    aliases: [setfilter]
+
+permissions:
+  deluxeshop.sell:
+    description: Access to /sell <item> <amount>
+    default: op
+  deluxeshop.sell.hand:
+    description: Access to /sell hand
+    default: op
+  deluxeshop.sell.handall:
+    description: Access to /sell handall
+    default: op
+  deluxeshop.sell.all:
+    description: Access to /sell all
+    default: op
+  deluxeshop.sell.menu:
+    description: Access to /sell menu
+    default: op
+  deluxeshop.search:
+    description: Access to /search <search>
+    default: op
+  deluxeshop.search.other:
+    description: Access to /search other <player> <search>
+    default: op

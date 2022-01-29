@@ -6,11 +6,11 @@ args:
 size: 36
 open_commands:
 - '[meta] set dmshop-currentPage INTEGER 1'
-- '[meta] set dmshop-filter STRING {category}Category'
+- '[console] search %player_name% {category}Category'
 - '[refresh] <delay=1>'
 close_commands:
 - '[meta] remove dmshop-currentPage INTEGER 0<delay=1>'
-- '[meta] remove dmshop-filter STRING 0'
+- '[console] search %player_name% clear'
 - '[openguimenu] shopCategories'
 items:
   'exit':
