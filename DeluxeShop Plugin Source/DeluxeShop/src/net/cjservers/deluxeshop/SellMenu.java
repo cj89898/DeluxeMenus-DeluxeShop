@@ -1,7 +1,5 @@
 package net.cjservers.deluxeshop;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -17,48 +15,31 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
 public class SellMenu implements Listener {
   
-  private final Inventory inv;
+  private String title;
+  private Inventory inv;
   private LinkedHashMap<String, ShopItem> allItems;
+  private List<ItemStack> menuItems;
   
-  public SellMenu(LinkedHashMap<String, ShopItem> allItems) {
-    
-    inv = Bukkit.createInventory(null, 36, "Example");
+  public SellMenu(LinkedHashMap<String, ShopItem> allItems, List<ItemStack> menuItems, String title) {
     // Put the items into the inventory
     this.allItems = allItems;
+    this.menuItems = menuItems;
+    this.title = title;
     initializeItems();
   }
   
-  // You can call this whenever you want to put the items in
   public void initializeItems() {
-    ItemStack cancel = createGuiItem(Material.DIAMOND_SWORD, "§cCancel", "§8Exit the menu");
-    ItemStack sell = createGuiItem(Material.DIAMOND_SWORD, "§aSell Items", "§8Make money");
-    for (int i = 27; i <= 30; i++) {
-      inv.setItem(i, cancel);
+    inv = Bukkit.createInventory(null, 54, title);
+    for (int i = 45; i <= 48; i++) {
+      inv.setItem(i, menuItems.get(0));
     }
-    inv.setItem(31, createGuiItem(Material.DIAMOND_SWORD, " "));
-    for (int i = 32; i <= 35; i++) {
-      inv.setItem(i, sell);
+    inv.setItem(49, menuItems.get(1));
+    for (int i = 50; i <= 53; i++) {
+      inv.setItem(i, menuItems.get(2));
     }
-  }
-  
-  // Nice little method to create a gui item with a custom name, and description
-  protected ItemStack createGuiItem(final Material material, final String name, final String... lore) {
-    final ItemStack item = new ItemStack(material, 1);
-    final ItemMeta meta = item.getItemMeta();
-    
-    // Set the name of the item
-    meta.setDisplayName(name);
-    
-    // Set the lore of the item
-    meta.setLore(Arrays.asList(lore));
-    
-    item.setItemMeta(meta);
-    
-    return item;
   }
   
   // You can open the inventory with this
@@ -74,14 +55,14 @@ public class SellMenu implements Listener {
       return;
     
     final Player p = (Player) e.getWhoClicked();
-    if (e.getRawSlot() >= 27 && e.getRawSlot() <= 35)
+    if (e.getRawSlot() >= 45 && e.getRawSlot() <= 53)
       e.setCancelled(true);
-    if (e.getRawSlot() >= 27 && e.getRawSlot() <= 30) {
+    if (e.getRawSlot() >= 45 && e.getRawSlot() <= 48) {
       p.getOpenInventory().close();
-    } else if (e.getRawSlot() >= 32 && e.getRawSlot() <= 35) {
+    } else if (e.getRawSlot() >= 50 && e.getRawSlot() <= 53) {
       double totalValue = 0;
       double totalAmount = 0;
-      for (int i = 0; i <= 27; i++) {
+      for (int i = 0; i <= 44; i++) {
         if (inv.getItem(i) == null) {
           continue;
         }
@@ -109,11 +90,10 @@ public class SellMenu implements Listener {
     }
   }
   
-  // Cancel dragging in our inventory
   @EventHandler
   public void onInventoryClick(final InventoryDragEvent e) {
     if (e.getInventory() == inv) {
-      for (int i = 27; i <= 35; i++) {
+      for (int i = 45; i <= 53; i++) {
         if (e.getRawSlots().contains(i)) {
           e.setCancelled(true);
         }
@@ -125,27 +105,29 @@ public class SellMenu implements Listener {
   public void onInventoryClose(final InventoryCloseEvent e) {
     if (e.getInventory() == inv && e.getPlayer() instanceof Player) {
       Player p = (Player) e.getPlayer();
-      for (int i = 0; i <= 26; i++) {
+      for (int i = 0; i <= 44; i++) {
         if (inv.getItem(i) != null) {
           p.getInventory().addItem(inv.getItem(i));
           inv.setItem(i, null);
         }
       }
-      List<String> itemNames = new ArrayList<String>();
-      itemNames.add("§cCancel");
-      itemNames.add("§aSell Items");
       for (ItemStack i : p.getInventory().getContents()) {
-        if (i != null) {
-          Bukkit.getLogger().info(i.getItemMeta().getDisplayName());
-          if (i.getType() == Material.DIAMOND_SWORD
-              && i.hasItemMeta()
-              && i.getItemMeta().hasDisplayName()
-              && itemNames.contains(i.getItemMeta().getDisplayName())) {
-            p.getInventory().remove(i);
-          }
+        if (i != null
+            && (i.isSimilar(menuItems.get(0)) || i.isSimilar(menuItems.get(1)) || i.isSimilar(menuItems.get(2)))) {
+          p.getInventory().remove(i);
         }
       }
       p.updateInventory();
     }
+  }
+  
+  public void setMenuItems(List<ItemStack> sellMenuItems) {
+    this.menuItems = sellMenuItems;
+    initializeItems();
+  }
+  
+  public void setTitle(String title) {
+    this.title = title;
+    initializeItems();
   }
 }

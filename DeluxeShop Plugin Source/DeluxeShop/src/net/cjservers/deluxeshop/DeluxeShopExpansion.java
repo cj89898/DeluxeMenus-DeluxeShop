@@ -30,7 +30,7 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
   
   @Override
   public String getVersion() {
-    return "3.0.0";
+    return plugin.getDescription().getVersion();
   }
   
   @Override

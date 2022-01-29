@@ -1,6 +1,7 @@
 package net.cjservers.deluxeshop;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,14 +11,20 @@ import java.util.Map;
 import java.util.UUID;
 
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.cjservers.deluxeshop.commands.CommandTabCompleter;
+import net.cjservers.deluxeshop.commands.DeluxeShopCommand;
 import net.cjservers.deluxeshop.commands.SearchCommand;
 import net.cjservers.deluxeshop.commands.SellCommand;
+import net.cjservers.deluxeshop.utilities.Utils;
 import net.milkbowl.vault.economy.Economy;
 
 public class DeluxeShop extends JavaPlugin {
@@ -25,7 +32,10 @@ public class DeluxeShop extends JavaPlugin {
   public static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("0.00");
   
   private File confYml;
-  private YamlConfiguration conf;
+  private FileConfiguration conf;
+  private File msgYml;
+  private FileConfiguration msgConf;
+  
   private static boolean sellIndividual;
   private static boolean sellPlaceholder;
   private static String sellPlaceholderMulti;
@@ -33,9 +43,15 @@ public class DeluxeShop extends JavaPlugin {
   
   private LinkedHashMap<String, ShopItem> items;
   private Map<UUID, Filter> filters;
+  
+  private ArrayList<ItemStack> sellMenuItems;
+  private String sellMenuTitle;
   private static Economy econ;
   
   public static SellMenu sellMenu;
+  public static Utils utils;
+  
+  public static Map<String, String> messages;
   
   @Override
   public void onEnable() {
@@ -44,13 +60,180 @@ public class DeluxeShop extends JavaPlugin {
       return;
     }
     new DeluxeShopExpansion(this).register();
-    confYml = new File(getDataFolder(), "config.yml");
-    conf = YamlConfiguration.loadConfiguration(confYml);
+    utils = new Utils(this);
+    reload();
+    
+    CommandTabCompleter tabCompleter = new CommandTabCompleter();
+    
+    getCommand("deluxeshop").setExecutor(new DeluxeShopCommand(this));
+    getCommand("deluxeshop").setTabCompleter(tabCompleter);
+    
+    if (setupEconomy()) {
+      getCommand("deluxeshopsell").setExecutor(new SellCommand(items));
+      getCommand("deluxeshopsell").setTabCompleter(tabCompleter);
+      sellMenu = new SellMenu(items, sellMenuItems, sellMenuTitle);
+      getServer().getPluginManager().registerEvents(sellMenu, this);
+    } else {
+      getLogger().info("[DeluxeShop] - Vault not found, sell commands disabled");
+    }
+    
+    getCommand("search").setExecutor(new SearchCommand(this));
+    
+    for (String e : msgConf.getConfigurationSection("").getKeys(false)) {
+      messages.put(e, msgConf.getString(e));
+    }
+    
+  }
+  
+  @Override
+  public void onDisable() {
+    
+  }
+  
+  private boolean setupEconomy() {
+    if (getServer().getPluginManager().getPlugin("Vault") == null) {
+      return false;
+    }
+    RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
+    if (rsp == null) {
+      return false;
+    }
+    econ = rsp.getProvider();
+    return econ != null;
+  }
+  
+  public static Economy getEconomy() {
+    return econ;
+  }
+  
+  public Map<UUID, Filter> getFilters() {
+    return filters;
+  }
+  
+  public LinkedHashMap<String, ShopItem> getItems() {
+    return items;
+  }
+  
+  public static boolean sellInvidiual() {
+    return sellIndividual;
+  }
+  
+  public static boolean sellPlaceholder() {
+    return sellPlaceholder;
+  }
+  
+  public static String sellPlaceholderMulti() {
+    return sellPlaceholderMulti;
+  }
+  
+  public static double sellMulti() {
+    return sellMulti;
+  }
+  
+  public static Map<String, String> getMessages() {
+    return messages;
+  }
+  
+  public void fixConf() {
     if (!(confYml.exists())) {
       saveDefaultConfig();
       getLogger().info("[DeluxeShop] - Created config.yml");
     }
+    if (!(msgYml.exists())) {
+      try {
+        msgYml.createNewFile();
+        System.out.println("[DeluxeShop] - Created messages.yml");
+      } catch (IOException e) {
+        getLogger().severe(ChatColor.RED + "[DeluxeShop] - Could not create messages.yml");
+      }
+    }
+  }
+  
+  private void initSellMenu() {
+    if (conf.get("sellmenu.items") == null) {
+      String c = "sellmenu.items.cancel.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", "Cancel");
+      conf.set(c + "lore", new ArrayList<String>());
+      //Divider Item
+      c = "sellmenu.items.divider.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", " ");
+      conf.set(c + "lore", new ArrayList<String>());
+      //Sell Item
+      c = "sellmenu.items.sell.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", "Sell");
+      conf.set(c + "lore", new ArrayList<String>());
+      Utils.save(conf, "config.yml");
+    }
+    if (conf.getString("sellmenu.title") == null) {
+      conf.set("sellmenu.title", "Sell Items");
+      Utils.save(conf, "config.yml");
+    }
+    sellMenuItems = new ArrayList<ItemStack>();
+    //Cancel Item
+    String c = "sellmenu.items.cancel.";
+    Material mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    String name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    List<String> lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
     
+    //Divider Item
+    c = "sellmenu.items.divider.";
+    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
+    
+    //Sell Item
+    c = "sellmenu.items.sell.";
+    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
+    
+    sellMenuTitle = conf.getString("sellmenu.title");
+  }
+  
+  private void initMessages() {
+    
+  }
+  
+  private ItemStack createGuiItem(final Material material, final String name, final List<String> lore) {
+    final ItemStack item = new ItemStack(material, 1);
+    final ItemMeta meta = item.getItemMeta();
+    
+    // Set the name of the item
+    meta.setDisplayName(name);
+    
+    // Set the lore of the item
+    meta.setLore(lore);
+    
+    item.setItemMeta(meta);
+    
+    return item;
+  }
+  
+  public void reload() {
+    confYml = new File(getDataFolder(), "config.yml");
+    msgYml = new File(getDataFolder(), "messages.yml");
+    
+    fixConf();
+    conf = Utils.getConfiguration("config.yml");
+    msgConf = Utils.getConfiguration("messages.yml");
+    
+    initMessages();
+    initSellMenu();
+    initConfigOpts();
+    
+    if (sellMenu != null) {
+      sellMenu.setMenuItems(sellMenuItems);
+      sellMenu.setTitle(sellMenuTitle);
+    }
+  }
+  
+  private void initConfigOpts() {
     try {
       String selling = conf.getString("selling");
       sellIndividual = selling == null ? false : selling.equalsIgnoreCase("individual");
@@ -83,70 +266,6 @@ public class DeluxeShop extends JavaPlugin {
       }
       items.put(item.toLowerCase(), new ShopItem(buy, sell, tags));
     }
-    CommandTabCompleter tabCompleter = new CommandTabCompleter();
-    
-    if (setupEconomy()) {
-      getCommand("deluxeshopsell").setExecutor(new SellCommand(items));
-      getCommand("deluxeshopsell").setTabCompleter(tabCompleter);
-      sellMenu = new SellMenu(items);
-      getServer().getPluginManager().registerEvents(sellMenu, this);
-    } else {
-      getLogger().info("[DeluxeShop] - Vault not found, sell commands disabled");
-    }
-    getCommand("search").setExecutor(new SearchCommand(this));
-  }
-  
-  @Override
-  public void onDisable() {
-    
-  }
-  
-  private boolean setupEconomy() {
-    if (getServer().getPluginManager().getPlugin("Vault") == null) {
-      return false;
-    }
-    RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
-    if (rsp == null) {
-      return false;
-    }
-    econ = rsp.getProvider();
-    return econ != null;
-  }
-  
-  public static Economy getEconomy() {
-    return econ;
-  }
-  
-  public Map<UUID, Filter> getFilters() {
-    return filters;
-  }
-  
-  public static String formatName(String name) {
-    String tempName = "";
-    for (String s : name.split("_")) {
-      tempName += s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase() + " ";
-    }
-    return tempName.substring(0, tempName.length() - 1);
-  }
-  
-  public LinkedHashMap<String, ShopItem> getItems() {
-    return items;
-  }
-  
-  public static boolean sellInvidiual() {
-    return sellIndividual;
-  }
-  
-  public static boolean sellPlaceholder() {
-    return sellPlaceholder;
-  }
-  
-  public static String sellPlaceholderMulti() {
-    return sellPlaceholderMulti;
-  }
-  
-  public static double sellMulti() {
-    return sellMulti;
   }
   
 }

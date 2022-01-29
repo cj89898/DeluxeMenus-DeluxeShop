@@ -1,5 +1,5 @@
 name: DeluxeShop
-version: 3.0.0
+version: 3.2.0
 author: cj89898
 website: http://www.cjservers.net/
 main: net.cjservers.deluxeshop.DeluxeShop
@@ -14,6 +14,10 @@ commands:
     description: Search the DeluxeShop
     usage: '/search <search parameters>'
     aliases: [setfilter]
+  deluxeshop:
+    description: Displays help
+    usage: '/deluxeshop'
+    aliases: [ds]
 
 permissions:
   deluxeshop.sell:
@@ -36,4 +40,7 @@ permissions:
     default: op
   deluxeshop.search.other:
     description: Access to /search other <player> <search>
+    default: op
+  deluxeshop.admin:
+    description: Access to /deluxeshop reload
     default: op

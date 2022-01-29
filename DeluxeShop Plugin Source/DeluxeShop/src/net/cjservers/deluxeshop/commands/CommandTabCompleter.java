@@ -14,7 +14,7 @@ public class CommandTabCompleter implements TabCompleter {
   
   @Override
   public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args) {
-    if (cmd.getName().equalsIgnoreCase("sell")) {
+    if (cmd.getName().equalsIgnoreCase("deluxeshopsell") || cmd.getName().equalsIgnoreCase("sell")) {
       if (sender.hasPermission("deluxeshop.sell")) {
         List<String> list = new ArrayList<String>();
         if (args.length == 1) {

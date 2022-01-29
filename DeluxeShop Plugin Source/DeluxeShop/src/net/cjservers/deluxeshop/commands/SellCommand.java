@@ -1,6 +1,8 @@
 package net.cjservers.deluxeshop.commands;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -12,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 
 import net.cjservers.deluxeshop.DeluxeShop;
 import net.cjservers.deluxeshop.ShopItem;
+import net.cjservers.deluxeshop.utilities.Utils;
 
 public class SellCommand implements CommandExecutor {
   
@@ -25,7 +28,7 @@ public class SellCommand implements CommandExecutor {
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
     if (cmd.getName().equalsIgnoreCase("deluxeshopsell")) {
       if (!(sender instanceof Player)) {
-        sender.sendMessage("&cYou must be a player to use this command");
+        Utils.sendTranslatedMessage(sender, "&cYou must be a player to use this command");
         return true;
       }
       Player p = (Player) sender;
@@ -39,16 +42,18 @@ public class SellCommand implements CommandExecutor {
             int amount = p.getInventory().getItemInMainHand().getAmount();
             p.getInventory().getItemInMainHand().setAmount(0);
             DeluxeShop.getEconomy().depositPlayer(p, sell * amount);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                "&6Successfully sold &a"
-                    + amount
-                    + " "
-                    + DeluxeShop.formatName(itemName)
-                    + " &6for &a"
-                    + DeluxeShop.DECIMAL_FORMAT.format(amount * sell)));
+            List<String> ph = new ArrayList<String>();
+            ph.add("%amount%");
+            ph.add("%item%");
+            ph.add("%value%");
+            List<String> values = new ArrayList<String>();
+            values.add(amount + "");
+            values.add(Utils.formatName(itemName));
+            values.add(DeluxeShop.DECIMAL_FORMAT.format(amount * sell));
+            Utils.sendTaggedPlaceHolderMessage(sender, "successful-sell-hand", ph, values);
             return true;
           }
-          p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&8Nothing to sell!"));
+          Utils.sendTranslatedMessage(p, "&8Nothing to sell!");
           return true;
         } else if (sender.hasPermission("deluxeshop.sell.handall")
             && (args.length >= 1)
@@ -65,17 +70,19 @@ public class SellCommand implements CommandExecutor {
               }
             }
             if (amount == 0) {
-              p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&8Nothing to sell!"));
+              Utils.sendTranslatedMessage(p, "&8Nothing to sell!");
               return true;
             }
             DeluxeShop.getEconomy().depositPlayer(p, sell * amount);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                "&6Successfully sold &a"
-                    + amount
-                    + " "
-                    + DeluxeShop.formatName(itemName)
-                    + " &6for &a"
-                    + DeluxeShop.DECIMAL_FORMAT.format(amount * sell)));
+            List<String> ph = new ArrayList<String>();
+            ph.add("%amount%");
+            ph.add("%item%");
+            ph.add("%value%");
+            List<String> values = new ArrayList<String>();
+            values.add(amount + "");
+            values.add(Utils.formatName(itemName));
+            values.add(DeluxeShop.DECIMAL_FORMAT.format(amount * sell));
+            Utils.sendTaggedPlaceHolderMessage(sender, "successful-sell-hand", ph, values);
           }
           return true;
         } else if (sender.hasPermission("deluxeshop.sell.all")
@@ -102,14 +109,16 @@ public class SellCommand implements CommandExecutor {
             }
           }
           if (totalAmount == 0) {
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&8Nothing to sell!"));
+            Utils.sendTranslatedMessageFromTag(p, "nothing-to-sell");
             return true;
           }
-          p.sendMessage(ChatColor.translateAlternateColorCodes('&',
-              "&6Successfully sold &a"
-                  + totalAmount
-                  + " items &6for &a"
-                  + DeluxeShop.DECIMAL_FORMAT.format(totalValue)));
+          List<String> ph = new ArrayList<String>();
+          ph.add("%amount%");
+          ph.add("%value%");
+          List<String> values = new ArrayList<String>();
+          values.add(totalAmount + "");
+          values.add(DeluxeShop.DECIMAL_FORMAT.format(totalValue));
+          Utils.sendTaggedPlaceHolderMessage(sender, "successful-sell-all", ph, values);
           return true;
         } else if (sender.hasPermission("deluxeshop.sell.menu")
             && (args.length >= 1)
@@ -123,7 +132,7 @@ public class SellCommand implements CommandExecutor {
           try {
             amountLeft = Integer.parseInt(args[1]);
           } catch (NumberFormatException e) {
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cInvalid Amount"));
+            Utils.sendTranslatedMessageFromTag(p, "invalid-amount");
             return true;
           }
           double sell = allItems.get(itemName).getSell(p);
@@ -146,18 +155,19 @@ public class SellCommand implements CommandExecutor {
             }
           }
           if (amount == 0) {
-            p.sendMessage(
-                ChatColor.translateAlternateColorCodes('&', "&8No " + DeluxeShop.formatName(itemName) + " to sell!"));
+            Utils.sendTaggedPlaceHolderMessage(p, "no-item-to-sell", "%item%", Utils.formatName(itemName));
             return true;
           }
           DeluxeShop.getEconomy().depositPlayer(p, sell * amount);
-          p.sendMessage(ChatColor.translateAlternateColorCodes('&',
-              "&6Successfully sold &a"
-                  + amount
-                  + " "
-                  + DeluxeShop.formatName(itemName)
-                  + " &6for &a"
-                  + DeluxeShop.DECIMAL_FORMAT.format(amount * sell)));
+          List<String> ph = new ArrayList<String>();
+          ph.add("%amount%");
+          ph.add("%item%");
+          ph.add("%value%");
+          List<String> values = new ArrayList<String>();
+          values.add(amount + "");
+          values.add(Utils.formatName(itemName));
+          values.add(DeluxeShop.DECIMAL_FORMAT.format(amount * sell));
+          Utils.sendTaggedPlaceHolderMessage(sender, "successful-sell-hand", ph, values);
           return true;
         }
         helpMenu(sender);
