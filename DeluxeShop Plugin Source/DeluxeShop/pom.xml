@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>DeluxeShop</groupId>
 	<artifactId>DeluxeShop</artifactId>
-	<version>3.2.0</version>
+	<version>3.2.1</version>
 	<name>DeluxeShop</name>
 	<build>
 		<sourceDirectory>src</sourceDirectory>

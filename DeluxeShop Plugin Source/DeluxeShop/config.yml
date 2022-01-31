@@ -1,5 +1,20 @@
 # Valid selling options can be any number, any placeholder, or "individual"
 selling: 0.33
+sellmenu:
+  title: Sell Items
+  items:
+    cancel:
+      material: DIAMOND_SWORD
+      display_name: Cancel
+      lore: []
+    divider:
+      material: DIAMOND_SWORD
+      display_name: ' '
+      lore: []
+    sell:
+      material: DIAMOND_SWORD
+      display_name: Sell
+      lore: []
 items:
   'Stone':
     buy: '1'

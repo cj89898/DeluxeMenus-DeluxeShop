@@ -79,10 +79,6 @@ public class DeluxeShop extends JavaPlugin {
     
     getCommand("search").setExecutor(new SearchCommand(this));
     
-    for (String e : msgConf.getConfigurationSection("").getKeys(false)) {
-      messages.put(e, msgConf.getString(e));
-    }
-    
   }
   
   @Override
@@ -149,57 +145,6 @@ public class DeluxeShop extends JavaPlugin {
     }
   }
   
-  private void initSellMenu() {
-    if (conf.get("sellmenu.items") == null) {
-      String c = "sellmenu.items.cancel.";
-      conf.set(c + ".material", "DIAMOND_SWORD");
-      conf.set(c + "display_name", "Cancel");
-      conf.set(c + "lore", new ArrayList<String>());
-      //Divider Item
-      c = "sellmenu.items.divider.";
-      conf.set(c + ".material", "DIAMOND_SWORD");
-      conf.set(c + "display_name", " ");
-      conf.set(c + "lore", new ArrayList<String>());
-      //Sell Item
-      c = "sellmenu.items.sell.";
-      conf.set(c + ".material", "DIAMOND_SWORD");
-      conf.set(c + "display_name", "Sell");
-      conf.set(c + "lore", new ArrayList<String>());
-      Utils.save(conf, "config.yml");
-    }
-    if (conf.getString("sellmenu.title") == null) {
-      conf.set("sellmenu.title", "Sell Items");
-      Utils.save(conf, "config.yml");
-    }
-    sellMenuItems = new ArrayList<ItemStack>();
-    //Cancel Item
-    String c = "sellmenu.items.cancel.";
-    Material mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
-    String name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
-    List<String> lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
-    
-    //Divider Item
-    c = "sellmenu.items.divider.";
-    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
-    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
-    lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
-    
-    //Sell Item
-    c = "sellmenu.items.sell.";
-    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
-    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
-    lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
-    
-    sellMenuTitle = conf.getString("sellmenu.title");
-  }
-  
-  private void initMessages() {
-    
-  }
-  
   private ItemStack createGuiItem(final Material material, final String name, final List<String> lore) {
     final ItemStack item = new ItemStack(material, 1);
     final ItemMeta meta = item.getItemMeta();
@@ -231,6 +176,78 @@ public class DeluxeShop extends JavaPlugin {
       sellMenu.setMenuItems(sellMenuItems);
       sellMenu.setTitle(sellMenuTitle);
     }
+  }
+  
+  private void initMessages() {
+    messages = new HashMap<String, String>();
+    if (msgConf.getString("no-item-to-sell") == null)
+      msgConf.set("no-item-to-sell", "&8No &6%item% &8to sell!");
+    if (msgConf.getString("nothing-to-sell") == null)
+      msgConf.set("nothing-to-sell", "&8Nothing to sell!");
+    if (msgConf.getString("successful-sell-hand") == null)
+      msgConf.set("successful-sell-hand", "&6Successfully sold &a%amount% %item% &6for &a$%value%");
+    if (msgConf.getString("successful-sell-all") == null)
+      msgConf.set("successful-sell-all", "&6Successfully sold &a%amount% &6items for &a$%value%");
+    if (msgConf.getString("invalid-amount") == null)
+      msgConf.set("invalid-amount", "&cInvalid Amount");
+    if (msgConf.getString("search-other-clear") == null)
+      msgConf.set("search-other-clear", "&8Cleared Search for: &a%player%");
+    if (msgConf.getString("search-other") == null)
+      msgConf.set("search-other", "&8Search for: &a%player% &8set to: &a%filter%");
+    if (msgConf.getString("console-needs-player") == null)
+      msgConf.set("console-needs-player", "&cYou must be a player to use this command");
+    Utils.save(msgConf, "messages.yml");
+    
+    for (String e : msgConf.getConfigurationSection("").getKeys(false)) {
+      messages.put(e, msgConf.getString(e));
+    }
+  }
+  
+  private void initSellMenu() {
+    if (conf.getString("sellmenu.title") == null) {
+      conf.set("sellmenu.title", "Sell Items");
+      Utils.save(conf, "config.yml");
+    }
+    if (conf.get("sellmenu.items") == null) {
+      String c = "sellmenu.items.cancel.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", "Cancel");
+      conf.set(c + "lore", new ArrayList<String>());
+      //Divider Item
+      c = "sellmenu.items.divider.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", " ");
+      conf.set(c + "lore", new ArrayList<String>());
+      //Sell Item
+      c = "sellmenu.items.sell.";
+      conf.set(c + ".material", "DIAMOND_SWORD");
+      conf.set(c + "display_name", "Sell");
+      conf.set(c + "lore", new ArrayList<String>());
+      Utils.save(conf, "config.yml");
+    }
+    sellMenuItems = new ArrayList<ItemStack>();
+    //Cancel Item
+    String c = "sellmenu.items.cancel.";
+    Material mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    String name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    List<String> lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
+    
+    //Divider Item
+    c = "sellmenu.items.divider.";
+    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
+    
+    //Sell Item
+    c = "sellmenu.items.sell.";
+    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
+    lore = conf.getStringList(c + ".lore");
+    sellMenuItems.add(createGuiItem(mat, name, lore));
+    
+    sellMenuTitle = conf.getString("sellmenu.title");
   }
   
   private void initConfigOpts() {
