@@ -228,21 +228,21 @@ public class DeluxeShop extends JavaPlugin {
     sellMenuItems = new ArrayList<ItemStack>();
     //Cancel Item
     String c = "sellmenu.items.cancel.";
-    Material mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    Material mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     String name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     List<String> lore = conf.getStringList(c + ".lore");
     sellMenuItems.add(createGuiItem(mat, name, lore));
     
     //Divider Item
     c = "sellmenu.items.divider.";
-    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     lore = conf.getStringList(c + ".lore");
     sellMenuItems.add(createGuiItem(mat, name, lore));
     
     //Sell Item
     c = "sellmenu.items.sell.";
-    mat = Material.matchMaterial(conf.getString(c + "material").toUpperCase());
+    mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     lore = conf.getStringList(c + ".lore");
     sellMenuItems.add(createGuiItem(mat, name, lore));
