@@ -27,7 +27,7 @@ public class SellMenu implements Listener {
     // Put the items into the inventory
     this.allItems = allItems;
     this.menuItems = menuItems;
-    this.title = title;
+    this.title = ChatColor.translateAlternateColorCodes('&', title);
     initializeItems();
   }
   
@@ -127,7 +127,7 @@ public class SellMenu implements Listener {
   }
   
   public void setTitle(String title) {
-    this.title = title;
+    this.title = ChatColor.translateAlternateColorCodes('&', title);
     initializeItems();
   }
 }

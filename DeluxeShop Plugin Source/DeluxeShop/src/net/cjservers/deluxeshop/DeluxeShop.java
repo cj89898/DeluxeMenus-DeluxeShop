@@ -19,6 +19,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.tr7zw.changeme.nbtapi.NBTItem;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.cjservers.deluxeshop.commands.CommandTabCompleter;
 import net.cjservers.deluxeshop.commands.DeluxeShopCommand;
@@ -145,9 +146,9 @@ public class DeluxeShop extends JavaPlugin {
     }
   }
   
-  private ItemStack createGuiItem(final Material material, final String name, final List<String> lore) {
-    final ItemStack item = new ItemStack(material, 1);
-    final ItemMeta meta = item.getItemMeta();
+  private ItemStack createGuiItem(Material material, String name, List<String> lore) {
+    ItemStack item = new ItemStack(material, 1);
+    ItemMeta meta = item.getItemMeta();
     
     // Set the name of the item
     meta.setDisplayName(name);
@@ -158,6 +159,15 @@ public class DeluxeShop extends JavaPlugin {
     item.setItemMeta(meta);
     
     return item;
+  }
+  
+  private ItemStack createGuiItem(Material material, String name, List<String> lore, int customModelData) {
+    ItemStack item = createGuiItem(material, name, lore);
+    if (customModelData == 0)
+      return item;
+    NBTItem nbtItem = new NBTItem(item);
+    nbtItem.setInteger("CustomModelData", customModelData);
+    return nbtItem.getItem();
   }
   
   public void reload() {
@@ -231,21 +241,21 @@ public class DeluxeShop extends JavaPlugin {
     Material mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     String name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     List<String> lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
+    sellMenuItems.add(createGuiItem(mat, name, lore, conf.getInt(c + "CustomModelData")));
     
     //Divider Item
     c = "sellmenu.items.divider.";
     mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
+    sellMenuItems.add(createGuiItem(mat, name, lore, conf.getInt(c + "CustomModelData")));
     
     //Sell Item
     c = "sellmenu.items.sell.";
     mat = Material.getMaterial(conf.getString(c + "material").toUpperCase());
     name = ChatColor.translateAlternateColorCodes('&', conf.getString(c + "display_name"));
     lore = conf.getStringList(c + ".lore");
-    sellMenuItems.add(createGuiItem(mat, name, lore));
+    sellMenuItems.add(createGuiItem(mat, name, lore, conf.getInt(c + "CustomModelData")));
     
     sellMenuTitle = conf.getString("sellmenu.title");
   }

@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>DeluxeShop</groupId>
 	<artifactId>DeluxeShop</artifactId>
-	<version>3.2.2</version>
+	<version>3.2.3</version>
 	<name>DeluxeShop</name>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -17,11 +17,33 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>shade</id>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<relocations>
+						<relocation>
+							<pattern>de.tr7zw.changeme.nbtapi</pattern>
+							<shadedPattern>de.shaded.changeme.nbtapi</shadedPattern>
+						</relocation>
+					</relocations>
+				</configuration>
+			</plugin>
 		</plugins>
 		<finalName>${project.artifactId}</finalName>
 		<resources>
 			<resource>
-				<directory></directory>
+				<directory>${basedir}</directory>
 				<includes>
 					<include>plugin.yml</include>
 					<include>config.yml</include>
@@ -42,6 +64,11 @@
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
+		<repository>
+			<id>codemc-repo</id>
+			<url>https://repo.codemc.org/repository/maven-public/</url>
+			<layout>default</layout>
+		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
@@ -61,6 +88,11 @@
 			<artifactId>VaultAPI</artifactId>
 			<version>1.7</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.tr7zw</groupId>
+			<artifactId>item-nbt-api</artifactId>
+			<version>2.9.0</version>
 		</dependency>
 	</dependencies>
 </project>
