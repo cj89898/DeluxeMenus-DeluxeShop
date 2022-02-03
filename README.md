@@ -1,5 +1,10 @@
 # DeluxeMenus-DeluxeShop
 
+![Main Shop](https://i.imgur.com/7NkcUz5.jpg)
+![Category Example](https://i.imgur.com/UiQWvTx.jpg)
+![Search Feature](https://i.imgur.com/JWqarXw.jpg)
+![Pages](https://i.imgur.com/xeGFP3c.jpg)
+
 This shop is fully configurable and very easy to add items to!
 
 ## Setup
@@ -18,7 +23,7 @@ Download these with `/papi ecloud download <expansion>` then type `/papi reload`
  - Support for filters and anti-filters via `/search`.
  - Tags can be added to items. If you have a filter, it will have to match one of the item tags EXACTLY for it to show in the results.
 
-The custom items I use as example can be [downloaded here](https://www.dropbox.com/s/t9addc1x29c0p62/custom_items.zip?dl=0)
+The custom items and gui textures I use as example can be [downloaded here](https://www.dropbox.com/s/mi8104yalt6eajt/custom%20pack.zip?dl=1)
 
 ## Commands
 

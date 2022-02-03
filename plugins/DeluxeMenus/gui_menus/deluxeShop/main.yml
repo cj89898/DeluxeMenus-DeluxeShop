@@ -1,4 +1,4 @@
-menu_title: '&9&lDeluxe&3&lShop &8- &4Search'
+menu_title: '&f򴋺'
 open_command: shop
 register_command: true
 size: 54
@@ -16,16 +16,16 @@ items:
     click_commands:
     - '[close]'
   'categories':
-    material: iron_ingot
-    nbt_int: CustomModelData:15
+    material: paper
+    nbt_int: CustomModelData:3
     display_name: "&dCategories"
     slot: 53
     click_commands:
     - '[openguimenu] shopCategories'
   'first_page':
-    material: iron_ingot
+    material: paper
     display_name: "&6First Page"
-    nbt_int: CustomModelData:13
+    nbt_int: CustomModelData:6
     slot: 46
     view_requirement:
       requirements:
@@ -38,9 +38,9 @@ items:
     - '[meta] set dmshop-currentPage INTEGER 1'
     - '[refresh]'
   'previous_page':
-    material: iron_ingot
+    material: paper
     display_name: "&6Previous Page"
-    nbt_int: CustomModelData:11
+    nbt_int: CustomModelData:5
     slot: 47
     view_requirement:
       requirements:
@@ -60,8 +60,8 @@ items:
     - '[player] search clear'
     - '[refresh]'
   'filter':
-    material: iron_ingot
-    nbt_int: CustomModelData:16
+    material: paper
+    nbt_int: CustomModelData:4
     display_name: '&6Current Search: &a%deluxeshop_formatfilter%'
     priority: 1
     view_requirement:
@@ -74,23 +74,23 @@ items:
     click_commands:
     - '[refresh]'
   'no-filter':
-    material: iron_ingot
-    nbt_int: CustomModelData:16
+    material: paper
+    nbt_int: CustomModelData:4
     display_name: '&cNo Filter'
     priority: 2
     slot: 49
   'set-filter':
-    material: iron_ingot
-    nbt_int: CustomModelData:12
+    material: paper
+    nbt_int: CustomModelData:9
     display_name: '&6Search for Items'
     slot: 50
     click_commands:
     - '[player] shopSearch <&aWhat would you like to search for?>'
     - '[close]'
   'next_page':
-    material: iron_ingot
+    material: paper
     display_name: "&6Next Page"
-    nbt_int: CustomModelData:10
+    nbt_int: CustomModelData:7
     slot: 51
     view_requirement:
       requirements:
@@ -102,9 +102,9 @@ items:
     - '[meta] set dmshop-currentPage INTEGER %math_0_MIN({deluxeshop_pages:45},{deluxemenus_meta_dmshop-currentPage_INTEGER_1}+1)%'
     - '[refresh]'
   'lastpage':
-    material: iron_ingot
+    material: paper
     display_name: "&6Last Page"
-    nbt_int: CustomModelData:14
+    nbt_int: CustomModelData:8
     slot: 52
     view_requirement:
       requirements:
