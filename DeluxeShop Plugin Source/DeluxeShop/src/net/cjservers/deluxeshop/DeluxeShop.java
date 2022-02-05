@@ -13,7 +13,9 @@ import java.util.UUID;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -60,6 +62,10 @@ public class DeluxeShop extends JavaPlugin {
       getServer().getPluginManager().disablePlugin(this);
       return;
     }
+    if (!setupEconomy()) {
+      getLogger().info("[DeluxeShop] - Vault not found, plugin disabled");
+      getServer().getPluginManager().disablePlugin(this);
+    }
     new DeluxeShopExpansion(this).register();
     utils = new Utils(this);
     reload();
@@ -68,15 +74,10 @@ public class DeluxeShop extends JavaPlugin {
     
     getCommand("deluxeshop").setExecutor(new DeluxeShopCommand(this));
     getCommand("deluxeshop").setTabCompleter(tabCompleter);
-    
-    if (setupEconomy()) {
-      getCommand("deluxeshopsell").setExecutor(new SellCommand(items));
-      getCommand("deluxeshopsell").setTabCompleter(tabCompleter);
-      sellMenu = new SellMenu(items, sellMenuItems, sellMenuTitle);
-      getServer().getPluginManager().registerEvents(sellMenu, this);
-    } else {
-      getLogger().info("[DeluxeShop] - Vault not found, sell commands disabled");
-    }
+    getCommand("deluxeshopsell").setExecutor(new SellCommand(items));
+    getCommand("deluxeshopsell").setTabCompleter(tabCompleter);
+    sellMenu = new SellMenu(items, sellMenuItems, sellMenuTitle);
+    getServer().getPluginManager().registerEvents(sellMenu, this);
     
     getCommand("search").setExecutor(new SearchCommand(this));
     
@@ -84,7 +85,9 @@ public class DeluxeShop extends JavaPlugin {
   
   @Override
   public void onDisable() {
-    
+    for (Player p : getServer().getOnlinePlayers()) {
+      p.removeMetadata("deluxeshop-amount", this);
+    }
   }
   
   private boolean setupEconomy() {
@@ -295,4 +298,15 @@ public class DeluxeShop extends JavaPlugin {
     }
   }
   
+  public String getItemName(OfflinePlayer player, String input) {
+    String name = "";
+    try {
+      name = "" + getFilters().get(player.getUniqueId()).getItems().keySet().toArray()[Integer.parseInt(input)];
+    } catch (NumberFormatException numError) {
+      name = input.toLowerCase();
+    } catch (ArrayIndexOutOfBoundsException oobError) {
+      return "";
+    }
+    return name;
+  }
 }

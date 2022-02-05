@@ -3,7 +3,12 @@ package net.cjservers.deluxeshop;
 import java.text.DecimalFormat;
 import java.util.LinkedHashMap;
 
+import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.metadata.MetadataValue;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
@@ -13,6 +18,7 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
   private final DeluxeShop plugin;
   
   public static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("0.00");
+  public static final DecimalFormat POS_NEG = new DecimalFormat("+#;-#");
   
   public DeluxeShopExpansion(DeluxeShop plugin) {
     this.plugin = plugin;
@@ -48,6 +54,32 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
     if (!plugin.getFilters().containsKey(player.getUniqueId())) {
       plugin.getFilters().put(player.getUniqueId(), new Filter("", "", plugin.getItems()));
     }
+    if (argsString.startsWith("currentAmount")) {
+      argsString = argsString.replaceAll("currentAmount", "");
+      if (!(player instanceof Player))
+        return "0";
+      Player p = (Player) player;
+      int amount = 0;
+      for (MetadataValue s : p.getMetadata("deluxeshop-amount")) {
+        amount = s.asInt();
+        break;
+      }
+      if (argsString.equals("")) {
+        
+        amount = amount >= 2304 ? 2304 : amount;
+        amount = amount <= 1 ? 1 : amount;
+        return amount + "";
+      }
+      try {
+        amount += POS_NEG.parse(argsString).intValue();
+        amount = amount >= 2304 ? 2304 : amount;
+        amount = amount <= 1 ? 1 : amount;
+        p.setMetadata("deluxeshop-amount", new FixedMetadataValue(plugin, amount));
+        return amount + "";
+      } catch (Exception e) {
+        return "";
+      }
+    }
     LinkedHashMap<String, ShopItem> tempItems = plugin.getFilters().get(player.getUniqueId()).getItems();
     if (argsString.equals("filter"))
       return plugin.getFilters().get(player.getUniqueId()).getFilter();
@@ -59,29 +91,44 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
     if (argsString.equals("formatantifilter")) {
       return formatFilter(plugin.getFilters().get(player.getUniqueId()).getAntiFilter());
     }
-    
     if (argsString.startsWith("pages:")) {
       double items = Integer.parseInt(argsString.split(":")[1]);
       return (int) Math.ceil(tempItems.size() / items) + "";
     }
+    if (argsString.startsWith("buyMax:")) {
+      argsString = argsString.replace("buyMax:", "");
+      if (!(player instanceof Player))
+        return "0";
+      Player p = (Player) player;
+      int max = (int) (DeluxeShop.getEconomy().getBalance(player)
+          / tempItems.get(plugin.getItemName(player, argsString)).getBuy());
+      max = max >= 2304 ? 2304 : max;
+      p.setMetadata("deluxeshop-amount", new FixedMetadataValue(plugin, max));
+      return max + "";
+    }
+    if (argsString.startsWith("sellMax:")) {
+      argsString = argsString.replace("sellMax:", "");
+      if (!(player instanceof Player))
+        return "0";
+      Player p = (Player) player;
+      ItemStack blankItem = new ItemStack(Material.getMaterial(plugin.getItemName(player, argsString).toUpperCase()));
+      int amount = 0;
+      for (int i = 0; i <= 40; i++) {
+        if (p.getInventory().getItem(i) != null && p.getInventory().getItem(i).isSimilar(blankItem)) {
+          amount += p.getInventory().getItem(i).getAmount();
+        }
+      }
+      amount = amount >= 2304 ? 2304 : amount;
+      amount = amount <= 1 ? 1 : amount;
+      p.setMetadata("deluxeshop-amount", new FixedMetadataValue(plugin, amount));
+      return amount + "";
+    }
+    
     String[] args = argsString.split(",");
-    String name = "";
     if (args[0].startsWith("math_")) {
       args[0] = PlaceholderAPI.setPlaceholders(player, "%" + args[0] + "%");
     }
-    try {
-      name = (String) tempItems.keySet().toArray()[Integer.parseInt(args[0])];
-    } catch (NumberFormatException numError) {
-      String[] nameArr = args[0].toLowerCase().split("_");
-      for (String s : nameArr) {
-        s = s.substring(0, 1).toUpperCase() + s.substring(1);
-        name += s + "_";
-      }
-      if (name.endsWith("_"))
-        name = name.substring(0, name.length() - 1);
-    } catch (ArrayIndexOutOfBoundsException oobError) {
-      return "";
-    }
+    String name = plugin.getItemName(player, args[0]);
     if (args[1].equals("sell")) {
       return DECIMAL_FORMAT.format(tempItems.get(name).getSell(player));
     } else if (args[1].equals("name")) {
@@ -93,6 +140,8 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
         return tempName.substring(0, tempName.length() - 1);
       }
       return name;
+    } else if (args[1].equals("mat")) {
+      return name.toUpperCase();
     } else if (args[1].equals("buy")) {
       return DECIMAL_FORMAT.format(tempItems.get(name).getBuy());
     }

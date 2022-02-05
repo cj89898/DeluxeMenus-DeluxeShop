@@ -1,10 +1,9 @@
 name: DeluxeShop
-version: 3.2.3
+version: 3.2.4
 author: cj89898
 website: http://www.cjservers.net/
 main: net.cjservers.deluxeshop.DeluxeShop
-depend: [PlaceholderAPI]
-softdepend: [Vault]
+depend: [PlaceholderAPI, Vault]
 api-version: 1.18
 commands:
   deluxeshopsell:
