@@ -12,7 +12,7 @@ Copy all files from `\plugins\` to your plugins directory, although I do recomme
 
 **Required Plugins:** [DeluxeMenus](https://www.spigotmc.org/resources/deluxemenus.11734/), [MyCommand](https://www.spigotmc.org/resources/mycommand.22272/), [CommandPrompter](https://www.spigotmc.org/resources/commandprompter.47772/)
 
-**Required Expansions:**  `checkitem`, `javascript`, `player`, `str`, `math`.
+**Required Expansions:**  `checkitem`, `player`, `math`.
 Download these with `/papi ecloud download <expansion>` then type `/papi reload`.
 
 ## Info
@@ -27,12 +27,14 @@ The custom items and gui textures I use as example can be [downloaded here](http
 
 ## Commands
 
-- /sell <item> <amount>  -- Sells a certain amount of an item - `deluxeshop.sell`
-- /sell hand -- Sells the item in your main hand -- `deluxeshop.sell.hand`
-- /sell handall -- Sells all items in your inventory that match the item in your main hand - `deluxeshop.sell.handall`
-- /sell all -- Sells everything in your inventory that can be sold - `deluxeshop.sell.all`
-- /sell menu -- Opens a menu for you to put items into and sell - `deluxeshop.sell.menu`
-- /search <query> -- Sets the player's search filter. - `deluxeshop.search` *
-- /search other <player> <query> -- Sets another player's search filter - `deluxeshop.search.other` *
+- `/sell <item> <amount>`  -- Sells a certain amount of an item - `deluxeshop.sell`
+- `/sell hand` -- Sells the item in your main hand -- `deluxeshop.sell.hand`
+- `/sell handall` -- Sells all items in your inventory that match the item in your main hand - `deluxeshop.sell.handall`
+- `/sell all` -- Sells everything in your inventory that can be sold - `deluxeshop.sell.all`
+- `/sell menu` -- Opens a menu for you to put items into and sell - `deluxeshop.sell.menu`
+- `/search <query>` -- Sets the player's search filter. - `deluxeshop.search` *
+- `/search other <player> <query>` -- Sets another player's search filter - `deluxeshop.search.other` *
+
+- `/shopsearch <search>` -  MyCmd command for searching the shop, it will open it.
 
 *Valid queries can be seperated by `,` (Example `sand,concrete_powder`). If the value is `clear` It will clear the player's filter. If you put `anti:` before-hand, it will set the player's anti-filter.

@@ -1,0 +1,5646 @@
+# Valid selling options can be any number, any placeholder, or "individual"
+selling: 0.33
+sellmenu:
+  title: '&f򴋻'
+  items:
+    cancel:
+      material: paper
+      CustomModelData: 2
+      display_name: '&r&cCancel'
+      lore: []
+    divider:
+      material: paper
+      CustomModelData: 2
+      display_name: ' '
+      lore: []
+    sell:
+      material: paper
+      CustomModelData: 2
+      display_name: '&r&aSell'
+      lore: []
+items:
+  'Stone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cobblestone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Granite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Granite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Diorite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - privateCategory
+  'Polished_Diorite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Andesite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Andesite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Grass_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dirt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Coarse_Dirt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - privateCategory
+  'Podzol':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - privateCategory
+  'Oak_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Spruce_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Birch_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Jungle_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Acacia_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dark_Oak_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Oak_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Spruce_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Birch_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Jungle_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Acacia_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Dark_Oak_Sapling':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Bedrock':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Sand':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Sand':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gravel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+    - oresCategory
+  'Iron_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+    - oresCategory
+  'Coal_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+    - oresCategory
+  'Oak_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Spruce_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Birch_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Jungle_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Acacia_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Dark_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - logsCategory
+  'Stripped_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Spruce_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Birch_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Jungle_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Acacia_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Dark_Oak_Log':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedLogsCategory
+  'Stripped_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Stripped_Spruce_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Stripped_Birch_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Stripped_Jungle_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Stripped_Acacia_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Stripped_Dark_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - strippedWoodCategory
+  'Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Spruce_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Birch_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Jungle_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Acacia_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Dark_Oak_Wood':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woodCategory
+  'Oak_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Spruce_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Birch_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Jungle_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Acacia_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Dark_Oak_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - leavesCategory
+  'Sponge':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Wet_Sponge':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lapis_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Lapis_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Dispenser':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Chiseled_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cut_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Note_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Powered_Rail':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Detector_Rail':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Sticky_Piston':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Cobweb':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Grass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Fern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Bush':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Seagrass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Sea_Pickle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Piston':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'White_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Orange_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Magenta_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Light_Blue_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Yellow_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Lime_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Pink_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Gray_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Light_Gray_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Cyan_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Purple_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Blue_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Brown_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Green_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Red_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Black_Wool':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - woolCategory
+  'Dandelion':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Poppy':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Blue_Orchid':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Allium':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Azure_Bluet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Red_Tulip':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Orange_Tulip':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'White_Tulip':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Pink_Tulip':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Oxeye_Daisy':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Brown_Mushroom':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Red_Mushroom':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Gold_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Iron_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Spruce_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Birch_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Jungle_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Acacia_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Dark_Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Stone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Petrified_Oak_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Cobblestone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Nether_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Quartz_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Purpur_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Prismarine_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Prismarine_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Dark_Prismarine_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Smooth_Quartz':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Smooth_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Smooth_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Smooth_Stone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Tnt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Bookshelf':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Mossy_Cobblestone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Obsidian':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Torch':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'End_Rod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Chorus_Plant':
+    buy: '1'
+    sell: '0.5'
+  'Chorus_Flower':
+    buy: '1'
+    sell: '0.5'
+  'Purpur_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purpur_Pillar':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purpur_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Spawner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Oak_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Chest':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Diamond_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Diamond_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Crafting_Table':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Furnace':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Ladder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Rail':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cobblestone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lever':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Stone_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Oak_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Spruce_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Birch_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Jungle_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Acacia_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Dark_Oak_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Redstone_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Redstone_Torch':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Stone_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Snow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Ice':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Snow_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cactus':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Clay':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Jukebox':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Oak_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Spruce_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Birch_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Jungle_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Acacia_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dark_Oak_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pumpkin':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Carved_Pumpkin':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Netherrack':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Soul_Sand':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Glowstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Jack_O_Lantern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Oak_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Spruce_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Birch_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Jungle_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Acacia_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Dark_Oak_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Infested_Stone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Infested_Cobblestone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Infested_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Infested_Mossy_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Infested_Cracked_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Infested_Chiseled_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Mossy_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cracked_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Chiseled_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Mushroom_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Red_Mushroom_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Mushroom_Stem':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Iron_Bars':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Melon':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Vine':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Oak_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Spruce_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Birch_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Jungle_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Acacia_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dark_Oak_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Mycelium':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lily_Pad':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Nether_Brick_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Nether_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Enchanting_Table':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'End_Portal_Frame':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'End_Stone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'End_Stone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dragon_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Redstone_Lamp':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Emerald_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Ender_Chest':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Tripwire_Hook':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Emerald_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Spruce_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Birch_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Jungle_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Beacon':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cobblestone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Mossy_Cobblestone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Oak_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Spruce_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Birch_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Jungle_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Acacia_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Dark_Oak_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Anvil':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Chipped_Anvil':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Damaged_Anvil':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Trapped_Chest':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Light_Weighted_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Heavy_Weighted_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Daylight_Detector':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Redstone_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+    - redstoneCategory
+  'Nether_Quartz_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Hopper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Chiseled_Quartz_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Quartz_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Quartz_Pillar':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Quartz_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Activator_Rail':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Dropper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'White_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Iron_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Hay_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'White_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Orange_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Magenta_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Light_Blue_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Yellow_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Lime_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Pink_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Gray_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Light_Gray_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Cyan_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Purple_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Blue_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Brown_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Green_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Red_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Black_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Coal_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Packed_Ice':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Acacia_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Dark_Oak_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Slime_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Sunflower':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Lilac':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Rose_Bush':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Peony':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Tall_Grass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Large_Fern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'White_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Stained_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'White_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Stained_Glass_Pane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Prismarine':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Prismarine_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dark_Prismarine':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Prismarine_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Prismarine_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Dark_Prismarine_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Sea_Lantern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Chiseled_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cut_Red_Sandstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Magma_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Nether_Wart_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Bone_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Observer':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'White_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Orange_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Magenta_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Light_Blue_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Yellow_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Lime_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Pink_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Gray_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Light_Gray_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cyan_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Purple_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Blue_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Brown_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Green_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Red_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Black_Shulker_Box':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'White_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Glazed_Terracotta':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'White_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Concrete':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'White_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Concrete_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Turtle_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Dead_Tube_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dead_Brain_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dead_Bubble_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dead_Fire_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dead_Horn_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Tube_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brain_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Bubble_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Fire_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Horn_Coral_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Tube_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Brain_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Bubble_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Fire_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Horn_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Brain_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Bubble_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Fire_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Horn_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Tube_Coral':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Tube_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Brain_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Bubble_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Fire_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Horn_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Tube_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Brain_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Bubble_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Fire_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dead_Horn_Coral_Fan':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Blue_Ice':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Conduit':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Iron_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Oak_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Spruce_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Birch_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Jungle_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Acacia_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Dark_Oak_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Repeater':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Comparator':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Turtle_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Scute':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Iron_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Iron_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Iron_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Flint_And_Steel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Apple':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Bow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Arrow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+    - dropsCategory
+  'Coal':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Charcoal':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Diamond':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Iron_Ingot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Gold_Ingot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Iron_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Wooden_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Wooden_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Wooden_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Wooden_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Stone_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Stone_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Stone_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Stone_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Diamond_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Diamond_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Diamond_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Diamond_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Stick':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Bowl':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Mushroom_Stew':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Golden_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Golden_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Golden_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Golden_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'String':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Feather':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Gunpowder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Wooden_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Stone_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Iron_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Diamond_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Golden_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Wheat_Seeds':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Wheat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Bread':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Leather_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Leather_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Leather_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Leather_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Chainmail_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Chainmail_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Chainmail_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Chainmail_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Iron_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Iron_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Iron_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Iron_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Diamond_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Diamond_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Diamond_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Diamond_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Golden_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Golden_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Golden_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Golden_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Flint':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Porkchop':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Porkchop':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Painting':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Golden_Apple':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Enchanted_Golden_Apple':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Water_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Lava_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Minecart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Saddle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Redstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - valuablesCategory
+  'Snowball':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Oak_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Leather':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Milk_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Pufferfish_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Salmon_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cod_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Tropical_Fish_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Brick':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Clay_Ball':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Sugar_Cane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Kelp':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Dried_Kelp_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Paper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Book':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Slime_Ball':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Chest_Minecart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Furnace_Minecart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Compass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Fishing_Rod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Clock':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Glowstone_Dust':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Cod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Salmon':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Tropical_Fish':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Pufferfish':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Cod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Salmon':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Ink_Sac':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Red_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Green_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cocoa_Beans':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lapis_Lazuli':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Purple_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cyan_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Gray_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Gray_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Pink_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lime_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Yellow_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Blue_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Magenta_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Orange_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Bone_Meal':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Bone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Sugar':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cake':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'White_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Orange_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Magenta_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Blue_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Yellow_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Lime_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Pink_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Gray_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Light_Gray_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cyan_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Purple_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blue_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Brown_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Green_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Black_Bed':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cookie':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Filled_Map':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Shears':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Melon_Slice':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Dried_Kelp':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Pumpkin_Seeds':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Melon_Seeds':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Beef':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Beef':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Chicken':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Chicken':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Rotten_Flesh':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Ender_Pearl':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Blaze_Rod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Ghast_Tear':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Gold_Nugget':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Nether_Wart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Potion':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Splash_Potion':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Lingering_Potion':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Glass_Bottle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Spider_Eye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Fermented_Spider_Eye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Blaze_Powder':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Magma_Cream':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Brewing_Stand':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cauldron':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Ender_Eye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Glistering_Melon_Slice':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Bat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Blaze_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Cave_Spider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Chicken_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Cod_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Cow_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Creeper_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Dolphin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Donkey_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Drowned_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Elder_Guardian_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Enderman_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Endermite_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Evoker_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Ghast_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Guardian_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Husk_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Llama_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Magma_Cube_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Mooshroom_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Mule_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Ocelot_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Parrot_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Phantom_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Pig_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Polar_Bear_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Pufferfish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Rabbit_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Salmon_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Sheep_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Shulker_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Silverfish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Skeleton_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Skeleton_Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Slime_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Spider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Squid_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Stray_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Tropical_Fish_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Turtle_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Vex_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Villager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Vindicator_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Witch_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Wither_Skeleton_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Wolf_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Zombie_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Zombie_Horse_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Zombie_Villager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Experience_Bottle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Fire_Charge':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Writable_Book':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Written_Book':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Emerald':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Item_Frame':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Flower_Pot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Carrot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+    - farmingCategory
+  'Potato':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+    - farmingCategory
+  'Baked_Potato':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Poisonous_Potato':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Map':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Golden_Carrot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Skeleton_Skull':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Wither_Skeleton_Skull':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Zombie_Head':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Creeper_Head':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Dragon_Head':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Carrot_On_A_Stick':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Nether_Star':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Pumpkin_Pie':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Firework_Rocket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Firework_Star':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Enchanted_Book':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Nether_Brick':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Quartz':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Tnt_Minecart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Hopper_Minecart':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Prismarine_Shard':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Prismarine_Crystals':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Rabbit':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Rabbit':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Rabbit_Stew':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Rabbit_Foot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Rabbit_Hide':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Armor_Stand':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Iron_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Golden_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Diamond_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Lead':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Name_Tag':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Mutton':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Cooked_Mutton':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'White_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Orange_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Magenta_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Blue_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Yellow_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lime_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Pink_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Gray_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Gray_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cyan_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Purple_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Blue_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Brown_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Green_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Red_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Black_Banner':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'End_Crystal':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Chorus_Fruit':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Popped_Chorus_Fruit':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Beetroot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Beetroot_Seeds':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Beetroot_Soup':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Dragon_Breath':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Spectral_Arrow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Tipped_Arrow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Shield':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Elytra':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Spruce_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Birch_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Jungle_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Acacia_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Dark_Oak_Boat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Totem_Of_Undying':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Shulker_Shell':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Iron_Nugget':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Knowledge_Book':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_13':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Cat':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Blocks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Chirp':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Far':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Mall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Mellohi':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Stal':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Strad':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Ward':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_11':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Music_Disc_Wait':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Trident':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Phantom_Membrane':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Nautilus_Shell':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Heart_Of_The_Sea':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cornflower':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Lily_Of_The_Valley':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Wither_Rose':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+    - flowersCategory
+  'Smooth_Stone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Cut_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Cut_Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Prismarine_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Sandstone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Mossy_Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Granite_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Nether_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Andesite_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Red_Nether_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Sandstone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'End_Stone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Diorite_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Granite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Smooth_Red_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Mossy_Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Polished_Diorite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Mossy_Cobblestone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'End_Stone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Stone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Smooth_Sandstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Smooth_Quartz_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Granite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Andesite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Red_Nether_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Polished_Andesite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Diorite_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Polished_Granite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Smooth_Red_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Mossy_Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Polished_Diorite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Mossy_Cobblestone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'End_Stone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Smooth_Sandstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Smooth_Quartz_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Granite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Andesite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Red_Nether_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Polished_Andesite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Diorite_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Scaffolding':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Jigsaw':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Composter':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Oak_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Spruce_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Birch_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Jungle_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Acacia_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Dark_Oak_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Bamboo':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - farmingCategory
+  'Red_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Green_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Yellow_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Blue_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Brown_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Black_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'White_Dye':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Fox_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Panda_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Pillager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Ravager_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Trader_Llama_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Wandering_Trader_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Leather_Horse_Armor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Crossbow':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Suspicious_Stew':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Loom':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Flower_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Creeper_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Skull_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Mojang_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Globe_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Barrel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Smoker':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Blast_Furnace':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Cartography_Table':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Fletching_Table':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Grindstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Lectern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Smithing_Table':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Stonecutter':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Bell':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lantern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Sweet_Berries':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - foodCategory
+  'Campfire':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Bee_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Honeycomb':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - dropsCategory
+  'Crimson_Nylium':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Nylium':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Planks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Nether_Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Crimson_Stem':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Stem':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Stripped_Crimson_Stem':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Stripped_Warped_Stem':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Stripped_Crimson_Hyphae':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Stripped_Warped_Hyphae':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Hyphae':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Hyphae':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Fungus':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Warped_Fungus':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Crimson_Roots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Warped_Roots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Nether_Sprouts':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Weeping_Vines':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Twisting_Vines':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Crimson_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Warped_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Crimson_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Warped_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Polished_Blackstone_Pressure_Plate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Crimson_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Fence':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Soul_Soil':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Basalt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Basalt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Soul_Torch':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Crimson_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Warped_Trapdoor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Chain':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Crimson_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Fence_Gate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cracked_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Chiseled_Nether_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Warped_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Blackstone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Warped_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Polished_Blackstone_Button':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Quartz_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Warped_Wart_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Crimson_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Warped_Door':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+    - decoCategory
+  'Netherite_Ingot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Netherite_Scrap':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Netherite_Sword':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - weaponsCategory
+  'Netherite_Shovel':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Netherite_Pickaxe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Netherite_Axe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Netherite_Hoe':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Netherite_Helmet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Netherite_Chestplate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Netherite_Leggings':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Netherite_Boots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - armorCategory
+  'Crimson_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Warped_Sign':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Hoglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Piglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Strider_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Zoglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Zombified_Piglin_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Warped_Fungus_On_A_Stick':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - toolsCategory
+  'Music_Disc_Pigstep':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Piglin_Banner_Pattern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Soul_Lantern':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Soul_Campfire':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Shroomlight':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lodestone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Netherite_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Ancient_Debris':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Target':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Crying_Obsidian':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blackstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Blackstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Blackstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Gilded_Blackstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Polished_Blackstone_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Chiseled_Polished_Blackstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Blackstone_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Polished_Blackstone_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Cracked_Polished_Blackstone_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Respawn_Anchor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Amethyst_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Amethyst_Cluster':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Amethyst_Shard':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Axolotl_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Axolotl_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Azalea':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Azalea_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Big_Dripleaf':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Black_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Blue_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Brown_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Cyan_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Gray_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Green_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Blue_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Light_Gray_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Lime_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Magenta_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Orange_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Pink_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Purple_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Red_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'White_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Yellow_Candle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Budding_Amethyst':
+    buy: '1'
+    sell: '0.5'
+  'Bundle':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Calcite':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Chiseled_Deepslate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cobbled_Deepslate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cobbled_Deepslate_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Cobbled_Deepslate_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Cobbled_Deepslate_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Copper_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Copper_Ingot':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Copper_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Cracked_Deepslate_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cracked_Deepslate_Tiles':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Deepslate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Deepslate_Bricks':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Deepslate_Brick_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Deepslate_Brick_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Deepslate_Brick_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Deepslate_Coal_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Copper_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Diamond_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Emerald_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Gold_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Iron_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Lapis_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Redstone_Ore':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - oresCategory
+  'Deepslate_Tiles':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Deepslate_Tile_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Deepslate_Tile_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Deepslate_Tile_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dirt_Path':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Dripstone_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Exposed_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Exposed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Exposed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Exposed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Flowering_Azalea':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Flowering_Azalea_Leaves':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Glow_Berries':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Glow_Ink_Sac':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Glow_Item_Frame':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Glow_Lichen':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Glow_Squid_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Goat_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Hanging_Roots':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Infested_Deepslate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Large_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Lightning_Rod':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Medium_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Moss_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Moss_Carpet':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - decoCategory
+  'Oxidized_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Oxidized_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Oxidized_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Oxidized_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Piglin_Brute_Spawn_Egg':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - privateCategory
+  'Pointed_Dripstone':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Polished_Deepslate':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Polished_Deepslate_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Polished_Deepslate_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Polished_Deepslate_Wall':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Powder_Snow_Bucket':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory
+  'Raw_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Raw_Copper_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Raw_Gold':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Raw_Gold_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Raw_Iron':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Raw_Iron_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - valuablesCategory
+  'Rooted_Dirt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Sculk_Sensor':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - redstoneCategory
+  'Small_Amethyst_Bud':
+    buy: '1'
+    sell: '0.5'
+  'Small_Dripleaf':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Smooth_Basalt':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Spore_Blossom':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - decoCategory
+  'Spyglass':
+    buy: '1'
+    sell: '0.5'
+  'Tinted_Glass':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Copper_Block':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Waxed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Waxed_Exposed_Copper':
+    buy: '1'
+    sell: '0.5'
+  'Waxed_Exposed_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Exposed_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Waxed_Exposed_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Waxed_Oxidized_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Oxidized_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Oxidized_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Waxed_Oxidized_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Waxed_Weathered_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Weathered_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Waxed_Weathered_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Waxed_Weathered_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Weathered_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Weathered_Cut_Copper':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+  'Weathered_Cut_Copper_Slab':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - slabsCategory
+  'Weathered_Cut_Copper_Stairs':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - blocksCategory
+    - stairsCategory
+  'Music_Disc_Otherside':
+    buy: '1'
+    sell: '0.5'
+    tags:
+    - miscCategory

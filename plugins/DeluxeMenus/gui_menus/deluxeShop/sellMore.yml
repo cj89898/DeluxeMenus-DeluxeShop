@@ -1,167 +1,179 @@
 menu_title: '&8Sell - &9%deluxeshop_{item},name,formatted%'
-size: 27
+size: 18
 open_command: sellMore
 register_command: true
 args:
 - item
 - lastMenu
+- category
 - page
 open_commands:
-- '[meta] set dmshop-currentAmount INTEGER 1'
+- '[placeholder] %deluxeshop_currentAmount-2304%'
 - '[refresh] <delay=1>'
-close_commands:
-- '[meta] remove dmshop-currentAmount INTEGER 0'
 
 items:
   'item':
     material: 'placeholder-%deluxeshop_{item},name%'
     display_name: '&a%deluxeshop_{item},name,formatted%'
-    slot: 13
+    slot: 4
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     - '&6Value per Item: &a$%deluxeshop_{item},sell%'
-    - '&6Total Value: &a$%math_2_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}*{deluxeshop_{item},sell}%'
+    - '&6Total Value: &a$%math_2_{deluxeshop_currentAmount}*{deluxeshop_{item},sell}%'
     - ''
     - '&8&oClick to Sell'
+  'sell':
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 12
+    display_name: '&cSell Items'
+    lore:
+    - '&f? Get &a%deluxeshop_currentAmount% &f%deluxeshop_{item},name,formatted%'
+    - '&f?? For: &c$%math_2_{deluxeshop_currentAmount}*{deluxeshop_{item},sell}%'
+    click_requirement:
+      requirements:
+        item:
+          type: string equals
+          input: '%checkitem_mat:{deluxeshop_{item},name},amt:{deluxeshop_currentAmount}%'
+          output: 'yes'
+          deny_commands:
+          - '[message]&cYou do not have enough items'
+          - '[close]'
     click_commands:
-    - '[player] sellConfirm {item} %deluxemenus_meta_dmshop-currentAmount_INTEGER_1% {lastMenu}'
+    - '[console] eco give %player_name% %math_{deluxeshop_currentAmount}*{deluxeshop_{item},sell}%'
+    - '[placeholder] %checkitem_remove_mat:{deluxeshop_{item},name},amt:{deluxeshop_currentAmount}%'
+    - '[message] &fYou have sold &e%deluxeshop_currentAmount%x %deluxeshop_{item},name,formatted%'
+    - '[message] &fGained &a$%math_2_{deluxeshop_currentAmount}*{deluxeshop_{item},sell}%'
+    - '[close]'
   'exit':
     material: barrier
-    slot: 26
+    slot: 14
     display_name: '&cReturn to previous menu'
     click_commands:
-    - '[openguimenu] {lastMenu}'
-    - '[meta] set dmshop-currentPage INTEGER {page} <delay=3>'
+    - '[meta] set dmshop-currentPage INTEGER {page}<delay=2>'
+    - '[player] {lastMenu} {category}'
   '-all':
     material: RED_STAINED_GLASS_PANE
     display_name: '&cSet to 1 item'
-    amount: 1
-    slot: 9
+    slot: 0
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         amount:
-          type: has meta
-          key: dmshop-currentAmount
-          meta_type: INTEGER
-          value: 3
+          type: '>='
+          input: '%deluxeshop_currentAmount%'
+          output: 3
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER 1'
+    - '[placeholder] %deluxeshop_currentAmount-2304%'
     - '[refresh]'
   '-64':
     material: RED_STAINED_GLASS_PANE
     display_name: '&cRemove 64 items'
+    slot: 1
     amount: 64
-    slot: 10
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         amount:
-          type: has meta
-          key: dmshop-currentAmount
-          meta_type: INTEGER
-          value: 65
+          type: '>='
+          input: '%deluxeshop_currentAmount%'
+          output: 65
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}-64)%'
+    - '[placeholder] %deluxeshop_currentAmount-64%'
     - '[refresh]'
   '-10':
     material: RED_STAINED_GLASS_PANE
     display_name: '&cRemove 10 items'
+    slot: 2
     amount: 10
-    slot: 11
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         amount:
-          type: has meta
-          key: dmshop-currentAmount
-          meta_type: INTEGER
-          value: 11
+          type: '>='
+          input: '%deluxeshop_currentAmount%'
+          output: 11
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}-10)%'
+    - '[placeholder] %deluxeshop_currentAmount-10%'
     - '[refresh]'
   '-1':
     material: RED_STAINED_GLASS_PANE
     display_name: '&cRemove 1 item'
-    amount: 1
-    slot: 12
+    slot: 3
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         amount:
-          type: has meta
-          key: dmshop-currentAmount
-          meta_type: INTEGER
-          value: 2
+          type: '>='
+          input: '%deluxeshop_currentAmount%'
+          output: 2
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %math_0_MAX(1,{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}-1)%'
+    - '[placeholder] %deluxeshop_currentAmount-1%'
     - '[refresh]'
   '+1':
-    material: LIME_STAINED_GLASS_PANE
+    material: GREEN_STAINED_GLASS_PANE
     display_name: '&aAdd 1 item'
     amount: 1
-    slot: 14
+    slot: 5
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         items:
           type: '>='
           input: '%checkitem_amount_mat:{deluxeshop_{item},name}%'
-          output: '%math_0_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+1%'
+          output: '%math_0_{deluxeshop_currentAmount}+1%'
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_1%'
+    - '[placeholder] %deluxeshop_currentAmount+1%'
     - '[refresh]'
   '+10':
-    material: LIME_STAINED_GLASS_PANE
+    material: GREEN_STAINED_GLASS_PANE
     display_name: '&aAdd 10 items'
+    slot: 6
     amount: 10
-    slot: 15
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         items:
           type: '>='
           input: '%checkitem_amount_mat:{deluxeshop_{item},name}%'
-          output: '%math_0_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+10%'
+          output: '%math_0_{deluxeshop_currentAmount}+10%'
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_10%'
+    - '[placeholder] %deluxeshop_currentAmount+10%'
     - '[refresh]'
   '+64':
-    material: LIME_STAINED_GLASS_PANE
+    material: GREEN_STAINED_GLASS_PANE
     display_name: '&aAdd 64 items'
+    slot: 7
     amount: 64
-    slot: 16
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         items:
           type: '>='
           input: '%checkitem_amount_mat:{deluxeshop_{item},name}%'
-          output: '%math_0_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+64%'
+          output: '%math_0_{deluxeshop_currentAmount}+64%'
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop_64%'
+    - '[placeholder] %deluxeshop_currentAmount+64%'
     - '[refresh]'
   '+max':
-    material: LIME_STAINED_GLASS_PANE
+    material: GREEN_STAINED_GLASS_PANE
     display_name: '&aAdd max items'
+    slot: 8
     amount: 64
-    slot: 17
     lore:
-    - '&6Current Amount: &a%deluxemenus_meta_dmshop-currentAmount_INTEGER_1%'
+    - '&6Current Amount: &a%deluxeshop_currentAmount%'
     view_requirement:
       requirements:
         items:
           type: '>='
           input: '%checkitem_amount_mat:{deluxeshop_{item},name}%'
-          output: '%math_0_{deluxemenus_meta_dmshop-currentAmount_INTEGER_1}+2%'
+          output: '%math_0_{deluxeshop_currentAmount}+2%'
     click_commands:
-    - '[meta] set dmshop-currentAmount INTEGER 1'
-    - '[meta] set dmshop-currentAmount INTEGER %javascript_dmshop-maxitems_{item}%'
+    - '[placeholder] %deluxeshop_sellMax:{item}%'
     - '[refresh]'

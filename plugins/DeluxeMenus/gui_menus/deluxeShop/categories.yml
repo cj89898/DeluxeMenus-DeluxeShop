@@ -1,26 +1,66 @@
 menu_title: '&9&lDeluxe&3&lShop &8- &dCategories'
 open_command: shops
-size: 54
+size: 27
 close_commands:
 - '[console] search %player_name% clear'
 items:
   'Blocks':
     material: stone_bricks
-    slots:
-    - 11
+    slot: 3
     display_name: '&aBlocks'
     click_commands:
-    - '[player] shopCat blocks'
-  'set-filter':
-    material: iron_ingot
-    nbt_int: CustomModelData:12
-    display_name: '&6Search Items'
-    slot: 45
+    - '[player] categories blocks'
+  'Tools':
+    material: diamond_pickaxe
+    slot: 4
+    display_name: '&aTools'
+    click_commands:
+    - '[player] categories tools'
+  'Weapons':
+    material: diamond_sword
+    slot: 5
+    display_name: '&aWeapons'
+    click_commands:
+    - '[player] categories weapons'
+  'Farming':
+    material: wheat_seeds
+    slot: 12
+    display_name: '&aFarming'
+    click_commands:
+    - '[player] categories farming'
+  'Food':
+    material: cooked_beef
+    slot: 13
+    display_name: '&aFood'
+    click_commands:
+    - '[player] categories food'
+  'Redstone':
+    material: sticky_piston
+    slot: 14
+    display_name: '&aRedstone'
+    click_commands:
+    - '[player] categories redstone'
+  'Drops':
+    material: bone
+    slot: 21
+    display_name: '&aDrops'
+    click_commands:
+    - '[player] categories drops'
+  'Deco':
+    material: poppy
+    slot: 22
+    display_name: '&aDecorations'
+    click_commands:
+    - '[player] categories deco'
+  'Misc':
+    material: map
+    slot: 23
+    display_name: '&aMiscellaneous'
+    click_commands:
+    - '[player] categories misc'
+  'return':
+    material: barrier
+    display_name: '&6Main Shop'
+    slot: 16
     click_commands:
     - '[openguimenu] deluxeshop'
-  filler-item:
-    priority: 100
-    display_name: ' '
-    material: GRAY_STAINED_GLASS_PANE
-    slots:
-    - 0-53
