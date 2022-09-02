@@ -1,5 +1,5 @@
 name: DeluxeShop
-version: 3.2.4
+version: ${project.version}
 author: cj89898
 website: http://www.cjservers.net/
 main: net.cjservers.deluxeshop.DeluxeShop

@@ -19,7 +19,6 @@ import org.bukkit.inventory.ItemStack;
 public class SellMenu implements Listener {
   
   private String title;
-  private Inventory inv;
   private LinkedHashMap<String, ShopItem> allItems;
   private List<ItemStack> menuItems;
   
@@ -28,11 +27,11 @@ public class SellMenu implements Listener {
     this.allItems = allItems;
     this.menuItems = menuItems;
     this.title = ChatColor.translateAlternateColorCodes('&', title);
-    initializeItems();
   }
   
-  public void initializeItems() {
-    inv = Bukkit.createInventory(null, 54, title);
+  // You can open the inventory with this
+  public void openInventory(final HumanEntity ent) {
+    Inventory inv = Bukkit.createInventory(null, 54, title);
     for (int i = 45; i <= 48; i++) {
       inv.setItem(i, menuItems.get(0));
     }
@@ -40,10 +39,6 @@ public class SellMenu implements Listener {
     for (int i = 50; i <= 53; i++) {
       inv.setItem(i, menuItems.get(2));
     }
-  }
-  
-  // You can open the inventory with this
-  public void openInventory(final HumanEntity ent) {
     ent.openInventory(inv);
   }
   
@@ -51,7 +46,7 @@ public class SellMenu implements Listener {
   @EventHandler
   public void onInventoryClick(final InventoryClickEvent e) {
     
-    if (e.getWhoClicked().getOpenInventory().getTopInventory() != inv && e.getClickedInventory() != inv)
+    if (!e.getView().getTitle().equals(title))
       return;
     
     final Player p = (Player) e.getWhoClicked();
@@ -63,18 +58,19 @@ public class SellMenu implements Listener {
       double totalValue = 0;
       double totalAmount = 0;
       for (int i = 0; i <= 44; i++) {
-        if (inv.getItem(i) == null) {
+        ItemStack currentItem = e.getClickedInventory().getItem(i);
+        if (currentItem == null) {
           continue;
         }
-        String itemName = inv.getItem(i).getType().toString().toLowerCase();
+        String itemName = currentItem.getType().toString().toLowerCase();
         if (!allItems.containsKey(itemName)) {
           continue;
         }
         double sell = allItems.get(itemName).getSell(p);
         ItemStack blankItem = new ItemStack(Material.getMaterial(itemName.toUpperCase()));
-        if (inv.getItem(i).isSimilar(blankItem)) {
-          int amount = inv.getItem(i).getAmount();
-          inv.setItem(i, null);
+        if (currentItem.isSimilar(blankItem)) {
+          int amount = currentItem.getAmount();
+          e.getClickedInventory().setItem(i, null);
           DeluxeShop.getEconomy().depositPlayer(p, sell * amount);
           totalAmount += amount;
           totalValue += (sell * amount);
@@ -92,7 +88,7 @@ public class SellMenu implements Listener {
   
   @EventHandler
   public void onInventoryClick(final InventoryDragEvent e) {
-    if (e.getInventory() == inv) {
+    if (e.getView().getTitle().equals(title)) {
       for (int i = 45; i <= 53; i++) {
         if (e.getRawSlots().contains(i)) {
           e.setCancelled(true);
@@ -103,12 +99,12 @@ public class SellMenu implements Listener {
   
   @EventHandler
   public void onInventoryClose(final InventoryCloseEvent e) {
-    if (e.getInventory() == inv && e.getPlayer() instanceof Player) {
+    if (e.getView().getTitle().equals(title) && e.getPlayer() instanceof Player) {
       Player p = (Player) e.getPlayer();
       for (int i = 0; i <= 44; i++) {
-        if (inv.getItem(i) != null) {
-          p.getInventory().addItem(inv.getItem(i));
-          inv.setItem(i, null);
+        if (e.getInventory().getItem(i) != null) {
+          p.getInventory().addItem(e.getInventory().getItem(i));
+          e.getInventory().setItem(i, null);
         }
       }
       for (ItemStack i : p.getInventory().getContents()) {
@@ -123,11 +119,9 @@ public class SellMenu implements Listener {
   
   public void setMenuItems(List<ItemStack> sellMenuItems) {
     this.menuItems = sellMenuItems;
-    initializeItems();
   }
   
   public void setTitle(String title) {
     this.title = ChatColor.translateAlternateColorCodes('&', title);
-    initializeItems();
   }
 }

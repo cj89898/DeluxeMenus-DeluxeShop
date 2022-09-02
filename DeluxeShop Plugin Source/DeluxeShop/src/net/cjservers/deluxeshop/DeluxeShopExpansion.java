@@ -3,6 +3,7 @@ package net.cjservers.deluxeshop;
 import java.text.DecimalFormat;
 import java.util.LinkedHashMap;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
@@ -51,6 +52,8 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
   
   @Override
   public String onRequest(OfflinePlayer player, String argsString) {
+    if (plugin.getConfig().getBoolean("debug"))
+      Bukkit.getLogger().info("[DeluxeShop Debug] Parsed: " + argsString);
     if (!plugin.getFilters().containsKey(player.getUniqueId())) {
       plugin.getFilters().put(player.getUniqueId(), new Filter("", "", plugin.getItems()));
     }
