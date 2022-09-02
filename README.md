@@ -2,10 +2,10 @@
 
 ![Main Shop](https://i.imgur.com/7NkcUz5.jpg)
 ![Category Example](https://i.imgur.com/UiQWvTx.jpg)
-![Search Feature](https://i.imgur.com/JWqarXw.jpg)
+![Search Feature](https://i.imgur.com/ZEjfBiS.jpg)
 ![Pages](https://i.imgur.com/xeGFP3c.jpg)
 
-This shop is fully configurable and very easy to add items to!
+*Credit to !SilentTail#1192 for the example UI*
 
 ## Setup
 Copy all files from `\plugins\` to your plugins directory, although I do recommend editing your own config files vs replacing as your other plugin settings could be lost.
