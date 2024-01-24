@@ -4,7 +4,7 @@ author: cj89898
 website: http://www.cjservers.net/
 main: net.cjservers.deluxeshop.DeluxeShop
 depend: [PlaceholderAPI, Vault]
-api-version: 1.18
+api-version: 1.13
 commands:
   deluxeshopsell:
     description: Displays help
