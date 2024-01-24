@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>DeluxeShop</groupId>
 	<artifactId>DeluxeShop</artifactId>
-	<version>3.2.6</version>
+	<version>3.2.8</version>
 	<name>DeluxeShop</name>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -75,7 +75,7 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.19.2-R0.1-SNAPSHOT</version>
+			<version>1.20.4-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -93,7 +93,7 @@
 		<dependency>
 			<groupId>de.tr7zw</groupId>
 			<artifactId>item-nbt-api</artifactId>
-			<version>2.10.0</version>
+			<version>2.12.2</version>
 		</dependency>
 	</dependencies>
 </project>
