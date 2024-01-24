@@ -133,7 +133,7 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
     }
     String name = plugin.getItemName(player, args[0]);
     if (args[1].equals("sell")) {
-      return DECIMAL_FORMAT.format(tempItems.get(name).getSell(player));
+      return DECIMAL_FORMAT.format(plugin.getItems().get(name).getSell(player));
     } else if (args[1].equals("name")) {
       if (args.length > 2 && args[2].equals("formatted")) {
         String tempName = "";
@@ -146,7 +146,7 @@ public class DeluxeShopExpansion extends PlaceholderExpansion {
     } else if (args[1].equals("mat")) {
       return name.toUpperCase();
     } else if (args[1].equals("buy")) {
-      return DECIMAL_FORMAT.format(tempItems.get(name).getBuy());
+      return DECIMAL_FORMAT.format(plugin.getItems().get(name).getBuy());
     }
     return "";
   }
