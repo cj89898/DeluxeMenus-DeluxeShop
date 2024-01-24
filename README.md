@@ -12,7 +12,7 @@ Copy all files from `\plugins\` to your plugins directory, although I do recomme
 
 **Required Plugins:** [DeluxeMenus](https://www.spigotmc.org/resources/deluxemenus.11734/), [MyCommand](https://www.spigotmc.org/resources/mycommand.22272/), [CommandPrompter](https://www.spigotmc.org/resources/commandprompter.47772/)
 
-**Required Expansions:**  `checkitem`, `player`, `math`.
+**Required Expansions:**  `checkitem`, `player`, `math`, `vault`.  
 Download these with `/papi ecloud download <expansion>` then type `/papi reload`.
 
 ## Info
